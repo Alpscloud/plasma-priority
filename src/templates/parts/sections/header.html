@@ -1,5 +1,22 @@
 <header class="header">
-	<!-- NAV -->
-	{% include '../components/nav.html' %}
-	<!-- //NAV -->
+	<div class="container container-wide">
+		<div class="row align-vertical-center align-horisontal-between header__row">
+			<div class="logo__col">
+				<div class="row align-vertical-center align-horisontal-start">
+					<!-- Logo -->
+					<a href="index.html" class="logo" title="Plasma Priority">
+						<img src="img/logo.svg" alt="Plasma Priority Logo">
+					</a>
+					<!-- //Logo -->
+
+					<!-- NAV -->
+					{% include '../components/nav.html' %}
+					<!-- //NAV -->
+				</div>
+			</div>
+
+			<button class="btn btn-secondary js-open-callback-popup-btn" type="button" data-btn-text="Заказать звонок" data-form-theme="Обратный звонок">заказать звонок</button>
+		</div>
+	</div>
+	
 </header>

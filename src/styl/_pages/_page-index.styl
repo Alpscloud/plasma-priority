@@ -1,0 +1,273 @@
+.sect__promo
+	padding 240px 0 50px
+	position relative
+	.container
+		position relative
+		z-index 1
+	&:before
+		pseudo()
+		position absolute
+		top 0
+		right 30%
+		width 1345px
+		height 1140px
+		background-color $secondary-color
+		border-bottom-right-radius 50%
+		
+
+.title
+	font 50px $CBold 
+	line-height 1.25
+	margin-bottom 40px
+	
+.subtitle
+	font-size 30px
+	line-height 40px
+	max-width 690px
+	margin-bottom 45px
+	
+
+.promo-block
+	position relative
+	&__content
+		position relative
+		z-index 1
+		
+	&__img
+		position absolute
+		width 650px
+		height 650px
+		top 0
+		right -200px
+		border-radius 50% 0 50% 50%
+		radius-overflow()
+
+			
+		
+	&__form
+		background-color $basic-white-color
+		padding 35px
+		max-width 970px
+		box-shadow 0px 10px 60px 0px rgba($text-color, 0.2)
+		margin-bottom 100px
+		
+// About
+.sect__about
+	padding-top 240px
+	position relative
+	z-index 1
+	
+.about-service-item
+	overflow hidden
+	border 1px solid rgba($secondary-color, .3)
+	font-size 16px
+	height 100%
+	display flex
+	flex-direction column
+	justify-content space-between
+	radius-overflow()
+	&__wrapper
+		margin-bottom 30px
+	&__description
+		padding 45px 35px 30px 35px
+		
+	&__title
+		font 24px $CBold
+		margin-bottom 30px
+		
+	img
+		display block
+		width 100%
+		
+.about-service__blockquote
+	padding 50px
+	border-left 10px solid $accent-color
+	font 14px $GItalic
+	line-height 26px
+	margin-bottom 80px
+	b, strong
+		font-family $GBoldItalic
+		
+
+.service-steps
+	.sect-title
+		margin-bottom 90px
+		
+.service-step
+	position relative
+	font-size 16px
+	&__wrapper
+		margin-bottom 60px
+	&__count
+		flex-col-center()
+		text-align center
+		color $basic-white-color
+		width 70px
+		height 70px
+		border-radius 50%
+		background-color $secondary-color
+		position absolute
+		horisontal-center()
+		top -35px
+		z-index 1
+		
+	&__img
+		width 100%
+		padding-top 64%
+		border-radius 16px 0 16px 0
+		radius-overflow()
+		margin-bottom 25px
+
+// Advantages
+.sect__advantages
+	border-bottom-right-radius 400px
+.advantage
+	display flex
+	align-items flex-start
+	justify-content flex-start
+	&__ic
+		flex none
+		width 50px
+		height 50px
+		border-radius 50%
+		background-color $basic-white-color
+		background-position 50% 50%
+		background-repeat no-repeat
+		background-size 20px 20px
+		margin-right 20px
+		box-shadow 0px 5px 25px 0px rgba($secondary-color, 0.15)
+	&__wrapper
+		margin-bottom 45px
+		
+// Team
+.team
+	&-member
+		margin-bottom 60px
+		display flex
+		flex-wrap nowrap
+		&__photo
+			width 50%
+			radius-overflow()
+			border-radius 24px 0 24px 24px
+			min-height 700px
+			img
+				@extends .visually-hidden
+		&__information
+			width 50%
+			padding-left 50px
+			padding-right 70px
+			
+		&__name
+			font 30px $CBold
+			margin-bottom 25px
+		&__experience
+			color $accent-color
+			font 14px $GMed
+			text-transform uppercase
+			margin-bottom 45px
+		&__position
+			font 18px $GMed
+			line-height 32px
+			margin-bottom 45px
+		&__description
+			font-size 16px
+			line-height 30px
+			
+		&:last-child
+			margin-bottom 0
+			
+// Prices
+.sect__prices
+	border-top-left-radius 400px
+
+.prices
+	max-width 970px
+	margin 0 auto	
+.price-block
+	margin-bottom 30px
+	&:last-child
+		margin-bottom 0
+		
+	&__header
+		background-color $accent-color
+		padding 30px
+		border-radius 24px 24px 0 0
+		margin-bottom 0
+		
+	&__title
+		font 24px $CBold
+		
+	&__body
+		table
+			border-collapse separate
+			border-spacing 0 10px
+			width 100%
+			tr
+				margin-bottom 10px
+				&:last-child
+					margin-bottom 0
+			td
+				padding 35px
+				&:first-child
+					text-align left
+					background-color $basic-white-color
+					font-size 16px 
+					width 75%
+					border-radius 4px 0 0 4px
+				&:last-child
+					text-align center
+					background-color #fafbfd
+					font 18px $GMed
+					width 25%
+					border-radius 0 4px 4px 0
+					
+// Faqs
+.sect__faqs
+	position relative
+	z-index 1
+	
+.faqs
+	margin 0 auto 130px auto
+	max-width 970px
+	
+.faq
+	margin-bottom 10px
+
+	&:last-child
+		margin-bottom 0
+		
+	&__question
+		padding 40px
+		&--title
+			font 18px $GMed
+			margin-right 15px
+			
+	&__answer
+		padding 0 70px 70px 70px
+		font-size 16px
+		line-height 30px
+		display none
+		
+// contacts
+.contacts-block
+	padding-right 70px
+	flex 1
+	
+.contacts-item
+	margin-bottom 35px
+	font 20px $GReg
+	line-height 30px
+	color $text-color
+	a
+		color inherit
+		&:hover
+			color $accent-color
+	&:last-child
+		margin-bottom 0
+		
+	&__title
+		text-transform uppercase
+		color rgba($text-color, .4)
+		font 14px $GMed
+		margin-bottom 10px
+		

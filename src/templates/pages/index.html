@@ -4,12 +4,569 @@
 	<!-- CONTENT WRAPPER -->
 	<div class="content__wrapper">
 
+		{% include '../parts/components/popups.html' %}
+		{% include '../parts/components/quiz.html' %}
+
+		<!-- Go to up btn -->
+		<button type="button" class="btn__top js-go-to-top-btn" title="К началу страницы"></button>
+		<!-- // Go to up btn  -->
+
 		<!-- Header -->
 		{% include '../parts/sections/header.html' %}
 		<!-- //Header -->
 
 		<!-- Main -->
 		<main class="main">
+
+			<!-- Section promo -->
+			<section class="sect__promo light-color-bg" id="home">
+				<h1 class="w3c">Собственная плазма - приоритет для восстановления вашего организма</h1>
+
+				<div class="container">
+					<div class="promo-block">
+						<div class="promo-block__content basic-white-color">
+							<h2 class="title">Собственная плазма -<br>приоритет для восстановления<br>вашего организма</h2>
+							<p class="subtitle">Безопасное и высокоэффективное лечение суставов с использованием собственной плазмы пациента</p>
+
+							<div class="promo-block__form b-radius-lg">
+								<form class="form">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Plasma Priority">
+									<input type="hidden" name="admin_email" value="email@email">
+									<input type="hidden" name="form_subject" value="Запись на прием">
+									<!-- // Hidden inputs -->
+
+
+									<div class="row inputs__row">
+										<div class="input__wrapper col-w-33">
+											<input type="text" class="input js-input b-radius-sm" name="Имя" placeholder="Ваше имя *">
+										</div>
+										<div class="input__wrapper col-w-33">
+											<input type="tel" class="input js-input b-radius-sm" name="Телефон" placeholder="Ваш телефон *">
+										</div>
+										<div class="input__wrapper col-w-33">
+											<button class="btn btn-wide" type="submit">Записаться на прием</button>
+										</div>
+									</div>
+
+									<p class="form__notice">* - мы не передаем Ваши персональные данные третьим лицам</p>
+
+
+								</form>
+							</div>
+
+							<a href="tel:+84951281780" class="phone-link">
+								<span class="phone-link__ic"></span>
+								<span>8 (495) 128 17 80</span>
+							</a>
+
+
+						</div>
+
+						<div class="promo-block__img img-wrapper">
+							<img src="img/promo-img.jpg" alt="Plasma Priority. Приоритет для восстановления вашего организма">
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+
+			</section>
+			<!-- //Section promo -->
+
+			<!-- Section about -->
+			<section class="sect__about" id="about">
+				<h2 class="sect-title container">Что такое плазмотерапия?</h2>
+
+				<div class="container">
+					<div class="row align-horisontal-start row-gutters about-service__row">
+						<!-- Item -->
+						<div class="col-w-33 col-gutters about-service-item__wrapper">
+							<div class="about-service-item b-radius-lg">
+								<div class="about-service-item__description">
+									<h3 class="about-service-item__title">О методе</h3>
+									<p>Использование собственной плазмы для лечения суставов — метод, в основе которого лежит способность человеческого организма к самовосстановлению, регенерации, лечению многих хронических заболеваний силами самого организма.</p>
+								</div>
+								
+								<img src="img/about/1.png" alt="">
+							</div>
+						</div>
+						<!-- //Item -->
+
+						<!-- Item -->
+						<div class="col-w-33 col-gutters about-service-item__wrapper">
+							<div class="about-service-item b-radius-lg">
+								<div class="about-service-item__description">
+									<h3 class="about-service-item__title">Суть лечения</h3>
+									<p>Тромбоцитарная аутологичная плазма (ТАП) в ортопедии творит чудеса. Болезни суставов с трудом поддаются лечению. Факторы роста, содержащиеся в тромбоцитах, активизируют обменные процессы и восстановление тканей. Плазма -  самый мощный, безопасный и эффективный стимулятор процессов регенерации.</p>
+								</div>
+								
+								<img src="img/about/2.png" alt="">
+							</div>
+						</div>
+						<!-- //Item -->
+
+						<!-- Item -->
+						<div class="col-w-33 col-gutters about-service-item__wrapper">
+							<div class="about-service-item b-radius-lg">
+								<div class="about-service-item__description">
+									<h3 class="about-service-item__title">Процедура</h3>
+									<p>Процедура представляет собой введение в полость сустава и околосуставные мягкие ткани собственной плазмы пациента. Это самая безопасная, гипоаллергенная и совместимая с организмом среда, которая уменьшает воспалительный процесс и болевой синдром, позволяет восстановить объем движений в суставе, запускает и активизирует процесс регенерации повреждённых тканей, останавливает процесс разрушения сустава, на начальных стадиях восстанавливает его структуры.</p>
+								</div>
+
+							</div>
+						</div>
+						<!-- //Item -->
+					</div>
+
+					<blockquote class="about-service__blockquote b-radius-lg light-color-bg">
+						<p><strong>Тромбоциты</strong> — это форменные элементы крови, которые играют важную роль в процессах восстановления и заживления. Терапевтическое действие плазмы при заболевании суставов основано именно на свойствах тромбоцитов. Факторы роста воздействуют на клетки пораженных зон, побуждая их интенсивно делиться и выделять биологически активные вещества. В результате ткани быстрее заживают и регенерируют.</p>
+					</blockquote>
+
+
+					<div class="service-steps">
+						<h3 class="sect-title text-center">Как проходит процедура?</h3>
+
+						<div class="row row-gutters align-horisontal-start service-steps__row">
+							<div class="col-w-33 col-gutters service-step__wrapper">
+								<div class="service-step">
+									<span class="service-step__count">01</span>
+									<div class="service-step__img img-wrapper"><img src="img/steps/1.jpg" alt=""></div>
+									<p>У пациента производят забор небольшого количества крови в стерильную пробирку</p>
+								</div>
+							</div>
+							<div class="col-w-33 col-gutters service-step__wrapper">
+								<div class="service-step">
+									<span class="service-step__count">02</span>
+									<div class="service-step__img img-wrapper"><img src="img/steps/2.jpg" alt=""></div>
+									<p>Из крови выделяют плазму, обогащённую тромбоцитами</p>
+								</div>
+							</div>
+							<div class="col-w-33 col-gutters service-step__wrapper">
+								<div class="service-step">
+									<span class="service-step__count">03</span>
+									<div class="service-step__img img-wrapper"><img src="img/steps/3.jpg" alt=""></div>
+									<p>Врач делает инъекцию (укол) в место, требующее лечения</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-wrapper basic-white-color text-center">
+						<h3 class="sect-title-sm">Можете больше узнать о своих суставах,<br>ответив на 7 вопросов</h3>
+						<p class="form-wrapper__description">и получить ПОДАРОК – консультацию опытного врача травматолога-ортопеда!</p>
+
+						<button class="btn js-open-quiz-popup-btn" type="buttom">пройти опрос и получить подарок</button>
+
+						<p class="form__notice">Бонусы после прохождения теста</p>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section about -->
+
+			<!-- Section advantages -->
+			<section class="sect__advantages gutter-bottom sect-under-form light-color-bg" id="advantages">
+				<h2 class="sect-title sect-title_with-text container text-center">Преимущества плазмотерапии</h2>
+				<p class="container text-center sect-description">Плазма с тромбоцитами, являясь живительной средой вашего организма, индивидуальна, оптимальна для него, всегда высокого качества. Всегда вызывает «правильный» биологический ответ</p>
+
+				<div class="container">
+					<div class="row row-gutters align-horisontal-start advantages__row">
+						<div class="advantage__wrapper col-w-33 col-gutters">
+							<div class="advantage">
+								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_1.svg');"></span>
+								<p>Несмотря на то, что инъекцию проводят внутри и околосуставно, и максимален именно локальный эффект, плазма оказывает положительное влияние на другие ткани, органы и системы</p>
+							</div>
+						</div>
+
+						<div class="advantage__wrapper col-w-33 col-gutters">
+							<div class="advantage">
+								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_2.svg');"></span>
+								<p>Плазма хорошо совместима с другими способами лечения: она дополняет и усиливает их действие. Благодаря этому часто удается снизить количество и дозы препаратов, принимаемых пациентом</p>
+							</div>
+						</div>
+
+						<div class="advantage__wrapper col-w-33 col-gutters">
+							<div class="advantage">
+								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_3.svg');"></span>
+								<p>Минимальная травматичность. Процедура практически безболезненна, пациент не нуждается в реабилитации. В день проведения  процедуры можно заниматься привычными делами</p>
+							</div>
+						</div>
+
+						<div class="advantage__wrapper col-w-33 col-gutters">
+							<div class="advantage">
+								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_4.svg');"></span>
+								<p>У вас есть гарантия того, что вы попадете на прием к опытному, практикующему специалисту, который глубоко знает проблему суставных заболеваний и уделит вам  время, необходимое для получения клинического результата</p>
+							</div>
+						</div>
+
+						<div class="advantage__wrapper col-w-33 col-gutters">
+							<div class="advantage">
+								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_5.svg');"></span>
+								<p>Эффект от проведенного лечения:<br>уменьшается боль; восстанавливается подвижность суставов; замедляется или останавливается процесс разрушения костной и хрящевой ткани; улучшается кровоснабжение в пораженной зоне; увеличивается объем внутрисуставной жидкости; снижается интенсивность воспалительного процесса</p>
+							</div>
+						</div>
+
+						<div class="advantage__wrapper col-w-33 col-gutters">
+							<div class="advantage">
+								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_6.svg');"></span>
+								<p>Ваш врач долгие годы специализируется на использовании тромбоцитарной плазмы для лечения суставов, и знает насколько она эффективна и безопасна; знает, как ее правильно применять при тех или иных заболеваниях</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="text-center">
+						<button class="btn js-open-callback-popup-btn" type="button" data-btn-text="Отправить заявку" data-form-theme="Запись на прием">Записаться на прием</button>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section advantages -->
+
+			<!-- Section team -->
+			<section class="sect__team gutters" id="team">
+				<h2 class="sect-title container text-center">Команда</h2>
+				<div class="container">
+					<div class="team">
+						<!-- Team member -->
+						<div class="team-member">
+							<div class="team-member__photo bg" style="background-image: url('img/team/1.jpg');">
+								<img src="img/team/1.jpg" alt="Карев Дмитрий Борисович фото">
+							</div>
+							<div class="team-member__information">
+								<h3 class="team-member__name">Карев Дмитрий Борисович</h3>
+								<p class="team-member__experience">опыт использования методики - более 8 лет</p>
+								<p class="team-member__position">Кандидат медицинских наук, доцент, врач травматолог-ортопед высшей квалификационной категории, 30 летний стаж работы в ортопедии.</p>
+								<div class="team-member__description">
+									<p>Владеет техникой первичного и ревизионного эндопротезирования тазобедренного и коленного сустава, рядом реконструктивных операций на тазобедренном суставе (разработчик оригинальных методик остеотомий бедренной кости при переломах шейки бедра и концепции биологического остеосинтеза). Автор 84 научных публикаций (в том числе в Европейских научных журналах), монографии, 14 патентов. Разработчик направления применения   аутологичной тромбоцитарной плазмы в травматологии и ортопедии. Организатор первого в мире специализированного центра на территории РБ, использующего плазму в лечении суставных заболеваний. Личный опыт применения плазмы (самый большой в мире) - более 15 000 пациентов.</p>
+								</div>
+							</div>
+						</div>
+						<!-- //Team member -->
+
+						<!-- Team member -->
+						<div class="team-member">
+							<div class="team-member__photo bg" style="background-image: url('img/team/2.jpg');">
+								<img src="img/team/2.jpg" alt="Карев Дмитрий Борисович фото">
+							</div>
+							<div class="team-member__information">
+								<h3 class="team-member__name">Карев Борис Дмитриевич</h3>
+								<p class="team-member__experience">опыт использования методики - 5 лет</p>
+								<p class="team-member__position">Врач травматолог-ортопед первой квалификационной категории, практикующий специалист.</p>
+								<div class="team-member__description">
+									<p>Владеет артроскопией коленного сустава, техникой первичного эндопротезирования тазобедренного сустава, современными методиками накостного и интрамедулярного остеосинтеза, реконструктивных операций на переднем отделе стопы. Автор 10 научных публикаций ( в том числе в Европейских научных журналах), 5 патентов. Личный опыт применения плазмы более 1500 пациентов.</p>
+								</div>
+							</div>
+						</div>
+						<!-- //Team member -->
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section team -->
+
+			<!-- Section prices -->
+			<section class="sect__prices light-color-bg gutters" id="prices">
+				<h2 class="sect-title container text-center">Прайс-лист</h2>
+
+				<div class="container">
+					<div class="prices">
+						<!-- Price block -->
+						<div class="price-block">
+							<div class="price-block__header text-center basic-white-color">
+								<h3 class="price-block__title">Прием (осмотр, консультация)</h3>
+							</div>
+							<div class="price-block__body">
+								<table>
+									<tr>
+										<td>Прием (осмотр, консультация) врача-травматолога-ортопеда К.М.Н.</td>
+										<td>2 500.00 руб</td>
+									</tr>
+									<tr>
+										<td>Прием (осмотр, консультация) врача-травматолога-ортопеда</td>
+										<td>2 000.00 руб</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-- //Price block -->
+
+						<!-- Price block -->
+						<div class="price-block">
+							<div class="price-block__header text-center basic-white-color">
+								<h3 class="price-block__title">Околосуставное введение аутологичной плазмы</h3>
+							</div>
+							<div class="price-block__body">
+								<table>
+									<tr>
+										<td>Крупные суставы нижних конечностей (пара)</td>
+										<td>10 500.00 руб</td>
+									</tr>
+									<tr>
+										<td>Суставы верхних конечностей (пара)</td>
+										<td>7 000.00 руб</td>
+									</tr>
+									<tr>
+										<td>Мелкий сустав</td>
+										<td>3 500.00 руб</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-- //Price block -->
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section prices -->
+
+			<!-- Section feedbacks -->
+			<section class="sect__feedbacks gutters dark-color-bg" id="feedbacks">
+				<h2 class="sect-title container text-center basic-white-color">Отзывы пациентов</h2>
+
+				<div class="feedbacks-slider">
+					<div class="swiper-container js-feedbacks-slider">
+						<div class="swiper-wrapper">
+							<!-- Feedback -->
+							<div class="swiper-slide">
+								<div class="feedback-slide">
+									<blockquote class="feedback-slide__text">
+										<p>Процедура представляет собой введение в полость сустава и околосуставные мягкие ткани собственной плазмы пациента. Это самая безопасная, гипоаллергенная и совместимая с организмом среда, которая уменьшает воспалительный процесс и болевой синдром, позволяет восстановить объем движений в суставе, запускает и активизирует процесс регенерации повреждённых тканей, останавливает процесс разрушения сустава.</p>
+									</blockquote>
+									<p class="feedback-slide__author-name">Иванов Алексей Петрович</p>
+									<p class="feedback-slide__author-age">54 года</p>
+								</div>
+							</div>
+							<!-- //Feedback -->
+
+							<!-- Feedback -->
+							<div class="swiper-slide">
+								<div class="feedback-slide">
+									<blockquote class="feedback-slide__text">
+										<p>Процедура представляет собой введение в полость сустава и околосуставные мягкие ткани собственной плазмы пациента. Это самая безопасная, гипоаллергенная и совместимая с организмом среда, которая уменьшает воспалительный процесс и болевой синдром.</p>
+									</blockquote>
+									<p class="feedback-slide__author-name">Иванов Алексей Петрович</p>
+									<p class="feedback-slide__author-age">54 года</p>
+								</div>
+							</div>
+							<!-- //Feedback -->
+
+							<!-- Feedback -->
+							<div class="swiper-slide">
+								<div class="feedback-slide">
+									<blockquote class="feedback-slide__text">
+										<p>Процедура представляет собой введение в полость сустава и околосуставные мягкие ткани собственной плазмы пациента. Это самая безопасная, гипоаллергенная и совместимая с организмом среда, которая уменьшает воспалительный процесс и болевой синдром, позволяет восстановить объем движений в суставе, запускает и активизирует процесс регенерации повреждённых тканей, останавливает процесс разрушения сустава.</p>
+									</blockquote>
+									<p class="feedback-slide__author-name">Иванов Алексей Петрович</p>
+									<p class="feedback-slide__author-age">54 года</p>
+								</div>
+							</div>
+							<!-- //Feedback -->
+
+							<!-- Feedback -->
+							<div class="swiper-slide">
+								<div class="feedback-slide">
+									<blockquote class="feedback-slide__text">
+										<p>Процедура представляет собой введение в полость сустава и околосуставные мягкие ткани собственной плазмы пациента. Это самая безопасная, гипоаллергенная и совместимая с организмом среда, которая уменьшает воспалительный процесс и болевой синдром.</p>
+									</blockquote>
+									<p class="feedback-slide__author-name">Иванов Алексей Петрович</p>
+									<p class="feedback-slide__author-age">54 года</p>
+								</div>
+							</div>
+							<!-- //Feedback -->
+						</div>
+					</div>
+
+					<!-- Navigation -->
+					<div class="feedbacks-slider__navigation">
+						<button class="btn__arrow btn__arrow--prev js-feedbacks-slider-btn-prev" type="button">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+								<path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
+								c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712
+								L143.492,221.863z"/>
+							</svg>
+						</button>
+
+						<button class="btn__arrow btn__arrow--next js-feedbacks-slider-btn-next" type="button">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+								<path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
+								c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712
+								L143.492,221.863z"/>
+							</svg>
+						</button>
+					</div>
+					<!-- //Navigation -->
+
+					<!-- Pagination -->
+					<div class="container">
+						<div class="slider__pagination js-feedbacks-slider-pagination"></div>
+					</div>
+					<!-- //Pagination -->
+				</div>
+			</section>
+			<!-- //Section feedbacks -->
+
+			<!-- Section faq -->
+			<section class="sect__faqs gutter-top" id="faq">
+				<h2 class="sect-title container text-center">Ответы на вопросы</h2>
+
+				<div class="container">
+
+					<div class="faqs">
+						<!-- Faq -->
+						<div class="faq b-radius-lg light-color-bg">
+							<div class="faq__question">
+								<div class="row align-horisontal-between align-vertical-center">
+									<h3 class="faq__question--title">При каких диагнозах показана процедура?</h3>
+
+									<button class="btn__toggle js-toggle-faq-btn" type="button" title="Показать ответ"></button>
+								</div>
+							</div>
+							<div class="faq__answer">
+								<p>Гонартроз, коксартроз, остеохондроз, плечелопаточный периартрит, тендиноз, тендинит, миазит, ахиллобурсит, киста Беккера, эпикондилит, локоть теннисиста, локоть гольфиста, разрывы, надрывы, растяжение связок, мышц, контрактуры, подагра, ревматоидные заболевания, болезнь Бехтерева. Переломы после операции и лечения в гипсовой повязке, ложные суставы, вправленные вывихи, боли в мышцах, сухожилиях при занятии спортом, фитнесом.</p>
+							</div>
+						</div>
+						<!-- //Faq -->
+
+						<!-- Faq -->
+						<div class="faq b-radius-lg light-color-bg">
+							<div class="faq__question">
+								<div class="row align-horisontal-between align-vertical-center">
+									<h3 class="faq__question--title">Имеются ли у данного метода противопоказания?</h3>
+
+									<button class="btn__toggle js-toggle-faq-btn" type="button" title="Показать ответ"></button>
+								</div>
+							</div>
+							<div class="faq__answer">
+								<p>Гонартроз, коксартроз, остеохондроз, плечелопаточный периартрит, тендиноз, тендинит, миазит, ахиллобурсит, киста Беккера, эпикондилит, локоть теннисиста, локоть гольфиста, разрывы, надрывы, растяжение связок, мышц, контрактуры, подагра, ревматоидные заболевания, болезнь Бехтерева.</p>
+							</div>
+						</div>
+						<!-- //Faq -->
+
+						<!-- Faq -->
+						<div class="faq b-radius-lg light-color-bg">
+							<div class="faq__question">
+								<div class="row align-horisontal-between align-vertical-center">
+									<h3 class="faq__question--title">Какие анализы нужно сделать перед проведением процедур?</h3>
+
+									<button class="btn__toggle js-toggle-faq-btn" type="button" title="Показать ответ"></button>
+								</div>
+							</div>
+							<div class="faq__answer">
+								<p>Гонартроз, коксартроз, остеохондроз, плечелопаточный периартрит, тендиноз, тендинит, миазит, ахиллобурсит, киста Беккера, эпикондилит, локоть теннисиста, локоть гольфиста, разрывы, надрывы, растяжение связок, мышц, контрактуры, подагра, ревматоидные заболевания, болезнь Бехтерева.</p>
+							</div>
+						</div>
+						<!-- //Faq -->
+
+						<!-- Faq -->
+						<div class="faq b-radius-lg light-color-bg">
+							<div class="faq__question">
+								<div class="row align-horisontal-between align-vertical-center">
+									<h3 class="faq__question--title">Сколько процедур надо сделать для достижения результата?</h3>
+
+									<button class="btn__toggle js-toggle-faq-btn" type="button" title="Показать ответ"></button>
+								</div>
+							</div>
+							<div class="faq__answer">
+								<p>Гонартроз, коксартроз, остеохондроз, плечелопаточный периартрит, тендиноз, тендинит, миазит, ахиллобурсит, киста Беккера, эпикондилит, локоть теннисиста, локоть гольфиста, разрывы, надрывы, растяжение связок, мышц, контрактуры, подагра, ревматоидные заболевания, болезнь Бехтерева.</p>
+							</div>
+						</div>
+						<!-- //Faq -->
+
+						<!-- Faq -->
+						<div class="faq b-radius-lg light-color-bg">
+							<div class="faq__question">
+								<div class="row align-horisontal-between align-vertical-center">
+									<h3 class="faq__question--title">Как долго держится эффект? На сколько это хватает?</h3>
+
+									<button class="btn__toggle js-toggle-faq-btn" type="button" title="Показать ответ"></button>
+								</div>
+							</div>
+							<div class="faq__answer">
+								<p>Гонартроз, коксартроз, остеохондроз, плечелопаточный периартрит, тендиноз, тендинит, миазит, ахиллобурсит, киста Беккера, эпикондилит, локоть теннисиста, локоть гольфиста, разрывы, надрывы, растяжение связок, мышц, контрактуры, подагра, ревматоидные заболевания, болезнь Бехтерева.</p>
+							</div>
+						</div>
+						<!-- //Faq -->
+					</div>
+
+
+					<div class="form-wrapper basic-white-color text-center">
+						<h3 class="sect-title-sm">Не нашли ответ на свой вопрос?</h3>
+						<p class="form-wrapper__description">Оставьте заявку на сайте, и наш врач проконсультирует Вас по всем вопросам</p>
+
+						<form class="form">
+							<!-- Hidden inputs -->
+							<input type="hidden" name="project_name" value="Plasma Priority">
+							<input type="hidden" name="admin_email" value="email@email">
+							<input type="hidden" name="form_subject" value="Консультация">
+							<!-- // Hidden inputs -->
+
+
+							<div class="row inputs__row">
+								<div class="input__wrapper col-w-33">
+									<input type="text" class="input js-input b-radius-sm" name="Имя" placeholder="Ваше имя *">
+								</div>
+								<div class="input__wrapper col-w-33">
+									<input type="tel" class="input js-input b-radius-sm" name="Телефон" placeholder="Ваш телефон *">
+								</div>
+								<div class="input__wrapper col-w-33">
+									<button class="btn btn-wide" type="submit">получить консультацию</button>
+								</div>
+							</div>
+
+							<p class="form__notice">* - мы не передаем Ваши персональные данные третьим лицам</p>
+
+
+						</form>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section faq -->
+
+			<!-- Section contacts -->
+			<section class="sect__contacts sect-under-form light-color-bg gutter-bottom" id="contacts">
+				<h2 class="w3c">Контакты</h2>
+
+				<div class="container">
+					<div class="contacts row align-horisontal-between">
+
+						<div class="contacts-block">
+							<h3 class="sect-title">Наши контакты</h3>
+
+							<div class="contacts-item">
+								<h4 class="contacts-item__title">телефон:</h4>
+								<p><a href="tel:+84951281780">8 (495) 128 17 80</a></p>
+							</div>
+							<div class="contacts-item">
+								<h4 class="contacts-item__title">адрес:</h4>
+								<p>г.Москва, ул.Медицинская, д.125</p>
+							</div>
+							<div class="contacts-item">
+								<h4 class="contacts-item__title">время работы:</h4>
+								<p>Пн-Пт: 09:00-18:00,<br>Сб-Вс: 10:00-17:00</p>
+							</div>
+							<div class="contacts-item">
+								<h4 class="contacts-item__title">мы в соцсетях:</h4>
+								<ul class="socials">
+									<li class="socials__item"><a href="#" class="socials__link" target="_blank" rel="nofollow" style="background-image:url('img/icons/svg/fb.svg');"></a></li>
+								</ul>
+							</div>
+
+						</div>
+
+						<!-- Map -->
+						<div class="map__wrapper">
+							<div class="coords visually-hidden" data-latitude="55.753918" data-longitude="37.620784"></div>
+
+							<div id="map"></div>
+						</div>
+						<!-- //Map -->
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section contacts -->
 		</main>
 		<!-- //Main -->
 

@@ -1,9 +1,25 @@
 .nav
+	margin-left 100px
 	&__item
 		display inline-block
-		margin-right 15px
+		margin-right 30px
 		&:last-child
 			margin-right 0
 	&__link
-		display block
-		color $text-color
+		display inline-block
+		color $basic-white-color
+		position relative
+		&:before
+			pseudo()
+			position absolute
+			bottom -10px
+			width 0
+			horisontal-center()
+			height 1px
+			background-color $basic-white-color
+			transition width .17s ease-in-out
+			
+		&:hover
+			&:before
+				width 40px
+			

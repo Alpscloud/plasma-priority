@@ -1,0 +1,375 @@
+<!-- Quiz-->
+<div class="popup quiz js-popup js-quiz-popup" style="display: block;">
+	<div class="popup__overflow">
+		<div class="popup__body">
+
+			<button class="btn__close js-close-popup-btn" type="button">
+				<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 14 14">
+					<path  d="M1402.39,291c1.4,1.385,2.79,2.77,4.19,4.155l0.87,0.9c0.05,0.036.09,0.073,0.14,0.11a1.657,1.657,0,0,0,.44.41l5.55-5.576c0.03,0.023,0,0,.02.028,0.47,0.455.93,0.91,1.4,1.366v0.028h-0.03c-1.38,1.384-2.75,2.769-4.13,4.154l-0.9.874c-0.04.046-.07,0.091-0.11,0.137a1.745,1.745,0,0,0-.41.437l5.58,5.548a0.092,0.092,0,0,1-.03.027c-0.46.465-.91,0.93-1.37,1.394-0.03-.023,0,0-0.02-0.027q-2.085-2.064-4.16-4.127c-0.29-.3-0.58-0.6-0.88-0.9-0.04-.036-0.09-0.073-0.13-0.109a1.625,1.625,0,0,0-.44-0.41L1402.42,305h-0.03v-0.027a1,1,0,0,1-.16-0.164l-0.33-.328h-0.03l-0.57-.6a1.583,1.583,0,0,1-.3-0.3,3.076,3.076,0,0,0,.44-0.437c0.22-.209.43-0.419,0.65-0.629,0.09-.091.17-0.182,0.25-0.273l2.13-2.1c0.27-.274.53-0.547,0.79-0.82l1.02-1.012a1.136,1.136,0,0,0,.3-0.328c-0.4-.382-0.79-0.765-1.18-1.147l-3.06-3.089c-0.28-.273-0.57-0.546-0.85-0.82-0.05-.064-0.11-0.127-0.16-0.191a2.924,2.924,0,0,1-.33-0.328c0.13-.119.26-0.237,0.38-0.355C1401.72,291.7,1402.06,291.349,1402.39,291Z" transform="translate(-1401 -291)"/>
+				</svg>
+			</button>
+
+			<!-- Popup content-->
+			<div class="popup__content">
+
+				<form class="form">
+					<!-- Hidden inputs -->
+					<input type="hidden" name="project_name" value="Plasma Priority">
+					<input type="hidden" name="admin_email" value="email@email">
+					<input type="hidden" name="form_subject" value="Опросник">
+					<!-- // Hidden inputs -->
+
+
+					<div class="quiz-steps">
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 1" value="Какие суставы Вас беспокоят?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 1 из 7</p>
+									<h2 class="quiz-step__title">Какие суставы Вас беспокоят?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Проблемный сустав" value="Тазобедренный">
+													<span class="radio">Тазобедренный</span>
+												</label>
+											</div>
+
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Проблемный сустав" value="Коленный">
+													<span class="radio">Коленный</span>
+												</label>
+											</div>
+
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Проблемный сустав" value="Локтевой">
+													<span class="radio">Локтевой</span>
+												</label>
+											</div>
+
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Проблемный сустав" value="Другой">
+													<span class="radio">Другой</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-end align-vertical-center">
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 2" value="Как давно появилась проблема?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 2 из 7</p>
+									<h2 class="quiz-step__title">Как давно появилась проблема?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Как давно болят" name="Менее 1 года">
+													<span class="radio">Менее 1 года</span>
+												</label>
+											</div>
+
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Как давно болят" name="Более 1 года">
+													<span class="radio">Более 1 года</span>
+												</label>
+											</div>
+
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Как давно болят" name="Более 5 лет">
+													<span class="radio">Более 5 лет</span>
+												</label>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-between align-vertical-center">
+										<button class="btn btn-transparent" type="button" data-quiz-direction="prev">Предыдущий вопрос</button>
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 3" value="Занимаетесь ли Вы тяжелым физическим трудом, спортом?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 3 из 7</p>
+									<h2 class="quiz-step__title">Занимаетесь ли Вы тяжелым физическим трудом, спортом?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Физ. занятия" name="Да">
+													<span class="radio">Да</span>
+												</label>
+											</div>
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Физ. занятия" name="Нет">
+													<span class="radio">Нет</span>
+												</label>
+											</div>
+
+											
+
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-between align-vertical-center">
+										<button class="btn btn-transparent" type="button" data-quiz-direction="prev">Предыдущий вопрос</button>
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 4" value="Сколько Вам лет?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 4 из 7</p>
+									<h2 class="quiz-step__title">Сколько Вам лет?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Возраст" name="До 40">
+													<span class="radio">До 40</span>
+												</label>
+											</div>
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Возраст" name="40-60">
+													<span class="radio">40-60</span>
+												</label>
+											</div>
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Возраст" name="Более 60">
+													<span class="radio">Более 60</span>
+												</label>
+											</div>
+
+											
+
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-between align-vertical-center">
+										<button class="btn btn-transparent" type="button" data-quiz-direction="prev">Предыдущий вопрос</button>
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 5" value="Прибегали ранее к лечению суставов?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 5 из 7</p>
+									<h2 class="quiz-step__title">Прибегали ранее к лечению суставов?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-50 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Было ли лечение ранее" name="Да, традиционная медицина">
+													<span class="radio">Да, традиционная медицина</span>
+												</label>
+											</div>
+
+											<div class="col-w-50 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Было ли лечение ранее" name="Да, нетрадиционная медицина">
+													<span class="radio">Да, нетрадиционная медицина</span>
+												</label>
+											</div>
+
+											<div class="col-w-50 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Было ли лечение ранее" name="Самолечение">
+													<span class="radio">Самолечение</span>
+												</label>
+											</div>
+
+											<div class="col-w-50 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Было ли лечение ранее" name="Нет">
+													<span class="radio">Нет</span>
+												</label>
+											</div>
+
+											
+
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-between align-vertical-center">
+										<button class="btn btn-transparent" type="button" data-quiz-direction="prev">Предыдущий вопрос</button>
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 6" value="Чувствуете ли Вы скованность в суставах?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 6 из 7</p>
+									<h2 class="quiz-step__title">Чувствуете ли Вы скованность в суставах?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Скованность суставов" name="До 15 минут">
+													<span class="radio">До 15 минут</span>
+												</label>
+											</div>
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Скованность суставов" name="15-60 минут">
+													<span class="radio">15-60 минут</span>
+												</label>
+											</div>
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Скованность суставов" name="Более 60 минут">
+													<span class="radio">Более 60 минут</span>
+												</label>
+											</div>
+
+											
+
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-between align-vertical-center">
+										<button class="btn btn-transparent" type="button" data-quiz-direction="prev">Предыдущий вопрос</button>
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 7" value="Беспокоят ли Вас ночные боли?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 7 из 7</p>
+									<h2 class="quiz-step__title">Беспокоят ли Вас ночные боли?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Ночные боли" name="Да">
+													<span class="radio">Да</span>
+												</label>
+											</div>
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Ночные боли" name="Нет">
+													<span class="radio">Нет</span>
+												</label>
+											</div>
+
+											
+
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-between align-vertical-center">
+										<button class="btn btn-transparent" type="button" data-quiz-direction="prev">Предыдущий вопрос</button>
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step quiz-step-final">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Финал" value="Финал">
+								<div class="quiz-step__top text-center">
+									<p class="quiz-step__progress">получение подарка</p>
+									<h2 class="quiz-step__title">Как с Вами связаться?</h2>
+
+									<p class="quiz-step__subtitle">Заполните форму, чтобы получить результаты теста</p>
+
+									<div class="inputs__row row align-horisontal-center">
+										<div class="input__col">
+											<input type="tel" name="Телефон" class="input js-input b-radius-sm" placeholder="Ваш телефон *">
+										</div>
+										<div class="input__col">
+											<button class="btn btn-wide" type="submit">Получить подарок</button>
+										</div>
+									</div>
+
+									<p class="form__notice">* - мы не передаем Ваши персональные данные третьим лицам</p>
+
+								</div>
+							</div>
+
+						</div>
+						<!-- //Step -->
+					</div>
+
+				</form>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Quiz-->

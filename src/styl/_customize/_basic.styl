@@ -15,8 +15,8 @@ html
 
 
 body
-	font 16px $Reg
-	line-height 1.45
+	font 14px $GReg
+	line-height 1.85
 	overflow-x hidden
 	min-width 320px
 	height 100%
@@ -108,8 +108,24 @@ img
 	height 100%
 	
 .sect-title
-	font 2em $Bold
-	margin-bottom 40px
+	font 40px $CBold
+	margin-bottom 65px
+	&-sm
+		font 30px $CBold
+		margin-bottom 25px
+		line-height 1.25
+		
+	&_with-text
+		margin-bottom 30px
+		
+.sect-description
+	font-size 16px
+	margin 0 auto 70px auto
+	max-width 890px
+	
+.sect-under-form
+	padding-top 300px
+	margin-top -180px
 		
 
 
@@ -157,6 +173,12 @@ img
 .dark-bg
 	background-color $dark-bg
 	
+.light-color-bg
+	background-color $light-color-bg
+	
+.dark-color-bg
+	background-color $dark-color-bg
+	
 .visually-hidden
 	position absolute
 	clip rect(0 0 0 0)
@@ -168,6 +190,11 @@ img
 	visiiblity hidden
 
 
-	
+
+.b-radius
+	&-sm
+		border-radius 8px
+	&-lg
+		border-radius 16px
 
 // ========== ========== ========== ========== ========== ==========

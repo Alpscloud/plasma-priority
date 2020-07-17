@@ -1,0 +1,49 @@
+.quiz
+	.popup__body
+		max-width 970px
+		text-align left
+		
+
+		
+	&-step
+		display none
+		&:first-child
+			display block
+		&-body
+			display flex
+			flex-direction column
+			justify-content space-between
+			min-height 345px
+	
+		
+		&-final
+			.quiz-step__title
+				margin-bottom 30px
+		
+		&__progress
+			color $accent-color
+			text-transform uppercase
+			font 14px $GMed
+			letter-spacing 0.1em
+			margin-bottom 25px
+			
+		&__title
+			font 24px $CBold
+			margin-bottom 50px
+			
+		&__subtitle
+			font-size 16px
+			margin-bottom 55px
+			
+
+		.input__col
+			padding 5px
+			width 100%
+			max-width 270px
+			
+		.form__notice
+			margin-top 30px
+			
+
+.quiz-answer__wrapper
+	margin-bottom 30px
