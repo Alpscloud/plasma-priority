@@ -41,8 +41,24 @@ $(document).ready(function() {
 		var id = $(this).attr('href'),
 			top = $(id).offset().top;
 
+			if($('.js-nav').hasClass('is-opened')) {
+				$('.js-open-mobile-menu-btn').removeClass('is-active');
+				$('html').removeClass('is-fixed');
+				$('.js-nav').removeClass('is-opened');
+			}
+
 		$('html, body').animate({scrollTop: top}, 'slow');
 	});	
+
+
+	$('.js-open-mobile-menu-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).addClass('is-active');
+		$('html').addClass('is-fixed');
+		$('.js-nav').addClass('is-opened');
+
+	});
 	// ========= =========== =========== ===========
 
 	// Popup
@@ -56,6 +72,14 @@ $(document).ready(function() {
 		$('.js-callback-popup').find('input[name=form_subject]').val(formTheme);
 
 		$('.js-callback-popup').fadeIn(300);
+		$('html').addClass('is-fixed');
+	});
+
+	$('.js-open-quiz-popup-btn').on('click',function(e) {
+		e.preventDefault();
+
+
+		$('.js-quiz-popup').fadeIn(300);
 		$('html').addClass('is-fixed');
 	});
 
@@ -82,10 +106,9 @@ $(document).ready(function() {
 
 	var feedbacksSlider = new Swiper('.js-feedbacks-slider', {
 		loop: true,
-		slidesPerView: 3,
-		centeredSlides: true,
-		slidesPerView: 'auto',
-		spaceBetween: 120,
+		slidesPerView: 1,
+		centeredSlides: false,
+		spaceBetween: 20,
 		autoplay: {
 			delay: 6000,
 			disableOnInteraction: false,
@@ -97,6 +120,15 @@ $(document).ready(function() {
 		navigation: {
 			nextEl: '.js-feedbacks-slider-btn-next',
 			prevEl: '.js-feedbacks-slider-btn-prev',
+		},
+
+		breakpoints: {
+			1150: {
+				slidesPerView: 3,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+				spaceBetween: 120
+			}
 		}
 	});
 

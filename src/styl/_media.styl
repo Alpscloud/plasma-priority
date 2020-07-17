@@ -9,3 +9,478 @@
 +min-screen-height(minHeight)
 */
 
++max-screen(1500px)
+	.sect__promo
+		padding-top 170px
+		&:before
+			width 77%
+			right 23%
+			
+
+			
++max-screen(1365px)
+	.sect__promo
+		&:before
+			width 100%
+			right 0
+			
+	.header
+		.btn
+			background-color $basic-white-color
+			color $accent-color
+			
+		.logo
+			width 120px
+			
+	.nav
+		margin-left 40px
+		&__item
+			margin-right 20px
+			
++max-screen(1150px)
+	.header
+		z-index 11
+		position fixed
+		background-color $basic-white-color
+		top 0
+		padding 10px 0
+		box-shadow 0px 10px 60px 0px rgba($text-color, 0.2)
+		
+		.btn
+			background-color $accent-color
+			color $basic-white-color
+			padding 20px 30px
+	.nav
+		position fixed
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background-color $secondary-color
+		margin-left 0
+		z-index 25
+		display flex
+		align-items center
+		text-align center
+		transition all .17s ease-in-out
+		transform translateX(105%)
+		opacity 0
+		visibility hidden
+		pointer-events none
+		&.is-opened
+			transform translateX(0)
+			opacity 1
+			visibility visible
+			pointer-events auto
+		
+		&__list
+			width 100%
+		&__item
+			display block
+			margin-right 0
+			margin-bottom 5vh
+			&:last-child
+				margin-bottom 0
+				
+		.btn__close
+			display inline-block
+			
+	.logo-img
+		&__desktop
+			display none
+		&__mobile
+			display block
+			
+	.btn__hamburger,
+	.mobile-phone-link
+		display inline-block
+			
+	// Promo
+	.sect__promo
+		padding-top 170px
+		padding-bottom 120px
+		background-color $secondary-color
+		border-bottom-right-radius 200px
+		&:before
+			display none
+		
+	.title
+		font-size 40px
+		
+	.subtitle
+		font-size 25px
+		line-height 35px
+		margin-bottom 35px
+		max-width 600px
+		
+	.promo-block__form
+		margin-bottom 70px
+		
+
+		
+	.promo-block__img
+		right -50px
+		width 450px
+		height 450px
+		
+	// About
+	.sect__about
+		padding-top 100px
+		
+	.form-wrapper
+		border-radius 180px 180px 180px 0
+		
+	// Team
+	.team-member__information
+		padding-right 0
+		
+	.sect__prices
+		border-top-left-radius 250px
+	.sect__advantages
+		border-bottom-right-radius 250px
+		
+	.feedbacks-slider
+		
+		padding-left 15px
+		padding-right 15px
+		.swiper-slide
+			width auto
+			
+		&__navigation
+			top auto
+			bottom -14px
+			transform translateX(-50%)
+			padding-left 15px
+			padding-right 15px
+			
+	.slider__pagination
+		margin-top 60px
+	
+
+	.sect__faqs
+		.form-wrapper
+			padding-left 50px
+			padding-right 50px
+			
+
+	.map__wrapper
+		max-width 550px
+		
+	.footer__col
+		width 100%
+		text-align center
+		margin-bottom 30px
+		&:last-child
+			margin-bottom 0
+			
+		.row
+			flex-direction column
+			align-items center
+			p
+				margin-bottom 10px
+				&:last-child
+					margin-bottom 0
+			
++max-screen(1000px)
+	.promo-block__img
+		display none
+		
+	// About
+	.about-service-item__wrapper
+		flex 1 0 50%
+		
+
+	.advantage__wrapper
+		width 50%
+		
+	// Team
+	.team-member
+		flex-wrap wrap
+		&__photo
+			width 100%
+			min-height auto
+			padding-top 75%
+		&__information
+			width 100%
+			padding-left 0
+			margin-top 40px
+			flex none
+			
+	.price-block
+		&__header
+			padding 20px
+		&__body
+			table
+				td
+					padding 15px
+					&:first-child
+						width 65%
+					&:last-child
+						width 35%
+						
+
+	.quiz-answer__wrapper
+		width 50%
+						
++max-screen(900px)
+	.map__wrapper
+		max-width 100%
+		flex none
+		height 450px
+		margin-top 40px
+		
+	.contacts-block
+		padding-right 0
+		
++max-screen(767px)
+	.inputs__row
+		.input__wrapper
+			width 100%
+			
+	.sect-title
+		font-size 30px
+		line-height 38px
+		margin-bottom 55px
+		&_with-text
+			margin-bottom 25px
+			
+
+		&-sm
+			font-size 24px
+			line-height 28px
+			
+	.sect-description
+		font-size 14px
+		line-height 22px
+		margin-bottom 50px
+		
+
+	.service-step__wrapper
+		flex 1 0 50%
+		
+
+	.form-wrapper
+		border-radius 100px 100px 100px 0
+		padding 40px 70px
+		
+	.gutters
+		padding 80px 0
+		
+	.gutter-top
+		padding-top 80px
+	.gutter-bottom
+		padding-bottom 80px
+		
+	.btn__top
+		bottom 8px
+		right 8px
+		
+	.quiz-answer__wrapper
+		width 100%
+		
++max-screen(700px)
+	.quiz-controls
+		.btn
+			width 100%
+			margin-top 10px
+			padding 25px
+			
+			&:last-child
+				margin-top 0
+				
+			&-transparent
+				order 2
+				
+	.checkbox, .radio
+		font-size 15px
+		&:before
+			top 4px
+			
+	.radio:after
+		top 9px
+			
++max-screen(620px)
+	
+	.header
+		.btn
+			display none
+			
+	.sect__promo
+		padding-top 140px
+		
+	.title
+		font-size 30px
+		margin-bottom 15px
+		
+	.subtitle
+		font-size 20px
+		line-height 28px
+		
+	.promo-block__form
+		padding 30px 15px
+		
+	.phone-link
+		font-size 24px
+		padding-left 60px
+		white-space nowrap
+		&__ic
+			width 45px
+			height 45px
+			
+	.about-service-item
+		&__wrapper
+			flex 1 0 100%
+		&__description
+			padding 30px 20px
+			
+	.about-service__row
+		position relative
+		&:before
+			width 395px
+			height 395px
+
+			top -200px
+			right -150px
+	
+			
+	.about-service__blockquote
+		padding 30px 20px
+		
+	.service-step__wrapper
+		flex 1 0 100%
+		
+	.sect__faqs
+		.form-wrapper
+			padding 30px 20px
+		
+	.form-wrapper
+		padding 30px 20px
+		border-radius 50px 50px 50px 0
+		
+		&__description
+			margin-bottom 25px
+			font-size 15px
+		
+		.sect-title-sm
+			font-size 20px
+			
+		.btn
+			width 100%
+			padding-left 10px
+			padding-right 10px
+			line-height 1.45
+			
+	.advantage__wrapper
+		width 100%
+		
+	.team-member
+		&__photo
+			padding-top 120%
+		&__name
+			font-size 26px
+			line-height 36px
+			margin-bottom 15px
+		&__experience
+			margin-bottom 30px
+			line-height 1.45
+			
+		&__position
+			font-size 16px
+			line-height 24px
+			
+
+	.sect__prices
+		border-top-left-radius 150px
+	.sect__advantages
+		border-bottom-right-radius 150px
+		
+
+	.price-block
+		&__title
+			font-size 20px
+		&__body
+			table
+				td
+					&:first-child
+						font-size 14px
+					&:last-child
+						font-size 16px
+
+	.feedbacks-slider__navigation
+		display none
+		
+	.feedback-slide
+		padding 70px 20px 30px 20px
+		&:before
+			width 35px
+			height 26px
+			left 20px
+			top 30px
+		&__text
+			font-size 15px
+			line-height 22px
+		&__author-name
+			font-size 16px
+			margin-bottom 8px
+			
+	.slider__pagination
+		margin-top 40px
+		
+	.faq__question
+		padding 20px
+		&--title
+			font-size 16px
+		
+	.faq__answer
+		padding 0 20px 30px 35px
+		font-size 15px
+		
+	.quiz-step 
+		.input__col
+			max-width 100%
+			
+		&__title
+			font-size 20px
+			line-height 28px
+			margin-bottom 30px
+			
+		&__subtitle
+			margin-bottom 25px
+	
+	.quiz-step-final 
+		.quiz-step__title
+			margin-bottom 20px
+			
+	.quiz-step__progress
+		margin-bottom 15px
++max-screen(480px)
+	.btn
+		width 100%
+		padding-left 10px
+		padding-right 10px
+		
+	.map__wrapper
+		height 350px
+		
+	.popup__body
+		padding 40px 20px
+		
+		.btn__close
+			top 10px
+			right 10px
+			
++max-screen(360px)
+	.header
+		padding 6px 0
+		.logo
+			width 80px
+			
+	.mobile-phone-link,
+	.btn__hamburger
+		width 40px
+		height 40px
+		
+	.sect__promo
+		padding-top 85px
+
+			
