@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>My Startng Template</title>
+	<title>Plasma Priority</title>
 
 	<!-- Meta tags -->
 	<meta charset="UTF-8">
@@ -10,21 +10,19 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Serhii 'winde' Kuptsov">
-
-	<!-- Chrome, Firefox, Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-	<!-- //Meta tags -->
 	
 	<!-- Favicons -->
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<!-- //Favicons -->
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#5bbad5">
 
 	<!-- All libs styles -->
-<!-- 	<link rel="stylesheet" href="css/libs.min.css"> -->
+	<link rel="stylesheet" href="css/libs.min.css">
 	<!-- Main file with styles -->
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -34,34 +32,1111 @@
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-</head>
-<body>
+</head><body>
 	
 	<!-- CONTENT WRAPPER -->
 	<div class="content__wrapper">
-	
+
+		<!-- Popup callback-->
+<div class="popup js-popup js-callback-popup">
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+
+			<button class="btn__close js-close-popup-btn" type="button">
+				<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 14 14">
+					<path  d="M1402.39,291c1.4,1.385,2.79,2.77,4.19,4.155l0.87,0.9c0.05,0.036.09,0.073,0.14,0.11a1.657,1.657,0,0,0,.44.41l5.55-5.576c0.03,0.023,0,0,.02.028,0.47,0.455.93,0.91,1.4,1.366v0.028h-0.03c-1.38,1.384-2.75,2.769-4.13,4.154l-0.9.874c-0.04.046-.07,0.091-0.11,0.137a1.745,1.745,0,0,0-.41.437l5.58,5.548a0.092,0.092,0,0,1-.03.027c-0.46.465-.91,0.93-1.37,1.394-0.03-.023,0,0-0.02-0.027q-2.085-2.064-4.16-4.127c-0.29-.3-0.58-0.6-0.88-0.9-0.04-.036-0.09-0.073-0.13-0.109a1.625,1.625,0,0,0-.44-0.41L1402.42,305h-0.03v-0.027a1,1,0,0,1-.16-0.164l-0.33-.328h-0.03l-0.57-.6a1.583,1.583,0,0,1-.3-0.3,3.076,3.076,0,0,0,.44-0.437c0.22-.209.43-0.419,0.65-0.629,0.09-.091.17-0.182,0.25-0.273l2.13-2.1c0.27-.274.53-0.547,0.79-0.82l1.02-1.012a1.136,1.136,0,0,0,.3-0.328c-0.4-.382-0.79-0.765-1.18-1.147l-3.06-3.089c-0.28-.273-0.57-0.546-0.85-0.82-0.05-.064-0.11-0.127-0.16-0.191a2.924,2.924,0,0,1-.33-0.328c0.13-.119.26-0.237,0.38-0.355C1401.72,291.7,1402.06,291.349,1402.39,291Z" transform="translate(-1401 -291)"/>
+				</svg>
+			</button>
+
+			<!-- Popup content-->
+			<div class="popup__content">
+				<h3 class="popup__title">Оставьте заявку</h3>
+				<p class="popup__text">и мы Вам перезвоним</p>
+
+				<form class="form">
+					<!-- Hidden inputs -->
+					<input type="hidden" name="project_name" value="Plasma Priority">
+					<input type="hidden" name="admin_email" value="winde100kg@gmail.com">
+					<input type="hidden" name="form_subject" value="Запись на прием">
+					<!-- // Hidden inputs -->
+
+
+					<div class="input__wrapper ">
+						<input type="text" class="input js-input b-radius-sm" name="Имя" placeholder="Ваше имя *">
+					</div>
+					<div class="input__wrapper ">
+						<input type="tel" class="input js-input b-radius-sm" name="Телефон" placeholder="Ваш телефон *">
+					</div>
+					<div class="input__wrapper ">
+						<button class="btn btn-wide" type="submit">Записаться на прием</button>
+					</div>
+					
+
+					<p class="form__notice">* - мы не передаем Ваши персональные данные третьим лицам</p>
+
+
+				</form>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup callback-->
+
+<!-- Popup thanks-->
+<div class="popup popup-thanks js-popup js-thanks-popup">
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+
+
+			<!-- Popup content-->
+			<div class="popup__content">
+				<img src="img/icons/svg/popup_icon.svg" alt="Спасибо. Заявка успешно отправлена.">
+				<h3 class="popup__title">Спасибо!</h3>
+				<p class="popup__text">Ваша заявка успешно принята.<br>В ближайшее время мы<br>свяжемся с Вами!</p>
+
+			
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup thanks-->		<!-- Quiz-->
+<div class="popup quiz js-popup js-quiz-popup">
+	<div class="popup__overflow">
+		<div class="popup__body">
+
+			<button class="btn__close js-close-popup-btn" type="button">
+				<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 14 14">
+					<path  d="M1402.39,291c1.4,1.385,2.79,2.77,4.19,4.155l0.87,0.9c0.05,0.036.09,0.073,0.14,0.11a1.657,1.657,0,0,0,.44.41l5.55-5.576c0.03,0.023,0,0,.02.028,0.47,0.455.93,0.91,1.4,1.366v0.028h-0.03c-1.38,1.384-2.75,2.769-4.13,4.154l-0.9.874c-0.04.046-.07,0.091-0.11,0.137a1.745,1.745,0,0,0-.41.437l5.58,5.548a0.092,0.092,0,0,1-.03.027c-0.46.465-.91,0.93-1.37,1.394-0.03-.023,0,0-0.02-0.027q-2.085-2.064-4.16-4.127c-0.29-.3-0.58-0.6-0.88-0.9-0.04-.036-0.09-0.073-0.13-0.109a1.625,1.625,0,0,0-.44-0.41L1402.42,305h-0.03v-0.027a1,1,0,0,1-.16-0.164l-0.33-.328h-0.03l-0.57-.6a1.583,1.583,0,0,1-.3-0.3,3.076,3.076,0,0,0,.44-0.437c0.22-.209.43-0.419,0.65-0.629,0.09-.091.17-0.182,0.25-0.273l2.13-2.1c0.27-.274.53-0.547,0.79-0.82l1.02-1.012a1.136,1.136,0,0,0,.3-0.328c-0.4-.382-0.79-0.765-1.18-1.147l-3.06-3.089c-0.28-.273-0.57-0.546-0.85-0.82-0.05-.064-0.11-0.127-0.16-0.191a2.924,2.924,0,0,1-.33-0.328c0.13-.119.26-0.237,0.38-0.355C1401.72,291.7,1402.06,291.349,1402.39,291Z" transform="translate(-1401 -291)"/>
+				</svg>
+			</button>
+
+			<!-- Popup content-->
+			<div class="popup__content">
+
+				<form class="form">
+					<!-- Hidden inputs -->
+					<input type="hidden" name="project_name" value="Plasma Priority">
+					<input type="hidden" name="admin_email" value="winde100kg@gmail.com">
+					<input type="hidden" name="form_subject" value="Опросник">
+					<!-- // Hidden inputs -->
+
+
+					<div class="quiz-steps">
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 1" value="Какие суставы Вас беспокоят?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 1 из 7</p>
+									<h2 class="quiz-step__title">Какие суставы Вас беспокоят?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Проблемный сустав" value="Тазобедренный">
+													<span class="radio">Тазобедренный</span>
+												</label>
+											</div>
+
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Проблемный сустав" value="Коленный">
+													<span class="radio">Коленный</span>
+												</label>
+											</div>
+
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Проблемный сустав" value="Локтевой">
+													<span class="radio">Локтевой</span>
+												</label>
+											</div>
+
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Проблемный сустав" value="Другой">
+													<span class="radio">Другой</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-end align-vertical-center">
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 2" value="Как давно появилась проблема?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 2 из 7</p>
+									<h2 class="quiz-step__title">Как давно появилась проблема?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Как давно болят" value="Менее 1 года">
+													<span class="radio">Менее 1 года</span>
+												</label>
+											</div>
+
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Как давно болят" value="Более 1 года">
+													<span class="radio">Более 1 года</span>
+												</label>
+											</div>
+
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Как давно болят" value="Более 5 лет">
+													<span class="radio">Более 5 лет</span>
+												</label>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-between align-vertical-center">
+										<button class="btn btn-transparent" type="button" data-quiz-direction="prev">Предыдущий вопрос</button>
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 3" value="Занимаетесь ли Вы тяжелым физическим трудом, спортом?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 3 из 7</p>
+									<h2 class="quiz-step__title">Занимаетесь ли Вы тяжелым физическим трудом, спортом?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Физ. занятия" value="Да">
+													<span class="radio">Да</span>
+												</label>
+											</div>
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Физ. занятия" value="Нет">
+													<span class="radio">Нет</span>
+												</label>
+											</div>
+
+
+
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-between align-vertical-center">
+										<button class="btn btn-transparent" type="button" data-quiz-direction="prev">Предыдущий вопрос</button>
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 4" value="Сколько Вам лет?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 4 из 7</p>
+									<h2 class="quiz-step__title">Сколько Вам лет?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Возраст" value="До 40">
+													<span class="radio">До 40</span>
+												</label>
+											</div>
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Возраст" value="40-60">
+													<span class="radio">40-60</span>
+												</label>
+											</div>
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Возраст" value="Более 60">
+													<span class="radio">Более 60</span>
+												</label>
+											</div>
+
+
+
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-between align-vertical-center">
+										<button class="btn btn-transparent" type="button" data-quiz-direction="prev">Предыдущий вопрос</button>
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 5" value="Прибегали ранее к лечению суставов?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 5 из 7</p>
+									<h2 class="quiz-step__title">Прибегали ранее к лечению суставов?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-50 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Было ли лечение ранее" value="Да, традиционная медицина">
+													<span class="radio">Да, традиционная медицина</span>
+												</label>
+											</div>
+
+											<div class="col-w-50 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Было ли лечение ранее" value="Да, нетрадиционная медицина">
+													<span class="radio">Да, нетрадиционная медицина</span>
+												</label>
+											</div>
+
+											<div class="col-w-50 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Было ли лечение ранее" value="Самолечение">
+													<span class="radio">Самолечение</span>
+												</label>
+											</div>
+
+											<div class="col-w-50 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Было ли лечение ранее" value="Нет">
+													<span class="radio">Нет</span>
+												</label>
+											</div>
+
+
+
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-between align-vertical-center">
+										<button class="btn btn-transparent" type="button" data-quiz-direction="prev">Предыдущий вопрос</button>
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 6" value="Чувствуете ли Вы скованность в суставах?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 6 из 7</p>
+									<h2 class="quiz-step__title">Чувствуете ли Вы скованность в суставах?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Скованность суставов" value="До 15 минут">
+													<span class="radio">До 15 минут</span>
+												</label>
+											</div>
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Скованность суставов" value="15-60 минут">
+													<span class="radio">15-60 минут</span>
+												</label>
+											</div>
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Скованность суставов" value="Более 60 минут">
+													<span class="radio">Более 60 минут</span>
+												</label>
+											</div>
+
+
+
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-between align-vertical-center">
+										<button class="btn btn-transparent" type="button" data-quiz-direction="prev">Предыдущий вопрос</button>
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Вопрос 7" value="Беспокоят ли Вас ночные боли?">
+								<div class="quiz-step__top">
+									<p class="quiz-step__progress">вопрос 7 из 7</p>
+									<h2 class="quiz-step__title">Беспокоят ли Вас ночные боли?</h2>
+
+									<div class="quiz-answers">
+										<div class="row align-horisontal-start quiz-answers__row">
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Ночные боли" value="Да">
+													<span class="radio">Да</span>
+												</label>
+											</div>
+											<div class="col-w-25 col-gutters quiz-answer__wrapper">
+												<label class="radio__label">
+													<input type="radio" name="Ночные боли" value="Нет">
+													<span class="radio">Нет</span>
+												</label>
+											</div>
+
+
+
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controls js-quiz-controls">
+									<div class="row align-horisontal-between align-vertical-center">
+										<button class="btn btn-transparent" type="button" data-quiz-direction="prev">Предыдущий вопрос</button>
+										<button class="btn" type="button" data-quiz-direction="next">следующий вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Step -->
+
+						<!-- Step -->
+						<div class="quiz-step js-quiz-step quiz-step-final">
+							<div class="quiz-step-body">
+								<input type="hidden" name="Финал" value="Финал">
+								<div class="quiz-step__top text-center">
+									<p class="quiz-step__progress">получение подарка</p>
+									<h2 class="quiz-step__title">Как с Вами связаться?</h2>
+
+									<p class="quiz-step__subtitle">Заполните форму, чтобы получить результаты теста</p>
+
+									<div class="inputs__row row align-horisontal-center">
+										<div class="input__col">
+											<input type="tel" name="Телефон" class="input js-input b-radius-sm" placeholder="Ваш телефон *">
+										</div>
+										<div class="input__col">
+											<button class="btn btn-wide" type="submit">Получить подарок</button>
+										</div>
+									</div>
+
+									<p class="form__notice">* - мы не передаем Ваши персональные данные третьим лицам</p>
+
+								</div>
+							</div>
+
+						</div>
+						<!-- //Step -->
+					</div>
+
+				</form>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Quiz-->
+		<!-- Go to up btn -->
+		<button type="button" class="btn__top js-go-to-top-btn" title="К началу страницы"></button>
+		<!-- // Go to up btn  -->
+
 		<!-- Header -->
-		<header class="header"></header>
+		<header class="header">
+	<div class="container container-wide">
+		<div class="row align-vertical-center align-horisontal-between header__row">
+			<div class="logo__col">
+				<div class="row align-vertical-center align-horisontal-start">
+					<!-- Logo -->
+					<a href="index.html" class="logo" title="Plasma Priority">
+						<img src="img/logo-white.svg" alt="Plasma Priority Logo" class="logo-img logo-img__desktop">
+						<img src="img/logo-color.svg" alt="Plasma Priority Logo" class="logo-img logo-img__mobile">
+					</a>
+					<!-- //Logo -->
+
+					<!-- NAV -->
+					<nav class="nav js-nav">
+
+	<button class="btn__close js-close-mobile-menu-btn" type="button">
+		<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 14 14">
+			<path  d="M1402.39,291c1.4,1.385,2.79,2.77,4.19,4.155l0.87,0.9c0.05,0.036.09,0.073,0.14,0.11a1.657,1.657,0,0,0,.44.41l5.55-5.576c0.03,0.023,0,0,.02.028,0.47,0.455.93,0.91,1.4,1.366v0.028h-0.03c-1.38,1.384-2.75,2.769-4.13,4.154l-0.9.874c-0.04.046-.07,0.091-0.11,0.137a1.745,1.745,0,0,0-.41.437l5.58,5.548a0.092,0.092,0,0,1-.03.027c-0.46.465-.91,0.93-1.37,1.394-0.03-.023,0,0-0.02-0.027q-2.085-2.064-4.16-4.127c-0.29-.3-0.58-0.6-0.88-0.9-0.04-.036-0.09-0.073-0.13-0.109a1.625,1.625,0,0,0-.44-0.41L1402.42,305h-0.03v-0.027a1,1,0,0,1-.16-0.164l-0.33-.328h-0.03l-0.57-.6a1.583,1.583,0,0,1-.3-0.3,3.076,3.076,0,0,0,.44-0.437c0.22-.209.43-0.419,0.65-0.629,0.09-.091.17-0.182,0.25-0.273l2.13-2.1c0.27-.274.53-0.547,0.79-0.82l1.02-1.012a1.136,1.136,0,0,0,.3-0.328c-0.4-.382-0.79-0.765-1.18-1.147l-3.06-3.089c-0.28-.273-0.57-0.546-0.85-0.82-0.05-.064-0.11-0.127-0.16-0.191a2.924,2.924,0,0,1-.33-0.328c0.13-.119.26-0.237,0.38-0.355C1401.72,291.7,1402.06,291.349,1402.39,291Z" transform="translate(-1401 -291)"/>
+		</svg>
+	</button>
+
+	<ul class="nav__list">
+		<li class="nav__item"><a href="#home" class="nav__link js-smooth-scroll-link">Главная</a></li>
+		<li class="nav__item"><a href="#about" class="nav__link js-smooth-scroll-link">Все об услуге</a></li>
+		<li class="nav__item"><a href="#advantages" class="nav__link js-smooth-scroll-link">Преимущества</a></li>
+		<li class="nav__item"><a href="#team" class="nav__link js-smooth-scroll-link">Команда</a></li>
+		<li class="nav__item"><a href="#prices" class="nav__link js-smooth-scroll-link">Прайс-лист</a></li>
+		<li class="nav__item"><a href="#feedbacks" class="nav__link js-smooth-scroll-link">Отзывы</a></li>
+		<li class="nav__item"><a href="#contacts" class="nav__link js-smooth-scroll-link">Контакты</a></li>
+	</ul>
+</nav>
+					<!-- //NAV -->
+				</div>
+			</div>
+
+
+			<div class="header-tools">
+				<button class="btn btn-secondary js-open-callback-popup-btn" type="button" data-btn-text="Заказать звонок" data-form-theme="Обратный звонок">заказать звонок</button>
+
+				<!-- Phone link -->
+				<a href="tel:+84951281780" class="mobile-phone-link"></a>
+				<!-- //Phone link -->
+
+				<!-- Mobile menu btn -->
+				<button type="button" class="btn__hamburger js-open-mobile-menu-btn">
+					<span class="btn__hamburger--line"></span>
+					<span class="btn__hamburger--line"></span>
+					<span class="btn__hamburger--line"></span>
+				</button>
+				<!-- //Mobile menu btn -->
+
+
+			</div>
+		</div>
+	</div>
+	
+</header>
 		<!-- //Header -->
 
 		<!-- Main -->
-		<main class="main"></main>
+		<main class="main">
+
+			<!-- Section promo -->
+			<section class="sect__promo light-color-bg" id="home">
+				<h1 class="w3c">Собственная плазма - приоритет для восстановления вашего организма</h1>
+
+				<div class="container">
+					<div class="promo-block">
+						<div class="promo-block__content basic-white-color">
+							<h2 class="title">Собственная плазма -<br>приоритет для восстановления<br>вашего организма</h2>
+							<p class="subtitle">Безопасное и высокоэффективное лечение суставов с использованием собственной плазмы пациента</p>
+
+							<div class="promo-block__form b-radius-lg">
+								<form class="form">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Plasma Priority">
+									<input type="hidden" name="admin_email" value="winde100kg@gmail.com">
+									<input type="hidden" name="form_subject" value="Запись на прием">
+									<!-- // Hidden inputs -->
+
+
+									<div class="row inputs__row">
+										<div class="input__wrapper col-w-33">
+											<input type="text" class="input js-input b-radius-sm" name="Имя" placeholder="Ваше имя *">
+										</div>
+										<div class="input__wrapper col-w-33">
+											<input type="tel" class="input js-input b-radius-sm" name="Телефон" placeholder="Ваш телефон *">
+										</div>
+										<div class="input__wrapper col-w-33">
+											<button class="btn btn-wide" type="submit">Записаться на прием</button>
+										</div>
+									</div>
+
+									<p class="form__notice">* - мы не передаем Ваши персональные данные третьим лицам</p>
+
+
+								</form>
+							</div>
+
+							<a href="tel:+84951281780" class="phone-link">
+								<span class="phone-link__ic"></span>
+								<span>8 (495) 128 17 80</span>
+							</a>
+
+
+						</div>
+
+						<div class="promo-block__img img-wrapper">
+							<img src="img/promo-img.jpg" alt="Plasma Priority. Приоритет для восстановления вашего организма">
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+
+			</section>
+			<!-- //Section promo -->
+
+			<!-- Section about -->
+			<section class="sect__about" id="about">
+				<h2 class="sect-title container">Что такое плазмотерапия?</h2>
+
+				<div class="container">
+
+					<div class="row align-horisontal-start row-gutters about-service__row">
+						<!-- Item -->
+						<div class="col-w-33 col-gutters about-service-item__wrapper">
+							<div class="about-service-item b-radius-lg">
+								<div class="about-service-item__description">
+									<h3 class="about-service-item__title">О методе</h3>
+									<p>Использование собственной плазмы для лечения суставов — метод, в основе которого лежит способность человеческого организма к самовосстановлению, регенерации, лечению многих хронических заболеваний силами самого организма.</p>
+								</div>
+								
+								<img src="img/about/1.png" alt="">
+							</div>
+						</div>
+						<!-- //Item -->
+
+						<!-- Item -->
+						<div class="col-w-33 col-gutters about-service-item__wrapper">
+							<div class="about-service-item b-radius-lg">
+								<div class="about-service-item__description">
+									<h3 class="about-service-item__title">Суть лечения</h3>
+									<p>Тромбоцитарная аутологичная плазма (ТАП) в ортопедии творит чудеса. Болезни суставов с трудом поддаются лечению. Факторы роста, содержащиеся в тромбоцитах, активизируют обменные процессы и восстановление тканей. Плазма -  самый мощный, безопасный и эффективный стимулятор процессов регенерации.</p>
+								</div>
+								
+								<img src="img/about/2.png" alt="">
+							</div>
+						</div>
+						<!-- //Item -->
+
+						<!-- Item -->
+						<div class="col-w-33 col-gutters about-service-item__wrapper">
+							<div class="about-service-item b-radius-lg">
+								<div class="about-service-item__description">
+									<h3 class="about-service-item__title">Процедура</h3>
+									<p>Процедура представляет собой введение в полость сустава и околосуставные мягкие ткани собственной плазмы пациента. Это самая безопасная, гипоаллергенная и совместимая с организмом среда, которая уменьшает воспалительный процесс и болевой синдром, позволяет восстановить объем движений в суставе, запускает и активизирует процесс регенерации повреждённых тканей, останавливает процесс разрушения сустава, на начальных стадиях восстанавливает его структуры.</p>
+								</div>
+
+							</div>
+						</div>
+						<!-- //Item -->
+					</div>
+
+					<blockquote class="about-service__blockquote b-radius-lg light-color-bg">
+						<p><strong>Тромбоциты</strong> — это форменные элементы крови, которые играют важную роль в процессах восстановления и заживления. Терапевтическое действие плазмы при заболевании суставов основано именно на свойствах тромбоцитов. Факторы роста воздействуют на клетки пораженных зон, побуждая их интенсивно делиться и выделять биологически активные вещества. В результате ткани быстрее заживают и регенерируют.</p>
+					</blockquote>
+
+
+					<div class="service-steps">
+						<h3 class="sect-title text-center">Как проходит процедура?</h3>
+
+						<div class="row row-gutters align-horisontal-start service-steps__row">
+							<div class="col-w-33 col-gutters service-step__wrapper">
+								<div class="service-step">
+									<span class="service-step__count">01</span>
+									<div class="service-step__img img-wrapper"><img src="img/steps/1.jpg" alt=""></div>
+									<p>У пациента производят забор небольшого количества крови в стерильную пробирку</p>
+								</div>
+							</div>
+							<div class="col-w-33 col-gutters service-step__wrapper">
+								<div class="service-step">
+									<span class="service-step__count">02</span>
+									<div class="service-step__img img-wrapper"><img src="img/steps/2.jpg" alt=""></div>
+									<p>Из крови выделяют плазму, обогащённую тромбоцитами</p>
+								</div>
+							</div>
+							<div class="col-w-33 col-gutters service-step__wrapper">
+								<div class="service-step">
+									<span class="service-step__count">03</span>
+									<div class="service-step__img img-wrapper"><img src="img/steps/3.jpg" alt=""></div>
+									<p>Врач делает инъекцию (укол) в место, требующее лечения</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-wrapper basic-white-color text-center">
+						<h3 class="sect-title-sm">Можете больше узнать о своих суставах,<br>ответив на 7 вопросов</h3>
+						<p class="form-wrapper__description">и получить ПОДАРОК – консультацию опытного врача травматолога-ортопеда!</p>
+
+						<button class="btn js-open-quiz-popup-btn" type="button">пройти опрос и получить подарок</button>
+
+						<p class="form__notice">Бонусы после прохождения теста</p>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section about -->
+
+			<!-- Section advantages -->
+			<section class="sect__advantages gutter-bottom sect-under-form light-color-bg" id="advantages">
+				<h2 class="sect-title sect-title_with-text container text-center">Преимущества плазмотерапии</h2>
+				<p class="container text-center sect-description">Плазма с тромбоцитами, являясь живительной средой вашего организма, индивидуальна, оптимальна для него, всегда высокого качества. Всегда вызывает «правильный» биологический ответ</p>
+
+				<div class="container">
+					<div class="row row-gutters align-horisontal-start advantages__row">
+						<div class="advantage__wrapper col-w-33 col-gutters">
+							<div class="advantage">
+								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_1.svg');"></span>
+								<p>Несмотря на то, что инъекцию проводят внутри и околосуставно, и максимален именно локальный эффект, плазма оказывает положительное влияние на другие ткани, органы и системы</p>
+							</div>
+						</div>
+
+						<div class="advantage__wrapper col-w-33 col-gutters">
+							<div class="advantage">
+								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_2.svg');"></span>
+								<p>Плазма хорошо совместима с другими способами лечения: она дополняет и усиливает их действие. Благодаря этому часто удается снизить количество и дозы препаратов, принимаемых пациентом</p>
+							</div>
+						</div>
+
+						<div class="advantage__wrapper col-w-33 col-gutters">
+							<div class="advantage">
+								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_3.svg');"></span>
+								<p>Минимальная травматичность. Процедура практически безболезненна, пациент не нуждается в реабилитации. В день проведения  процедуры можно заниматься привычными делами</p>
+							</div>
+						</div>
+
+						<div class="advantage__wrapper col-w-33 col-gutters">
+							<div class="advantage">
+								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_4.svg');"></span>
+								<p>У вас есть гарантия того, что вы попадете на прием к опытному, практикующему специалисту, который глубоко знает проблему суставных заболеваний и уделит вам  время, необходимое для получения клинического результата</p>
+							</div>
+						</div>
+
+						<div class="advantage__wrapper col-w-33 col-gutters">
+							<div class="advantage">
+								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_5.svg');"></span>
+								<p>Эффект от проведенного лечения:<br>уменьшается боль; восстанавливается подвижность суставов; замедляется или останавливается процесс разрушения костной и хрящевой ткани; улучшается кровоснабжение в пораженной зоне; увеличивается объем внутрисуставной жидкости; снижается интенсивность воспалительного процесса</p>
+							</div>
+						</div>
+
+						<div class="advantage__wrapper col-w-33 col-gutters">
+							<div class="advantage">
+								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_6.svg');"></span>
+								<p>Ваш врач долгие годы специализируется на использовании тромбоцитарной плазмы для лечения суставов, и знает насколько она эффективна и безопасна; знает, как ее правильно применять при тех или иных заболеваниях</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="text-center">
+						<button class="btn js-open-callback-popup-btn" type="button" data-btn-text="Отправить заявку" data-form-theme="Запись на прием">Записаться на прием</button>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section advantages -->
+
+			<!-- Section team -->
+			<section class="sect__team gutters" id="team">
+				<h2 class="sect-title container text-center">Команда</h2>
+				<div class="container">
+					<div class="team">
+						<!-- Team member -->
+						<div class="team-member">
+							<div class="team-member__photo bg" style="background-image: url('img/team/1.jpg');">
+								<img src="img/team/1.jpg" alt="Карев Дмитрий Борисович фото">
+							</div>
+							<div class="team-member__information">
+								<h3 class="team-member__name">Карев Дмитрий Борисович</h3>
+								<p class="team-member__experience">опыт использования методики - более 8 лет</p>
+								<p class="team-member__position">Кандидат медицинских наук, доцент, врач травматолог-ортопед высшей квалификационной категории, 30 летний стаж работы в ортопедии.</p>
+								<div class="team-member__description">
+									<p>Владеет техникой первичного и ревизионного эндопротезирования тазобедренного и коленного сустава, рядом реконструктивных операций на тазобедренном суставе (разработчик оригинальных методик остеотомий бедренной кости при переломах шейки бедра и концепции биологического остеосинтеза). Автор 84 научных публикаций (в том числе в Европейских научных журналах), монографии, 14 патентов. Разработчик направления применения   аутологичной тромбоцитарной плазмы в травматологии и ортопедии. Организатор первого в мире специализированного центра на территории РБ, использующего плазму в лечении суставных заболеваний. Личный опыт применения плазмы (самый большой в мире) - более 15 000 пациентов.</p>
+								</div>
+							</div>
+						</div>
+						<!-- //Team member -->
+
+						<!-- Team member -->
+						<div class="team-member">
+							<div class="team-member__photo bg" style="background-image: url('img/team/2.jpg');">
+								<img src="img/team/2.jpg" alt="Карев Дмитрий Борисович фото">
+							</div>
+							<div class="team-member__information">
+								<h3 class="team-member__name">Карев Борис Дмитриевич</h3>
+								<p class="team-member__experience">опыт использования методики - 5 лет</p>
+								<p class="team-member__position">Врач травматолог-ортопед первой квалификационной категории, практикующий специалист.</p>
+								<div class="team-member__description">
+									<p>Владеет артроскопией коленного сустава, техникой первичного эндопротезирования тазобедренного сустава, современными методиками накостного и интрамедулярного остеосинтеза, реконструктивных операций на переднем отделе стопы. Автор 10 научных публикаций ( в том числе в Европейских научных журналах), 5 патентов. Личный опыт применения плазмы более 1500 пациентов.</p>
+								</div>
+							</div>
+						</div>
+						<!-- //Team member -->
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section team -->
+
+			<!-- Section prices -->
+			<section class="sect__prices light-color-bg gutters" id="prices">
+				<h2 class="sect-title container text-center">Прайс-лист</h2>
+
+				<div class="container">
+					<div class="prices">
+						<!-- Price block -->
+						<div class="price-block">
+							<div class="price-block__header text-center basic-white-color">
+								<h3 class="price-block__title">Прием (осмотр, консультация)</h3>
+							</div>
+							<div class="price-block__body">
+								<table>
+									<tr>
+										<td>Прием (осмотр, консультация) врача-травматолога-ортопеда К.М.Н.</td>
+										<td>2 500 руб</td>
+									</tr>
+									<tr>
+										<td>Прием (осмотр, консультация) врача-травматолога-ортопеда</td>
+										<td>2 000 руб</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-- //Price block -->
+
+						<!-- Price block -->
+						<div class="price-block">
+							<div class="price-block__header text-center basic-white-color">
+								<h3 class="price-block__title">Околосуставное введение аутологичной плазмы</h3>
+							</div>
+							<div class="price-block__body">
+								<table>
+									<tr>
+										<td>Крупные суставы нижних конечностей (пара)</td>
+										<td>10 500 руб</td>
+									</tr>
+									<tr>
+										<td>Суставы верхних конечностей (пара)</td>
+										<td>7 000 руб</td>
+									</tr>
+									<tr>
+										<td>Мелкий сустав</td>
+										<td>3 500 руб</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-- //Price block -->
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section prices -->
+
+			<!-- Section feedbacks -->
+			<section class="sect__feedbacks gutters dark-color-bg" id="feedbacks">
+				<h2 class="sect-title container text-center basic-white-color">Отзывы пациентов</h2>
+
+				<div class="feedbacks-slider">
+					<div class="swiper-container js-feedbacks-slider">
+						<div class="swiper-wrapper">
+							<!-- Feedback -->
+							<div class="swiper-slide">
+								<div class="feedback-slide">
+									<blockquote class="feedback-slide__text">
+										<p>Процедура представляет собой введение в полость сустава и околосуставные мягкие ткани собственной плазмы пациента. Это самая безопасная, гипоаллергенная и совместимая с организмом среда, которая уменьшает воспалительный процесс и болевой синдром, позволяет восстановить объем движений в суставе, запускает и активизирует процесс регенерации повреждённых тканей, останавливает процесс разрушения сустава.</p>
+									</blockquote>
+									<p class="feedback-slide__author-name">Иванов Алексей Петрович</p>
+									<p class="feedback-slide__author-age">54 года</p>
+								</div>
+							</div>
+							<!-- //Feedback -->
+
+							<!-- Feedback -->
+							<div class="swiper-slide">
+								<div class="feedback-slide">
+									<blockquote class="feedback-slide__text">
+										<p>Процедура представляет собой введение в полость сустава и околосуставные мягкие ткани собственной плазмы пациента. Это самая безопасная, гипоаллергенная и совместимая с организмом среда, которая уменьшает воспалительный процесс и болевой синдром.</p>
+									</blockquote>
+									<p class="feedback-slide__author-name">Иванов Алексей Петрович</p>
+									<p class="feedback-slide__author-age">54 года</p>
+								</div>
+							</div>
+							<!-- //Feedback -->
+
+							<!-- Feedback -->
+							<div class="swiper-slide">
+								<div class="feedback-slide">
+									<blockquote class="feedback-slide__text">
+										<p>Процедура представляет собой введение в полость сустава и околосуставные мягкие ткани собственной плазмы пациента. Это самая безопасная, гипоаллергенная и совместимая с организмом среда, которая уменьшает воспалительный процесс и болевой синдром, позволяет восстановить объем движений в суставе, запускает и активизирует процесс регенерации повреждённых тканей, останавливает процесс разрушения сустава.</p>
+									</blockquote>
+									<p class="feedback-slide__author-name">Иванов Алексей Петрович</p>
+									<p class="feedback-slide__author-age">54 года</p>
+								</div>
+							</div>
+							<!-- //Feedback -->
+
+							<!-- Feedback -->
+							<div class="swiper-slide">
+								<div class="feedback-slide">
+									<blockquote class="feedback-slide__text">
+										<p>Процедура представляет собой введение в полость сустава и околосуставные мягкие ткани собственной плазмы пациента. Это самая безопасная, гипоаллергенная и совместимая с организмом среда, которая уменьшает воспалительный процесс и болевой синдром.</p>
+									</blockquote>
+									<p class="feedback-slide__author-name">Иванов Алексей Петрович</p>
+									<p class="feedback-slide__author-age">54 года</p>
+								</div>
+							</div>
+							<!-- //Feedback -->
+						</div>
+					</div>
+
+					<!-- Navigation -->
+					<div class="feedbacks-slider__navigation">
+						<button class="btn__arrow btn__arrow--prev js-feedbacks-slider-btn-prev" type="button">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+								<path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
+								c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712
+								L143.492,221.863z"/>
+							</svg>
+						</button>
+
+						<button class="btn__arrow btn__arrow--next js-feedbacks-slider-btn-next" type="button">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+								<path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
+								c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712
+								L143.492,221.863z"/>
+							</svg>
+						</button>
+					</div>
+					<!-- //Navigation -->
+
+					<!-- Pagination -->
+					<div class="container">
+						<div class="slider__pagination js-feedbacks-slider-pagination"></div>
+					</div>
+					<!-- //Pagination -->
+				</div>
+			</section>
+			<!-- //Section feedbacks -->
+
+			<!-- Section faq -->
+			<section class="sect__faqs gutter-top" id="faq">
+				<h2 class="sect-title container text-center">Ответы на вопросы</h2>
+
+				<div class="container">
+
+					<div class="faqs">
+						<!-- Faq -->
+						<div class="faq b-radius-lg light-color-bg">
+							<div class="faq__question">
+								<div class="row align-horisontal-between align-vertical-center">
+									<h3 class="faq__question--title">При каких диагнозах показана процедура?</h3>
+
+									<button class="btn__toggle js-toggle-faq-btn" type="button" title="Показать ответ"></button>
+								</div>
+							</div>
+							<div class="faq__answer">
+								<p>Гонартроз, коксартроз, остеохондроз, плечелопаточный периартрит, тендиноз, тендинит, миазит, ахиллобурсит, киста Беккера, эпикондилит, локоть теннисиста, локоть гольфиста, разрывы, надрывы, растяжение связок, мышц, контрактуры, подагра, ревматоидные заболевания, болезнь Бехтерева. Переломы после операции и лечения в гипсовой повязке, ложные суставы, вправленные вывихи, боли в мышцах, сухожилиях при занятии спортом, фитнесом.</p>
+							</div>
+						</div>
+						<!-- //Faq -->
+
+						<!-- Faq -->
+						<div class="faq b-radius-lg light-color-bg">
+							<div class="faq__question">
+								<div class="row align-horisontal-between align-vertical-center">
+									<h3 class="faq__question--title">Имеются ли у данного метода противопоказания?</h3>
+
+									<button class="btn__toggle js-toggle-faq-btn" type="button" title="Показать ответ"></button>
+								</div>
+							</div>
+							<div class="faq__answer">
+								<p>Гонартроз, коксартроз, остеохондроз, плечелопаточный периартрит, тендиноз, тендинит, миазит, ахиллобурсит, киста Беккера, эпикондилит, локоть теннисиста, локоть гольфиста, разрывы, надрывы, растяжение связок, мышц, контрактуры, подагра, ревматоидные заболевания, болезнь Бехтерева.</p>
+							</div>
+						</div>
+						<!-- //Faq -->
+
+						<!-- Faq -->
+						<div class="faq b-radius-lg light-color-bg">
+							<div class="faq__question">
+								<div class="row align-horisontal-between align-vertical-center">
+									<h3 class="faq__question--title">Какие анализы нужно сделать перед проведением процедур?</h3>
+
+									<button class="btn__toggle js-toggle-faq-btn" type="button" title="Показать ответ"></button>
+								</div>
+							</div>
+							<div class="faq__answer">
+								<p>Гонартроз, коксартроз, остеохондроз, плечелопаточный периартрит, тендиноз, тендинит, миазит, ахиллобурсит, киста Беккера, эпикондилит, локоть теннисиста, локоть гольфиста, разрывы, надрывы, растяжение связок, мышц, контрактуры, подагра, ревматоидные заболевания, болезнь Бехтерева.</p>
+							</div>
+						</div>
+						<!-- //Faq -->
+
+						<!-- Faq -->
+						<div class="faq b-radius-lg light-color-bg">
+							<div class="faq__question">
+								<div class="row align-horisontal-between align-vertical-center">
+									<h3 class="faq__question--title">Сколько процедур надо сделать для достижения результата?</h3>
+
+									<button class="btn__toggle js-toggle-faq-btn" type="button" title="Показать ответ"></button>
+								</div>
+							</div>
+							<div class="faq__answer">
+								<p>Гонартроз, коксартроз, остеохондроз, плечелопаточный периартрит, тендиноз, тендинит, миазит, ахиллобурсит, киста Беккера, эпикондилит, локоть теннисиста, локоть гольфиста, разрывы, надрывы, растяжение связок, мышц, контрактуры, подагра, ревматоидные заболевания, болезнь Бехтерева.</p>
+							</div>
+						</div>
+						<!-- //Faq -->
+
+						<!-- Faq -->
+						<div class="faq b-radius-lg light-color-bg">
+							<div class="faq__question">
+								<div class="row align-horisontal-between align-vertical-center">
+									<h3 class="faq__question--title">Как долго держится эффект? На сколько это хватает?</h3>
+
+									<button class="btn__toggle js-toggle-faq-btn" type="button" title="Показать ответ"></button>
+								</div>
+							</div>
+							<div class="faq__answer">
+								<p>Гонартроз, коксартроз, остеохондроз, плечелопаточный периартрит, тендиноз, тендинит, миазит, ахиллобурсит, киста Беккера, эпикондилит, локоть теннисиста, локоть гольфиста, разрывы, надрывы, растяжение связок, мышц, контрактуры, подагра, ревматоидные заболевания, болезнь Бехтерева.</p>
+							</div>
+						</div>
+						<!-- //Faq -->
+					</div>
+
+
+					<div class="form-wrapper basic-white-color text-center">
+						<h3 class="sect-title-sm">Не нашли ответ на свой вопрос?</h3>
+						<p class="form-wrapper__description">Оставьте заявку на сайте, и наш врач проконсультирует Вас по всем вопросам</p>
+
+						<form class="form">
+							<!-- Hidden inputs -->
+							<input type="hidden" name="project_name" value="Plasma Priority">
+							<input type="hidden" name="admin_email" value="winde100kg@gmail.com">
+							<input type="hidden" name="form_subject" value="Консультация">
+							<!-- // Hidden inputs -->
+
+
+							<div class="row inputs__row">
+								<div class="input__wrapper col-w-33">
+									<input type="text" class="input js-input b-radius-sm" name="Имя" placeholder="Ваше имя *">
+								</div>
+								<div class="input__wrapper col-w-33">
+									<input type="tel" class="input js-input b-radius-sm" name="Телефон" placeholder="Ваш телефон *">
+								</div>
+								<div class="input__wrapper col-w-33">
+									<button class="btn btn-wide" type="submit">получить консультацию</button>
+								</div>
+							</div>
+
+							<p class="form__notice">* - мы не передаем Ваши персональные данные третьим лицам</p>
+
+
+						</form>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section faq -->
+
+			<!-- Section contacts -->
+			<section class="sect__contacts sect-under-form light-color-bg gutter-bottom" id="contacts">
+				<h2 class="w3c">Контакты</h2>
+
+				<div class="container">
+					<div class="contacts row align-horisontal-between">
+
+						<div class="contacts-block">
+							<h3 class="sect-title">Наши контакты</h3>
+
+							<div class="contacts-item">
+								<h4 class="contacts-item__title">телефон:</h4>
+								<p><a href="tel:+84951281780">8 (495) 128 17 80</a></p>
+							</div>
+							<div class="contacts-item">
+								<h4 class="contacts-item__title">адрес:</h4>
+								<p>г.Москва, ул.Медицинская, д.125</p>
+							</div>
+							<div class="contacts-item">
+								<h4 class="contacts-item__title">время работы:</h4>
+								<p>Пн-Пт: 09:00-18:00,<br>Сб-Вс: 10:00-17:00</p>
+							</div>
+							<div class="contacts-item">
+								<h4 class="contacts-item__title">мы в соцсетях:</h4>
+								<ul class="socials">
+									<li class="socials__item"><a href="#" class="socials__link" target="_blank" rel="nofollow" style="background-image:url('img/icons/svg/fb.svg');"></a></li>
+								</ul>
+							</div>
+
+						</div>
+
+						<!-- Map -->
+						<div class="map__wrapper">
+							<div class="coords visually-hidden" data-latitude="55.753918" data-longitude="37.620784"></div>
+
+							<div id="map"></div>
+						</div>
+						<!-- //Map -->
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section contacts -->
+		</main>
 		<!-- //Main -->
 
 		<!-- Footer -->
-		<footer class="footer"></footer>
+		<footer class="footer">
+	<div class="container">
+
+		<div class="row row-gutters align-vertical-center footer__row align-horisontal-between">
+			<div class="footer__col col-gutters">
+				<!-- Logo -->
+				<a href="index.html" class="logo" title="Plasma Priority">
+					<img src="img/logo-white.svg" alt="Plasma Priority Logo" class="logo-img">
+				</a>
+				<!-- //Logo -->
+			</div>
+
+			<div class="footer__col col-gutters">
+				<div class="row align-vertical-start align-horisontal-between">
+					<p>PlasmaPriority&copy;2020. Все права защищены</p>
+					<p><a href="#">Политика конфиденциальности</a></p>
+					<p><a href="#">Лицензии</a></p>
+				</div>
+			</div>
+
+			<div class="footer__col col-gutters">
+				<button class="btn btn-light js-open-callback-popup-btn" type="button" data-btn-text="Заказать звонок" data-form-theme="Обратный звонок">заказать звонок</button>
+			</div>
+		</div>
+	</div>
+	<!-- //container -->
+</footer>
 		<!-- //Footer -->
 
 	</div>
 	<!-- //CONTENT WRAPPER -->
 
 	<!-- jQuery IF NEEDED-->
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<!-- All libs scripts -->
-	<!-- 	<script src="js/libs.min.js"></script> -->
-	<!-- Main file with scripts -->
-	<script src="js/common.min.js"></script>
-
+<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!-- Google map -->
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBR5vIGzW3iFwxgUDP3TEFZR66J5LzJdhY"></script>
+<!-- All libs scripts -->
+	<script src="js/libs.min.js"></script>
+<!-- Main file with scripts -->
+<script src="js/common.min.js"></script>
 </body>
 
 </html>
