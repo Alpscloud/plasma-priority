@@ -9,20 +9,30 @@
 	backface-visibility hidden
 	text-transform uppercase
 	letter-spacing 0.01em
-	background-color $accent-color
+	background-color $alternate-accent-color
 	@extends .b-radius-sm
 	&:hover
-		background-color $light-accent-color
-	&-secondary
 		background-color $secondary-color
+	&-secondary
+		background-color $alternate-accent-color
 		&:hover
 			background-color $light-secondary-color
 			
 	&-light
 		background-color $basic-white-color
-		color $secondary-color
+		white-space nowrap
+		color $alternate-accent-color
 		&:hover
 			background-color $basic-white-color
+			color $accent-color
+			
+	&-callback
+		display inline-block
+		font 12px $GMed
+		color $alternate-accent-color
+		text-transform uppercase
+		letter-spacing 0.01em
+		&:hover
 			color $accent-color
 		
 	&-wide

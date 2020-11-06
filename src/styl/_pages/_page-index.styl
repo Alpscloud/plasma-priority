@@ -1,23 +1,13 @@
 .sect__promo
-	padding 240px 0 50px
 	position relative
 	z-index 2
 	.container
 		position relative
 		z-index 1
-	&:before
-		pseudo()
-		position absolute
-		top 0
-		right 30%
-		width 70%
-		height 1140px
-		background-color $secondary-color
-		border-bottom-right-radius 50%
 		
 
 .title
-	font 50px $CBold 
+	font 45px $CBold 
 	line-height 1.25
 	margin-bottom 40px
 	
@@ -50,26 +40,17 @@
 		padding 35px
 		max-width 970px
 		box-shadow 0px 10px 60px 0px rgba($text-color, 0.2)
-		margin-bottom 100px
+		margin -90px auto 0 auto
+		position relative
+		z-index 2
 		
 // About
 .sect__about
-	padding-top 240px
+	padding-top 60px
 	position relative
 	z-index 1
 	
-.about-service__row
-	position relative
-	&:before
-		pseudo()
-		position absolute
-		width 695px
-		height 695px
-		border-radius 50%
-		background-color #f7f9fb
-		top -240px
-		right -200px
-		z-index -1
+
 	
 .about-service-item
 	overflow hidden
@@ -99,7 +80,7 @@
 	border-left 10px solid $accent-color
 	font 14px $GItalic
 	line-height 26px
-	margin-bottom 80px
+	margin-bottom 50px
 	b, strong
 		font-family $GBoldItalic
 		
@@ -112,7 +93,7 @@
 	position relative
 	font-size 16px
 	&__wrapper
-		margin-bottom 60px
+		margin-bottom 35px
 	&__count
 		flex-col-center()
 		text-align center
@@ -132,10 +113,25 @@
 		border-radius 16px 0 16px 0
 		radius-overflow()
 		margin-bottom 25px
+		
+.attention
+	margin-bottom 35px
+	text-align center
+	p
+		position relative
+		padding-left 35px
+		display inline-block
+		&:before
+			pseudo()
+			position absolute
+			left 0
+			vertical-center()
+			width 18px
+			height 16px
+			background url('../img/icons/svg/warning.svg') no-repeat
 
 // Advantages
-.sect__advantages
-	border-bottom-right-radius 400px
+
 .advantage
 	display flex
 	align-items flex-start
@@ -155,35 +151,71 @@
 		margin-bottom 45px
 		
 // Team
+.team-description
+	margin-bottom 50px
+	.content
+		flex 1
+		margin-right 60px
+		
+.content
+	p
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 0
+			
+	ul
+		li
+			position relative
+			margin-bottom 10px
+			font-size 16px
+			line-height 1.25
+			&:before
+				pseudo()
+				display inline-block
+				vertical-align middle
+				margin-right 20px
+				width 4px
+				height 4px
+				border-radius 50%
+				background-color $text-color
+			&:last-child
+				margin-bottom 0
+			
+.office
+	text-align center
+	font 14px $GBoldItalic
+	img
+		display block
+		border-radius 0 20px 0 20px
+		margin 0 auto 10px auto
 .team
 	&-member
-		margin-bottom 60px
+		margin-bottom 30px
 		display flex
 		flex-wrap nowrap
 		&__photo
 			width 50%
 			radius-overflow()
 			border-radius 24px 0 24px 24px
-			min-height 700px
+			min-height 440px
 			img
 				@extends .visually-hidden
 		&__information
 			width 50%
-			padding-left 50px
-			padding-right 70px
+			padding-left 30px
 			
 		&__name
-			font 30px $CBold
-			margin-bottom 25px
+			font 24px $CBold
+			margin-bottom 20px
 		&__experience
 			color $accent-color
 			font 14px $GMed
 			text-transform uppercase
-			margin-bottom 45px
+			margin-bottom 20px
 		&__position
 			font 18px $GMed
 			line-height 32px
-			margin-bottom 45px
+			margin-bottom 20px
 		&__description
 			font-size 16px
 			line-height 30px
@@ -191,15 +223,31 @@
 		&:last-child
 			margin-bottom 0
 			
-// Prices
-.sect__prices
-	border-top-left-radius 400px
+// Treatment
+.sect__treatment
+	.sect-title
+		margin-bottom 30px
 
-.prices
-	max-width 970px
-	margin 0 auto	
+.sect-subtitle
+	text-transform uppercase
+	font-size 24px
+	margin-bottom 25px
+	line-height 1.25
+	b, strong, span
+		font-family $GMed
+		
+
+	
+// Prices
+
+
 .price-block
 	margin-bottom 30px
+	&-notice
+		text-align center
+		font 18px $GMed
+		margin-top 30px
+	
 	&:last-child
 		margin-bottom 0
 		
@@ -241,10 +289,7 @@
 .sect__faqs
 	position relative
 	z-index 1
-	
-.faqs
-	margin 0 auto 130px auto
-	max-width 970px
+
 	
 .faq
 	margin-bottom 10px
@@ -289,3 +334,184 @@
 		font 14px $GMed
 		margin-bottom 10px
 		
+
+
+		
+.accordion
+	&-item
+		background-color $basic-white-color
+		border-radius 0 0 6px 6px
+		margin-bottom 10px
+		&:last-child
+			margin-bottom 0
+		
+	&-header
+		padding 20px 40px
+		border-radius 6px 6px 0 0
+		display flex
+		align-items center
+		justify-content space-between
+		flex-wrap nowrap
+		transition background-color .17s ease-in-out
+	&-title
+		text-transform uppercase
+		font 20px $CBold
+		transition color .17s ease-in-out
+		
+	&-body
+		padding 0 40px 20px 70px
+		display none
+		
+.treatment-item
+	&.is-active
+		.accordion-title
+			color $secondary-color
+			
+	&__header
+		&:hover
+			.accordion-title
+				color $accent-color
+				
+.faq-item
+	background-color #f1f8f7
+	margin-bottom 0
+	border-radius 0
+	&__header
+		padding 25px 25px 10px 25px
+	&:last-child
+		.faq-item__header
+			padding-bottom 25px
+
+	&__body
+		padding 0 25px 25px 50px
+		font-size 16px
+	&__title
+		text-transform none
+		font 16px $GMed
+		margin-right 40px
+	&.is-active
+		.accordion-title
+			color $secondary-color
+
+.prices-item
+	&__header
+		background-color $accent-color
+	&__title
+		color $basic-white-color
+		
+	&__body
+		padding-left 25px
+		
+		
+	.btn__toggle
+		&:after
+			background-image url('../img/icons/svg/faq-minus-light.svg')
+		&:before
+			background-image url('../img/icons/svg/faq-plus-light.svg')
+			
+	&.is-active
+		.prices-item
+			&__header
+				background-color $secondary-color
+			&__title
+				color $basic-white-color
+				
+.prices-table
+	width 100%
+	max-width 1000px
+	margin 0 auto
+	font-size 16px
+	tr
+		
+		border-bottom 1px solid #d4ebe8
+		&:last-child
+			border-bottom 2px solid $accent-color
+	td
+		padding 20px 0
+		&:last-child
+			font-family $GMed
+			text-align right
+			padding-left 20px
+			white-space nowrap
+			
+.prices-notice
+	max-width 1000px
+	margin 30px auto 0
+	
+.prices-block-notice
+	text-align center
+	font 18px $GMed
+	margin-top 30px
+
+.tab-controls
+	display flex
+	flex-wrap nowrap
+	
+.btn-tab
+	width 50%
+	padding 20px
+	text-align center
+	text-transform uppercase
+	border 2px solid $accent-color
+	background-color $basic-white-color
+	color $accent-color
+	font 14px $GMed
+	letter-spacing 0.01em
+	&.is-active
+		background-color $accent-color
+		color $basic-white-color
+		
+
+
+.sect__docs
+	position relative
+	z-index 1
+
+
+.sertificate-link
+	display inline-block
+	position relative
+	overflow hidden
+	box-shadow 0px 10px 50px 0px rgba(0, 0, 0, 0.1)
+	&:before
+		pseudo()
+		position absolute
+		fullSize()
+		background-color rgba($secondary-color, .6)
+		transition opacity .17s ease-in-out
+		opacity 0
+	&:after
+		pseudo()
+		position absolute
+		position-center()
+		z-index 1
+		transition opacity .17s ease-in-out
+		opacity 0
+		width 40px
+		height 40px
+		background url('../img/icons/svg/zoom.svg') no-repeat
+		
+	&:hover
+		&:before,
+		&:after
+			opacity 1
+		
+	img
+		display block
+		
+
+.address
+	font-size 18px
+	line-height 1.25
+	p
+		margin-bottom 15px
+		&:last-child
+			margin-bottom 0
+	&-title
+		font-family $GMed
+		text-transform uppercase
+	
+.metro-item
+	padding-left 25px
+	background url('../img/icons/svg/metro.svg') left center no-repeat / 18px 11px
+	

@@ -2,27 +2,34 @@
 	<div class="container container-wide">
 		<div class="row align-vertical-center align-horisontal-between header__row">
 			<div class="logo__col">
-				<div class="row align-vertical-center align-horisontal-start">
+				<div class="row align-vertical-center align-horisontal-between row-nowrap">
 					<!-- Logo -->
 					<a href="index.html" class="logo" title="Plasma Priority">
-						<img src="img/logo-white.svg" alt="Plasma Priority Logo" class="logo-img logo-img__desktop">
-						<img src="img/logo-color.svg" alt="Plasma Priority Logo" class="logo-img logo-img__mobile">
+						<img src="img/logo.svg" alt="Plasma Priority Logo" class="logo-img">
 					</a>
 					<!-- //Logo -->
 
 					<!-- NAV -->
 					{% include '../components/nav.html' %}
 					<!-- //NAV -->
+
+					<ul class="socials">
+						<li class="socials__item"><a href="#" class="socials__link" target="_blank" rel="nofollow" style="background-image:url('img/icons/svg/fb.svg');"></a></li>
+						<li class="socials__item"><a href="#" class="socials__link" target="_blank" rel="nofollow" style="background-image:url('img/icons/svg/inst.svg');"></a></li>
+					</ul>
 				</div>
 			</div>
 
 
 			<div class="header-tools">
-				<button class="btn btn-secondary js-open-callback-popup-btn" type="button" data-btn-text="Заказать звонок" data-form-theme="Обратный звонок">заказать звонок</button>
+				
+				<div class="header-tools__phone">
+					<!-- Phone link -->
+					<a href="tel:+84951281780" class="phone-link"><span>8 (495) 350 76 30</span></a>
 
-				<!-- Phone link -->
-				<a href="tel:+84951281780" class="mobile-phone-link"></a>
-				<!-- //Phone link -->
+					<button class="btn-callback js-open-callback-popup-btn" type="button" data-btn-text="Заказать звонок" data-form-theme="Обратный звонок">заказать звонок</button>
+					<!-- //Phone link -->
+				</div>
 
 				<!-- Mobile menu btn -->
 				<button type="button" class="btn__hamburger js-open-mobile-menu-btn">

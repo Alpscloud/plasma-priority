@@ -2,9 +2,37 @@
 	position absolute
 	left 0
 	width 100%
-	top 15px
+	top 0
+	padding 5px 0
 	z-index 5
+	background-color $basic-white-color
 	&-tools
 		display flex
 		align-items center
 		justify-content flex-end
+		&__phone
+			display flex
+			flex-direction column
+			align-items flex-end
+		
+	.phone-link
+		font 22px $GMed
+		color $basic-black-color
+		display inline-block
+		position relative
+		padding-left 30px
+		margin-bottom 5px
+		&:before
+			pseudo()
+			position absolute
+			left 0
+			vertical-center()
+			width 18px
+			height 18px
+			background url('../img/icons/svg/phone-icon.svg') no-repeat
+		&:hover
+			color $alternate-accent-color
+			
+
+	.socials
+		margin-left 30px

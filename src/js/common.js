@@ -59,6 +59,18 @@ $(document).ready(function() {
 		$('.js-nav').addClass('is-opened');
 
 	});
+
+	$('.js-close-mobile-menu-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$('.js-open-mobile-menu-btn').removeClass('is-active');
+		$('html').removeClass('is-fixed');
+		$('.js-nav').removeClass('is-opened');
+
+	});
+
+
+	
 	// ========= =========== =========== ===========
 
 	// Popup
@@ -103,6 +115,22 @@ $(document).ready(function() {
 	});
 	// ========= =========== =========== ===========
 
+	var promoSlider = new Swiper('.js-promo-slider', {
+		loop: true,
+		slidesPerView: 1,
+		spaceBetween: 0,
+		pagination: {
+			el: '.js-promo-slider-pagination',
+			clickable: true
+		},
+		navigation: {
+			nextEl: '.js-promo-slider-btn-next',
+			prevEl: '.js-promo-slider-btn-prev',
+		},
+
+		
+	});
+
 
 	var feedbacksSlider = new Swiper('.js-feedbacks-slider', {
 		loop: true,
@@ -130,6 +158,58 @@ $(document).ready(function() {
 				spaceBetween: 120
 			}
 		}
+	});
+
+	var sertificatesSlider = new Swiper('.js-sertificates-slider', {
+		loop: true,
+		slidesPerView: 1,
+		centeredSlides: false,
+		spaceBetween: 0,
+		pagination: {
+			el: '.js-sertificates-slider-pagination',
+			clickable: true
+		},
+		navigation: {
+			nextEl: '.js-sertificates-slider-btn-next',
+			prevEl: '.js-sertificates-slider-btn-prev',
+		},
+
+		breakpoints: {
+			1400: {
+				slidesPerView: 5,
+			},
+			1000: {
+				slidesPerView: 4,
+			},
+			700: {
+				slidesPerView: 3,
+			},
+			480: {
+				slidesPerView: 2,
+			}
+		}
+	});
+
+
+	$('[data-fancybox]').fancybox();
+
+	$('.js-tab-content').not(":first").hide();
+	$('.js-tab-btn:first').addClass('is-active');
+
+	$('.js-tab-btn').on('click', function(e) {
+		e.preventDefault();
+		$('.js-tab-content').removeClass('is-active');
+		$('.js-tab-btn').removeClass('is-active').eq($(this).index()).addClass('is-active');
+		$('.js-tab-content').hide().eq($(this).index()).fadeIn().addClass('is-active');
+	}).eq(0).addClass('is-active');
+
+	$('.js-toggle-accordion-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-active');
+		$(this).parents('.accordion-item').toggleClass('is-active');
+
+		$(this).parents('.accordion-item').find('.accordion-body').stop().slideToggle(150);
 	});
 
 

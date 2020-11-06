@@ -30,6 +30,110 @@
 			background-color $basic-white-color
 			&:last-child
 				margin-right 0
+				
+.slider__pagination--dark
+	padding-left 15px
+	padding-right 15px
+	margin-bottom 70px
+	margin-top 0
+	
+	.swiper-pagination-bullet
+		border 2px solid $secondary-color
+		opacity 1
+		background transparent
+		&-active
+			background $secondary-color
+			
+				
+
+.promo-slide
+	min-height 100vh
+	padding 120px 0
+	display flex
+	align-items center
+	overflow hidden
+	&__content
+		position relative
+		max-width 670px
+		background-color rgba($secondary-color, .6)
+		border-radius 0 12px 12px 0
+		padding 40px 20px 40px 0
+		font 18px $GReg
+		&:before
+			pseudo()
+			height 100%
+			width 200%
+			right 100%
+			position absolute
+			top 0
+			background-color rgba($secondary-color, .6)
+			
+		
+		h3
+			font 28px $GReg
+			
+		
+	&__title
+		font 40px $CBold
+		margin-bottom 30px
+		b, strong, span
+			text-transform uppercase
+			
+
+.sertificates-slider
+	margin-bottom 20px
+	position relative
+	&:before
+		pseudo()
+		height 190px
+		background-color $accent-color
+		opacity .15
+		border-radius 8px
+		z-index -1
+		horisontal-center()
+		bottom 0
+		position absolute
+		width 1030px
+		
+	.swiper-wrapper
+		align-items center
+		
+	.swiper-slide
+		height auto
+		padding 20px 50px 50px 
+		
+
+.promo-slider
+	position relative
+	&__navigation
+		position absolute
+		position-center()
+		z-index 3
+		pointer-events none
+		display flex
+		align-items center
+		justify-content space-between
+		padding-left 15px
+		padding-right 15px
+		width 100%
+		button
+			pointer-events auto
+			
+	.slider__pagination
+		horisontal-center()
+		position absolute
+		z-index 3
+		bottom 100px
+		padding-left 15px
+		padding-right 15px
+		
+		.swiper-pagination-bullet
+			border 2px solid $basic-white-color
+			opacity 1
+			background transparent
+			&-active
+				background $basic-white-color
+		 
 			
 
 .feedback-slide
