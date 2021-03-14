@@ -84,8 +84,11 @@
 		z-index 25
 		display flex
 		align-items center
+		flex-direction column
+		justify-content center
 		text-align center
 		transition all .17s ease-in-out
+		flex-wrap wrap
 		transform translateX(105%)
 		opacity 0
 		visibility hidden
@@ -200,6 +203,9 @@
 		font-size 12px
 		max-width 600px
 		margin 0 auto 20px auto
+		
+	.what-we-treating__slogan
+		font-size 30px
 					
 +max-screen(1100px)
 	.office
@@ -209,6 +215,24 @@
 	.team-description__row
 		.content
 			margin-right 0
+			
+
+	.what-we-treating
+		&__row
+			flex-wrap wrap
+		&__img
+			order 2
+			width 100%
+			padding-top 100%
+		&__content
+			order 1
+			padding-left 0
+			width 100%
+			margin-bottom 40px
+			
+			.content
+				max-width 100%
+				font-size 16px
 			
 +max-screen(1000px)
 	.promo-block__img
@@ -251,6 +275,18 @@
 			margin-top 40px
 			flex none
 			
+	.page-alternate
+		.team-members__row
+			flex-wrap wrap
+		.team-member
+			&__wrapper
+				width 100%
+			&__photo
+				padding-top 0
+				min-height 250px
+			&__information
+				margin-top 0
+			
 	.price-block
 		&__header
 			padding 20px
@@ -276,6 +312,14 @@
 		
 	.contacts-block
 		padding-right 0
+		
+	.desktop-socials
+		display none
+	.mobile-socials
+		display block !important
+		margin-top 40px
+		.socials
+			display block !important
 		
 +max-screen(767px)
 	.promo-slide
@@ -397,7 +441,11 @@
 		width 100%
 			
 +max-screen(620px)
-
+	
+	.what-we-treating__slogan
+		font-size 24px
+		padding 30px 0 30px 30px
+		
 		
 	.promo-slider
 		.swiper-slide
@@ -412,11 +460,13 @@
 		height 100%
 		p
 			font-size inherit
+			margin-top 20px
 		h3
 			font-size 20px
+			margin-top 20px
 		&__title
 			font-size 30px
-			margin-bottom 20px
+			
 			
 		&__content
 			font-size 14px
@@ -514,6 +564,28 @@
 			line-height 24px
 			
 
+	.page-alternate
+		.team-members__row
+			flex-wrap wrap
+		.team-member
+			&__wrapper
+				width 100%
+			&__photo
+			
+				flex none
+				
+			&__information
+				margin-top 0
+				padding-left 0
+				margin-top 20px
+				width 100%
+				flex none
+				
+	.service-notice
+		padding-left 0
+		padding-top 40px
+		&:before
+			top 0
 
 
 	.price-block
