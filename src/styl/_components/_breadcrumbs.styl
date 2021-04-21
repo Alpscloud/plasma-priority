@@ -1,12 +1,26 @@
 .breadcrumbs
+	margin-bottom 50px
 	&__item
 		display inline-block
-		margin-right 15px
+		margin-right 40px
 		position relative
+		&:after
+			pseudo()
+			position absolute
+			vertical-center()
+			left 100%
+			margin-left 18px
+			width 4px
+			background url('../img/icons/svg/nav_arrow.svg') no-repeat / contain
+			height 8px
 		&:last-child
 			margin-right 0
+			&:after
+				display none
+				
 	&__link
-		display block
-		color $text-color
+		color rgba($text-color, .5)
+		font-size 14px
+		
 		&.is-active
-			color $accent-color
+			color $text-color

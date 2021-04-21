@@ -1,0 +1,77 @@
+{% include '../parts/head.html' %}
+<body id="home">
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+
+			{% include '../parts/sections/sect-seo.html' %}
+			
+
+			<!-- Section contacts -->
+			<section class="sect__contacts light-color-bg  gutters">
+
+				<div class="container">
+					<div class="contacts row align-horisontal-between">
+
+						<div class="contacts-block">
+							<h2 class="sect-title">Наши контакты</h2>
+
+							<div class="contacts-item">
+								<h3 class="contacts-item__title">телефон:</h3>
+								<p><a href="tel:+84951281780">8 (495) 128 17 80</a></p>
+							</div>
+							<div class="contacts-item">
+								<h3 class="contacts-item__title">адрес:</h3>
+								<div class="address">
+									<p class="address-title">ООО “АРНИКА”</p>
+									<p class="metro-item">Бульвар Дмитрия Донского</p>
+									<p class="metro-item">улица Старокачаловская</p>
+									<p>г.Москва, ул. Коктебельская, 4 корпус 1</p>
+								</div>
+							</div>
+							<div class="contacts-item">
+								<h3 class="contacts-item__title">время работы:</h3>
+								<p>Пн-Пт: 09:00-18:00,<br>Сб-Вс: 10:00-17:00</p>
+							</div>
+							<div class="contacts-item">
+								<h3 class="contacts-item__title">мы в соцсетях:</h3>
+								{% include '../parts/components/socials.html' %}
+							</div>
+
+						</div>
+
+						<!-- Map -->
+						<div class="map__wrapper">
+							<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/koktebelskaya_ulitsa_4k1/Z04Ycw9mSUAHQFtvfXl3dHtgbA==/?ll=37.586050%2C55.565738&utm_medium=mapframe&utm_source=maps&z=17.15" style="color:#eee;font-size:12px;position:absolute;top:14px;">Коктебельская улица, 4к1 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUA4AGxpD" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+						</div>
+						<!-- //Map -->
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section contacts -->
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>
