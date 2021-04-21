@@ -30,8 +30,9 @@
 								<div class="promo-slide bg" style="background-image: url('img/promo/1.jpg');">
 									<div class="container">
 										<div class="promo-slide__content basic-white-color">
-											<h2 class="promo-slide__title">Консультация, диагностика и процедуры - все в день посещения</h2>
-											<h3>Безопасное и высокоэффективное лечение суставов с использованием собственной плазмы пациента</h3>
+											<h2 class="promo-slide__title"><strong>Долой предрассудки!</strong></h2>
+											<p>Качественное лечение - не роскошь! Премиальные технологии – по доступной цене!</p>
+											{% include '../parts/components/btn-order.html' %}
 										</div>
 									</div>
 								</div>
@@ -43,8 +44,9 @@
 								<div class="promo-slide bg" style="background-image: url('img/promo/2.jpg');">
 									<div class="container">
 										<div class="promo-slide__content basic-white-color">
-											<h2 class="promo-slide__title">Лечение артроза суставов<br><strong>БЕЗ ОПЕРАЦИЙ</strong></h2>
-											<h3>Безопасное и высокоэффективное лечение суставов с использованием собственной плазмы пациента</h3>
+											<h2 class="promo-slide__title">Лечение суставов методом синовиального протезирования<br><strong>БЕЗ ОПЕРАЦИЙ</strong></h2>
+											<p>Быстро снимем боль, вернем подвижность</p>
+											{% include '../parts/components/btn-order.html' %}
 										</div>
 									</div>
 								</div>
@@ -56,8 +58,9 @@
 								<div class="promo-slide bg" style="background-image: url('img/promo/3.jpg');">
 									<div class="container">
 										<div class="promo-slide__content basic-white-color">
-											<h2 class="promo-slide__title">Приведи друга - <br>заработай сам</h2>
-											<h3>Безопасное и высокоэффективное лечение суставов с использованием собственной плазмы пациента</h3>
+											<h2 class="promo-slide__title">Плазмотерапия ≠PRP –терапия. Мы применяем обе современные технологии, позволяющие сохранить свой сустав и избежать протезирования</h2>
+											<p>Безопасные, научно обоснованные технологии использования собственной плазмы пациента</p>
+											{% include '../parts/components/btn-order.html' %}
 										</div>
 									</div>
 								</div>
@@ -69,13 +72,30 @@
 								<div class="promo-slide bg" style="background-image: url('img/promo/4.jpg');">
 									<div class="container">
 										<div class="promo-slide__content basic-white-color">
-											<h2 class="promo-slide__title">Перенесли COVID-19?<br>Чувствуете слабость?</h2>
-											<p>Привычные движения вызывают непреодолимое желание прилечь? Не можете вздохнуть полной грудью? Самое время помочь организму восстановить силы! Вы можете устранить последствия от самой инфекции и медикаментозной нагрузки на организм, воспользовавшись реабилитационными мероприятиями, чтобы быстрее вернуться к полноценной жизни… В нашей клинике Вам подберут индивидуальную комплексную программу восстановления, исходя из тяжести перенесенного заболевания. Давайте вместе позаботимся о Вашем здоровье!</p>
+											<h2 class="promo-slide__title">Эффективное лечение остеохондроза (грыжи и протрузий) позвоночника</h2>
+											<p>Используем все современные методы</p>
+											{% include '../parts/components/btn-order.html' %}
 										</div>
 									</div>
 								</div>
 							</div>
 							<!-- //Slide -->
+
+							<!-- Slide -->
+							<div class="swiper-slide">
+								<div class="promo-slide bg" style="background-image: url('img/promo/5.jpg');">
+									<div class="container">
+										<div class="promo-slide__content basic-white-color">
+											<h2 class="promo-slide__title">Индивидуальная реабилитация ваших суставов и позвоночника после травм и операций</h2>
+											<p>Сократит срок восстановления в 2 раза</p>
+											{% include '../parts/components/btn-order.html' %}
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //Slide -->
+
+
 						</div>
 
 						<!-- Navigation -->
@@ -105,182 +125,426 @@
 			</section>
 			<!-- //Section promo -->
 
-			<div class="promo-block__form b-radius-lg">
-				<form class="form">
-					<!-- Hidden inputs -->
-					<input type="hidden" name="project_name" value="Plasma Priority">
-					<input type="hidden" name="admin_email" value="winde100kg@gmail.com">
-					<input type="hidden" name="form_subject" value="Запись на прием">
-					<!-- // Hidden inputs -->
-
-
-					<div class="row inputs__row">
-						<div class="input__wrapper col-w-33">
-							<input type="text" class="input js-input b-radius-sm" name="Имя" placeholder="Ваше имя *">
-						</div>
-						<div class="input__wrapper col-w-33">
-							<input type="tel" class="input js-input b-radius-sm" name="Телефон" placeholder="Ваш телефон *">
-						</div>
-						<div class="input__wrapper col-w-33">
-							<button class="btn btn-wide" type="submit">Записаться на прием</button>
-						</div>
-					</div>
-
-					<p class="form__notice">* - мы не передаем Ваши персональные данные третьим лицам</p>
-
-
-				</form>
-			</div>
-
 			<!-- Section about -->
-			<section class="sect__about" id="services">
-				<h2 class="sect-title text-center container">Что такое плазмотерапия?</h2>
+			<section class="sect__about gutters">
+
 
 				<div class="container">
 
-					<div class="row align-horisontal-start row-gutters about-service__row">
-						<!-- Item -->
-						<div class="col-w-33 col-gutters about-service-item__wrapper">
-							<div class="about-service-item b-radius-lg">
-								<div class="about-service-item__description">
-									<h3 class="about-service-item__title">О методе</h3>
-									<p>Использование собственной плазмы для лечения суставов — метод, в основе которого лежит способность человеческого организма к самовосстановлению, регенерации, лечению многих хронических заболеваний силами самого организма.</p>
+					<div class="about-us">
+						<div class="row align-horisontal-between about-us__row">
+							<div class="about-us__text col-w-50">
+								<h2 class="sect-title">О нас</h2>
+								<div class="content">
+									<p><strong>Главная наша задача</strong> — комплексное лечение пациента, основанное на выявлении нарушений и  причины боли в опорно-двигательном аппарате и подбор оптимального, индивидуального варианта лечения, который позволит устранить их и приведет пациента к положительному результату. Мы используем все современные методы лечения, включая биотехнологии.</p>
 								</div>
-								
-								<img src="img/about/1.png" alt="">
-							</div>
-						</div>
-						<!-- //Item -->
-
-						<!-- Item -->
-						<div class="col-w-33 col-gutters about-service-item__wrapper">
-							<div class="about-service-item b-radius-lg">
-								<div class="about-service-item__description">
-									<h3 class="about-service-item__title">Суть лечения</h3>
-									<p>Тромбоцитарная аутологичная плазма (ТАП) в ортопедии творит чудеса. Болезни суставов с трудом поддаются лечению. Факторы роста, содержащиеся в тромбоцитах, активизируют обменные процессы и восстановление тканей. Плазма -  самый мощный, безопасный и эффективный стимулятор процессов регенерации.</p>
-								</div>
-								
-								<img src="img/about/2.png" alt="">
-							</div>
-						</div>
-						<!-- //Item -->
-
-						<!-- Item -->
-						<div class="col-w-33 col-gutters about-service-item__wrapper">
-							<div class="about-service-item b-radius-lg">
-								<div class="about-service-item__description">
-									<h3 class="about-service-item__title">Процедура</h3>
-									<p>Процедура представляет собой введение в полость сустава и околосуставные мягкие ткани собственной плазмы пациента. Это самая безопасная, гипоаллергенная и совместимая с организмом среда, которая уменьшает воспалительный процесс и болевой синдром, позволяет восстановить объем движений в суставе, запускает и активизирует процесс регенерации повреждённых тканей, останавливает процесс разрушения сустава, на начальных стадиях восстанавливает его структуры.</p>
-								</div>
+								<a href="page-about.html" class="btn btn-transparent">Подробнее о клинике</a>
 
 							</div>
-						</div>
-						<!-- //Item -->
-					</div>
 
-					<blockquote class="about-service__blockquote b-radius-lg light-color-bg">
-						<p><strong>Тромбоциты</strong> — это форменные элементы крови, которые играют важную роль в процессах восстановления и заживления. Терапевтическое действие плазмы при заболевании суставов основано именно на свойствах тромбоцитов. Факторы роста воздействуют на клетки пораженных зон, побуждая их интенсивно делиться и выделять биологически активные вещества. В результате ткани быстрее заживают и регенерируют.</p>
-					</blockquote>
+							<div class="about-us__slider col-w-50">
+								<div class="swiper-container js-about-clinic-slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<a href="img/about/1.jpg" class="about-us__slide thumbnail" data-fancybox="about-clinic">
+												<img src="img/about/1.jpg" alt="">
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="img/about/2.jpg" class="about-us__slide thumbnail" data-fancybox="about-clinic">
+												<img src="img/about/2.jpg" alt="">
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="img/about/3.jpg" class="about-us__slide thumbnail" data-fancybox="about-clinic">
+												<img src="img/about/3.jpg" alt="">
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="img/about/4.jpg" class="about-us__slide thumbnail" data-fancybox="about-clinic">
+												<img src="img/about/4.jpg" alt="">
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="img/about/5.jpg" class="about-us__slide thumbnail" data-fancybox="about-clinic">
+												<img src="img/about/5.jpg" alt="">
+											</a>
+										</div>
 
-
-					<div class="service-steps">
-						<h3 class="sect-title text-center">Как проходит процедура?</h3>
-
-						<div class="row row-gutters align-horisontal-start service-steps__row">
-							<div class="col-w-33 col-gutters service-step__wrapper">
-								<div class="service-step">
-									<span class="service-step__count">01</span>
-									<div class="service-step__img img-wrapper"><img src="img/steps/1.jpg" alt=""></div>
-									<p>У пациента производят забор небольшого количества крови в стерильную пробирку</p>
+									</div>
 								</div>
-							</div>
-							<div class="col-w-33 col-gutters service-step__wrapper">
-								<div class="service-step">
-									<span class="service-step__count">02</span>
-									<div class="service-step__img img-wrapper"><img src="img/steps/2.jpg" alt=""></div>
-									<p>Из крови выделяют плазму, обогащённую тромбоцитами</p>
-								</div>
-							</div>
-							<div class="col-w-33 col-gutters service-step__wrapper">
-								<div class="service-step">
-									<span class="service-step__count">03</span>
-									<div class="service-step__img img-wrapper"><img src="img/steps/3.jpg" alt=""></div>
-									<p>Врач делает инъекцию (укол) в место, требующее лечения</p>
-								</div>
+
+								<button class="btn__arrow btn__arrow--prev js-about-clinic-slider-btn-prev" type="button">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+										<path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
+										c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712
+										L143.492,221.863z"/>
+									</svg>
+								</button>
+
+								<button class="btn__arrow btn__arrow--next js-about-clinic-slider-btn-next" type="button">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+										<path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
+										c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712
+										L143.492,221.863z"/>
+									</svg>
+								</button>
 							</div>
 						</div>
 					</div>
 
-					<div class="attention">
-						<p>Имеются противопоказания. Требуется консультация специалиста</p>
-					</div>
 
 
-					<div class="form-wrapper basic-white-color text-center">
-						<h3 class="sect-title-sm">Можете больше узнать о своих суставах,<br>ответив на 7 вопросов</h3>
-						<p class="form-wrapper__description">и получить ПОДАРОК – консультацию опытного врача травматолога-ортопеда!</p>
 
-						<button class="btn js-open-quiz-popup-btn" type="button">пройти опрос и получить подарок</button>
 
-						<p class="form__notice">Бонусы после прохождения теста</p>
-					</div>
+					
 				</div>
 				<!-- //container -->
 			</section>
 			<!-- //Section about -->
 
+			<!-- Section services -->
+			<section class="sect__services light-color-bg gutters">
+				<h2 class="sect-title container text-center sect-title_with-text">Что мы лечим</h2>
+				<p class="container text-center sect-description">Симптомы и заболевания</p>
+
+				<div class="container">
+					<div class="services">
+						<!-- Service -->
+						<div class="service text-center">
+							<h3 class="service-title">суставы</h3>
+							<div class="content">
+								<p>Каковы основные причины появления боли или неприятных ощущений в суставе? Как правило, это воспалительные процессы, травмы и их последствия, повреждение сосудов и нервов. В 75% обращений, причиной боли в суставах являются хронические дегенеративные заболевания: артроз, артрит. Эти заболевания прогрессирующие, разрушающие сустав, приводящие к инвалидности.<br><strong>СВОЕВРЕМЕННО НАЧАТОЕ ЛЕЧЕНИЕ – ШАНС СОХРАНИТЬ ПОДВИЖНОСТЬ!</strong></p>
+							</div>
+
+							<div class="service-cards row align-horisontal-center row-gutters">
+								<!-- Card -->
+								<div class="col-gutters col-w-33 card-wrapper">
+									<article class="card">
+										<a href="page-service.html" class="card-thumbnail thumbnail">
+											<img src="img/services/1.jpg" alt="">
+										</a>
+										<div class="card-content">
+											<h4 class="card-content__title">
+												<a href="page-service.html">плечевой сустав</a>
+											</h4>
+											<p>Краткое описание услуги в две строки</p>
+											<a href="page-service.html" class="card-permalink">подробнее</a>
+										</div>
+									</article>
+								</div>
+								<!-- //Card -->
+
+								<!-- Card -->
+								<div class="col-gutters col-w-33 card-wrapper">
+									<article class="card">
+										<a href="page-service.html" class="card-thumbnail thumbnail">
+											<img src="img/services/2.jpg" alt="">
+										</a>
+										<div class="card-content">
+											<h4 class="card-content__title">
+												<a href="page-service.html">коленный сустав</a>
+											</h4>
+											<p>Краткое описание услуги в две строки</p>
+											<a href="page-service.html" class="card-permalink">подробнее</a>
+										</div>
+									</article>
+								</div>
+								<!-- //Card -->
+
+								<!-- Card -->
+								<div class="col-gutters col-w-33 card-wrapper">
+									<article class="card">
+										<a href="page-service.html" class="card-thumbnail thumbnail">
+											<img src="img/services/3.jpg" alt="">
+										</a>
+										<div class="card-content">
+											<h4 class="card-content__title">
+												<a href="page-service.html">тазобедренный сустав</a>
+											</h4>
+											<p>Краткое описание услуги в две строки</p>
+											<a href="page-service.html" class="card-permalink">подробнее</a>
+										</div>
+									</article>
+								</div>
+								<!-- //Card -->
+
+								<!-- Card -->
+								<div class="col-gutters col-w-33 card-wrapper">
+									<article class="card">
+										<a href="page-service.html" class="card-thumbnail thumbnail">
+											<img src="img/services/4.jpg" alt="">
+										</a>
+										<div class="card-content">
+											<h4 class="card-content__title">
+												<a href="page-service.html">локтевой сустав</a>
+											</h4>
+											<p>Краткое описание услуги в две строки</p>
+											<a href="page-service.html" class="card-permalink">подробнее</a>
+										</div>
+									</article>
+								</div>
+								<!-- //Card -->
+
+								<!-- Card -->
+								<div class="col-gutters col-w-33 card-wrapper">
+									<article class="card">
+										<a href="page-service.html" class="card-thumbnail thumbnail">
+											<img src="img/services/5.jpg" alt="">
+										</a>
+										<div class="card-content">
+											<h4 class="card-content__title">
+												<a href="page-service.html">голеностопный сустав</a>
+											</h4>
+											<p>Краткое описание услуги в две строки</p>
+											<a href="page-service.html" class="card-permalink">подробнее</a>
+										</div>
+									</article>
+								</div>
+								<!-- //Card -->
+
+								<!-- Card -->
+								<div class="col-gutters col-w-33 card-wrapper">
+									<article class="card">
+										<a href="page-service.html" class="card-thumbnail thumbnail">
+											<img src="img/services/6.jpg" alt="">
+										</a>
+										<div class="card-content">
+											<h4 class="card-content__title">
+												<a href="page-service.html">кисть</a>
+											</h4>
+											<p>Краткое описание услуги в две строки</p>
+											<a href="page-service.html" class="card-permalink">подробнее</a>
+										</div>
+									</article>
+								</div>
+								<!-- //Card -->
+							</div>
+						</div>
+						<!-- //Service -->
+
+						<!-- Service -->
+						<div class="service text-center">
+							<h3 class="service-title">позвоночник</h3>
+							<div class="content">
+								<p><strong>Остеохондроз</strong> – хроническое заболевание, которое поражает позвоночный столб. В ходе болезни наибольшему разрушению подвергаются межпозвоночные диски, сосуды и нервы. Лечение необходимо начинать при первых проявлениях боли. Симптомами заболевания могут быть сильные головные боли, шум в ушах, нарушения зрения, онемение рук, ограничение подвижности и боль в любом отделе позвоночника.</p>
+							</div>
+
+							<div class="service-cards row align-horisontal-center row-gutters">
+								<!-- Card -->
+								<div class="col-gutters col-w-33 card-wrapper">
+									<article class="card">
+										<a href="page-service.html" class="card-thumbnail thumbnail">
+											<img src="img/services/7.png" alt="">
+										</a>
+										<div class="card-content">
+											<h4 class="card-content__title">
+												<a href="page-service.html">шейный отдел</a>
+											</h4>
+											<p>Краткое описание услуги в две строки</p>
+											<a href="page-service.html" class="card-permalink">подробнее</a>
+										</div>
+									</article>
+								</div>
+								<!-- //Card -->
+
+								<!-- Card -->
+								<div class="col-gutters col-w-33 card-wrapper">
+									<article class="card">
+										<a href="page-service.html" class="card-thumbnail thumbnail">
+											<img src="img/services/8.png" alt="">
+										</a>
+										<div class="card-content">
+											<h4 class="card-content__title">
+												<a href="page-service.html">грудной отдел</a>
+											</h4>
+											<p>Краткое описание услуги в две строки</p>
+											<a href="page-service.html" class="card-permalink">подробнее</a>
+										</div>
+									</article>
+								</div>
+								<!-- //Card -->
+
+								<!-- Card -->
+								<div class="col-gutters col-w-33 card-wrapper">
+									<article class="card">
+										<a href="page-service.html" class="card-thumbnail thumbnail">
+											<img src="img/services/9.png" alt="">
+										</a>
+										<div class="card-content">
+											<h4 class="card-content__title">
+												<a href="page-service.html">поясничный отдел</a>
+											</h4>
+											<p>Краткое описание услуги в две строки</p>
+											<a href="page-service.html" class="card-permalink">подробнее</a>
+										</div>
+									</article>
+								</div>
+								<!-- //Card -->
+
+							</div>
+						</div>
+						<!-- //Service -->
+					</div>
+
+
+					<div class="text-center permalink-wrapper">
+						{% include '../parts/components/btn-order-accent.html' %}
+					</div>
+
+				</div>
+				<!-- //container -->
+
+			</section>
+			<!-- //Section services -->
+
+			<!-- Section procedures -->
+			<section class="sect__procedures gutters">
+				<h2 class="sect-title container text-center">основные процедуры нашей клиники</h2>
+
+
+				<div class="container">
+					<div class="service-cards procedures-cards row align-horisontal-center row-gutters">
+						<!-- Card -->
+						<div class="col-gutters col-w-33 card-wrapper">
+							<article class="card card-alternate-color">
+								<a href="page-procedure.html" class="card-thumbnail thumbnail">
+									<img src="img/procedures/1.jpg" alt="">
+								</a>
+								<div class="card-content">
+									<h4 class="card-content__title">
+										<a href="page-procedure.html">PRP-терапия и плазмотерапия</a>
+									</h4>
+									<a href="page-procedure.html" class="card-permalink">подробнее</a>
+								</div>
+							</article>
+						</div>
+						<!-- //Card -->
+
+						<!-- Card -->
+						<div class="col-gutters col-w-33 card-wrapper">
+							<article class="card card-alternate-color">
+								<a href="page-procedure.html" class="card-thumbnail thumbnail">
+									<img src="img/procedures/2.jpg" alt="">
+								</a>
+								<div class="card-content">
+									<h4 class="card-content__title">
+										<a href="page-procedure.html">Внутрисуставные инъекции и блокады лекарственными препаратами</a>
+									</h4>
+									<a href="page-procedure.html" class="card-permalink">подробнее</a>
+								</div>
+							</article>
+						</div>
+						<!-- //Card -->
+
+						<!-- Card -->
+						<div class="col-gutters col-w-33 card-wrapper">
+							<article class="card card-alternate-color">
+								<a href="page-procedure.html" class="card-thumbnail thumbnail">
+									<img src="img/procedures/3.png" alt="">
+								</a>
+								<div class="card-content">
+									<h4 class="card-content__title">
+										<a href="page-procedure.html">Лечение остеохондроза</a>
+									</h4>
+									<a href="page-procedure.html" class="card-permalink">подробнее</a>
+								</div>
+							</article>
+						</div>
+						<!-- //Card -->
+
+						<!-- Card -->
+						<div class="col-gutters col-w-33 card-wrapper">
+							<article class="card card-alternate-color">
+								<a href="page-procedure.html" class="card-thumbnail thumbnail">
+									<img src="img/procedures/4.png" alt="">
+								</a>
+								<div class="card-content">
+									<h4 class="card-content__title">
+										<a href="page-procedure.html">Терапия</a>
+									</h4>
+									<a href="page-procedure.html" class="card-permalink">подробнее</a>
+								</div>
+							</article>
+						</div>
+						<!-- //Card -->
+
+						<!-- Card -->
+						<div class="col-gutters col-w-33 card-wrapper">
+							<article class="card card-alternate-color">
+								<a href="page-procedure.html" class="card-thumbnail thumbnail">
+									<img src="img/procedures/5.png" alt="">
+								</a>
+								<div class="card-content">
+									<h4 class="card-content__title">
+										<a href="page-procedure.html">Лабораторная диагностика</a>
+									</h4>
+									<a href="page-procedure.html" class="card-permalink">подробнее</a>
+								</div>
+							</article>
+						</div>
+						<!-- //Card -->
+					</div>
+
+					{% include '../parts/components/quiz-form-block.html' %}
+
+				</div>
+				<!-- //container -->
+
+			</section>
+			<!-- //Section procedures -->
+
 			<!-- Section advantages -->
-			<section class="sect__advantages gutter-bottom sect-under-form light-color-bg" id="advantages">
-				<h2 class="sect-title sect-title_with-text container text-center">Преимущества плазмотерапии</h2>
-				<p class="container text-center sect-description">Плазма с тромбоцитами, являясь живительной средой вашего организма, индивидуальна, оптимальна для него, всегда высокого качества. Всегда вызывает «правильный» биологический ответ</p>
+			<section class="sect__advantages gutters dark-bg basic-white-color">
+				<h2 class="sect-title  container text-center">Преимущества нашей клиники</h2>
 
 				<div class="container">
 					<div class="row row-gutters align-horisontal-start advantages__row">
 						<div class="advantage__wrapper col-w-33 col-gutters">
 							<div class="advantage">
 								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_1.svg');"></span>
-								<p>Несмотря на то, что инъекцию проводят внутри и околосуставно, и максимален именно локальный эффект, плазма оказывает положительное влияние на другие ткани, органы и системы</p>
+								<p>Мы предоставляем широкий спектр услуг, чтобы у каждого человека была возможность получить качественную помощь. Наши специалисты предложат пациенту на выбор несколько вариантов лечения в соответствии именно с его ситуацией и будут  работать с каждым из Вас до получения клинического результата. Мы заинтересованы в нем не меньше самого пациента!</p>
 							</div>
 						</div>
 
 						<div class="advantage__wrapper col-w-33 col-gutters">
 							<div class="advantage">
 								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_2.svg');"></span>
-								<p>Плазма хорошо совместима с другими способами лечения: она дополняет и усиливает их действие. Благодаря этому часто удается снизить количество и дозы препаратов, принимаемых пациентом</p>
+								<p>Наши врачи стояли у истоков разработки технологии применения тромбоцитарной плазмы в ортопедии, практикуют ее уже больше 10 лет. Клинический опыт успешного лечения у более 16000 пациентов (один из самых обширных в мире). Они в совершенстве владеют этой безопасной и очень и очень эффективной методикой.</p>
 							</div>
 						</div>
 
 						<div class="advantage__wrapper col-w-33 col-gutters">
 							<div class="advantage">
 								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_3.svg');"></span>
-								<p>Минимальная травматичность. Процедура практически безболезненна, пациент не нуждается в реабилитации. В день проведения  процедуры можно заниматься привычными делами</p>
+								<p>У вас есть гарантия того, что вы попадете на прием к опытным, практикующим специалистам, у которых за плечами многолетний опыт работы оперирующих ортопедов, которые глубоко знают проблему  заболеваний суставов, позвоночника, повреждений связок, мышц, сухожилий, переломов костей всех локализаций, способы их лечения и восстановления после травм и операций.</p>
 							</div>
 						</div>
 
 						<div class="advantage__wrapper col-w-33 col-gutters">
 							<div class="advantage">
 								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_4.svg');"></span>
-								<p>У вас есть гарантия того, что вы попадете на прием к опытному, практикующему специалисту, который глубоко знает проблему суставных заболеваний и уделит вам  время, необходимое для получения клинического результата</p>
+								<p>Индивидуальный подход к каждому. При составлении схемы лечения учитывается множество факторов. Мы лечим именно пациента, а не его болезнь и не результаты его анализов. Вы можете быть уверены в том, что назначенное вам лечение обязательно поможет!</p>
 							</div>
 						</div>
 
 						<div class="advantage__wrapper col-w-33 col-gutters">
 							<div class="advantage">
 								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_5.svg');"></span>
-								<p>Эффект от проведенного лечения:<br>уменьшается боль; восстанавливается подвижность суставов; замедляется или останавливается процесс разрушения костной и хрящевой ткани; улучшается кровоснабжение в пораженной зоне; увеличивается объем внутрисуставной жидкости; снижается интенсивность воспалительного процесса</p>
+								<p>Наша ценовая политика рассчитана на людей с любым достатком. Предлагаемые варианты лечения предполагают возможность решения проблемы, как при однократном посещении, так и при курсовом лечении. Предоставляется гибкая система скидок и возможность поэтапной оплаты.</p>
 							</div>
 						</div>
 
 						<div class="advantage__wrapper col-w-33 col-gutters">
 							<div class="advantage">
 								<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/features_6.svg');"></span>
-								<p>Ваш врач долгие годы специализируется на использовании тромбоцитарной плазмы для лечения суставов, и знает насколько она эффективна и безопасна; знает, как ее правильно применять при тех или иных заболеваниях</p>
+								<p>Узнать о наших врачах, о методах нашей работы, услышать ответы на самые насущные вопросы, вы можете, просмотрев цикл коротких видео на нашем YOUTUBE – канале. Вы получите ответы на злободневные вопросы, услышите полезные советы от наших ведущих специалистов.</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="text-center">
-						<button class="btn js-open-callback-popup-btn" type="button" data-btn-text="Отправить заявку" data-form-theme="Запись на прием">Записаться на прием</button>
+					<div class="text-center permalink-wrapper">
+						{% include '../parts/components/btn-order.html' %}
 					</div>
 				</div>
 				<!-- //container -->
@@ -288,175 +552,95 @@
 			<!-- //Section advantages -->
 
 			<!-- Section team -->
-			<section class="sect__team gutters" id="aboutUs">
-				<h2 class="sect-title container text-left">О нас</h2>
+			<section class="sect__team gutters">
+				<h2 class="sect-title text-center">наши специалисты</h2>
 				<div class="container">
-					<div class="team-description">
-						<div class="row align-horisontal-between team-description__row">
-							<div class="content">
-								<p>Кроме применения традиционных методов лечения, отличительной особенностью НАШЕЙ КЛИНИКИ, является использование современной технологии лечения суставов и позвоночника с помощью собственной плазмы пациента (ТАП), известной в настоящее время как PRP- терапия, Плазмотерапия, Плазмолифтинг.</p>
-								<p>Наши врачи стояли у истоков разработки технологии, применяют ее уже больше 8 лет, у более 15000 пациентов (один из самых  обширных в мире), и, получив хорошие результаты, они полностью себя посвятили ей. Они в совершенстве владеют этой безопасной и очень эффективной методикой. Ранее это оперирующие специалисты, которые занимались заменой суставов, артроскопией, остеосинтезом, реконструктивной хирургией костей и суставов. </p>
-								<p>Каждому пациенту гарантирован индивидуальный подход и работа до получения результата.</p>
-							</div>
-
-							<div class="office">
-								<img src="img/office.png" alt="">
-								<p>Врачи нашей клиники всегда готовы Вам помочь</p>
-							</div>
-						</div>
-					</div>
 
 					<div class="team">
-						<h3 class="sect-title-sm">Наша команда</h3>
-						<!-- Team member -->
-						<div class="team-member">
-							<div class="team-member__photo bg" style="background-image: url('img/team/1.jpg');">
-								<img src="img/team/1.jpg" alt="Карев Дмитрий Борисович фото">
+						<div class="service-cards row align-horisontal-center row-gutters">
+							<!-- Card -->
+							<div class="col-gutters col-w-25 card-wrapper">
+								<article class="card card-alternate-color ">
+									<a href="page-team-single.html" class="card-thumbnail thumbnail">
+										<img src="img/team/1.png" alt="">
+									</a>
+									<div class="card-content">
+										<h4 class="card-content__title">
+											<a href="page-team-single.html">Карев Дмитрий Борисович</a>
+										</h4>
+										<p>Врач травматолог-ортопед</p>
+										<a href="page-team-single.html" class="card-permalink">подробнее</a>
+									</div>
+								</article>
 							</div>
-							<div class="team-member__information">
-								<h4 class="team-member__name">Карев Дмитрий Борисович</h4>
-								<p class="team-member__experience">опыт использования методики - более 8 лет</p>
-								<p class="team-member__position">Кандидат медицинских наук, доцент, врач травматолог-ортопед высшей квалификационной категории, 30 летний стаж работы в ортопедии.</p>
-								<div class="team-member__description">
-									<p>Владеет техникой первичного и ревизионного эндопротезирования тазобедренного и коленного сустава, рядом реконструктивных операций на тазобедренном суставе (разработчик оригинальных методик остеотомий бедренной кости при переломах шейки бедра и концепции биологического остеосинтеза). Автор 84 научных публикаций (в том числе в Европейских научных журналах), монографии, 14 патентов. Разработчик направления применения   аутологичной тромбоцитарной плазмы в травматологии и ортопедии. Организатор первого в мире специализированного центра на территории РБ, использующего плазму в лечении суставных заболеваний. Личный опыт применения плазмы (самый большой в мире) - более 15 000 пациентов.</p>
-								</div>
-							</div>
-						</div>
-						<!-- //Team member -->
+							<!-- //Card -->
 
-						<!-- Team member -->
-						<div class="team-member">
-							<div class="team-member__photo bg" style="background-image: url('img/team/2.jpg');">
-								<img src="img/team/2.jpg" alt="Карев Дмитрий Борисович фото">
+							<!-- Card -->
+							<div class="col-gutters col-w-25 card-wrapper">
+								<article class="card card-alternate-color">
+									<a href="page-team-single.html" class="card-thumbnail thumbnail">
+										<img src="img/team/2.png" alt="">
+									</a>
+									<div class="card-content">
+										<h4 class="card-content__title">
+											<a href="page-team-single.html">Карев Борис Дмитриевич</a>
+										</h4>
+										<p>Врач травматолог-ортопед</p>
+										<a href="page-team-single.html" class="card-permalink">подробнее</a>
+									</div>
+								</article>
 							</div>
-							<div class="team-member__information">
-								<h3 class="team-member__name">Карев Борис Дмитриевич</h3>
-								<p class="team-member__experience">опыт использования методики - 5 лет</p>
-								<p class="team-member__position">Врач травматолог-ортопед первой квалификационной категории, практикующий специалист.</p>
-								<div class="team-member__description">
-									<p>Владеет артроскопией коленного сустава, техникой первичного эндопротезирования тазобедренного сустава, современными методиками накостного и интрамедулярного остеосинтеза, реконструктивных операций на переднем отделе стопы. Автор 10 научных публикаций ( в том числе в Европейских научных журналах), 5 патентов. Личный опыт применения плазмы более 1500 пациентов.</p>
-								</div>
-							</div>
-						</div>
-						<!-- //Team member -->
+							<!-- //Card -->
 
-						<!-- Team member -->
-						<div class="team-member">
-							<div class="team-member__photo bg" style="background-image: url('img/team/2.jpg');">
-								<img src="img/team/2.jpg" alt="Карев Дмитрий Борисович фото">
+							<!-- Card -->
+							<div class="col-gutters col-w-25 card-wrapper">
+								<article class="card card-alternate-color">
+									<a href="page-team-single.html" class="card-thumbnail thumbnail">
+										<img src="img/team/3.png" alt="">
+									</a>
+									<div class="card-content">
+										<h4 class="card-content__title">
+											<a href="page-team-single.html">Алиев Али Асхабалиевич</a>
+										</h4>
+										<p>Врач невролог</p>
+										<a href="page-team-single.html" class="card-permalink">подробнее</a>
+									</div>
+								</article>
 							</div>
-							<div class="team-member__information">
-								<h3 class="team-member__name">Карев Борис Дмитриевич</h3>
-								<p class="team-member__experience">опыт использования методики - 5 лет</p>
-								<p class="team-member__position">Врач травматолог-ортопед первой квалификационной категории, практикующий специалист.</p>
-								<div class="team-member__description">
-									<p>Владеет артроскопией коленного сустава, техникой первичного эндопротезирования тазобедренного сустава, современными методиками накостного и интрамедулярного остеосинтеза, реконструктивных операций на переднем отделе стопы. Автор 10 научных публикаций ( в том числе в Европейских научных журналах), 5 патентов. Личный опыт применения плазмы более 1500 пациентов.</p>
-								</div>
+							<!-- //Card -->
+
+							<!-- Card -->
+							<div class="col-gutters col-w-25 card-wrapper">
+								<article class="card card-alternate-color">
+									<a href="page-team-single.html" class="card-thumbnail thumbnail">
+										<img src="img/team/4.png" alt="">
+									</a>
+									<div class="card-content">
+										<h4 class="card-content__title">
+											<a href="page-team-single.html">Ибрагимова Людмила Алексеевна</a>
+										</h4>
+										<p>Врач терапевт</p>
+										<a href="page-team-single.html" class="card-permalink">подробнее</a>
+									</div>
+								</article>
 							</div>
+							<!-- //Card -->
 						</div>
-						<!-- //Team member -->
+
+						<div class="text-center ">
+							<a href="page-team.html" class="btn btn-transparent">больше о специалистах</a>
+						</div>
+
 					</div>
 				</div>
 				<!-- //container -->
 			</section>
 			<!-- //Section team -->
 
-			<!-- Section treatment -->
-			<section class="sect__treatment light-color-bg gutters" id="treatment">
-				<h2 class="sect-title container text-center ">Что мы лечим</h2>
-				<p class="sect-subtitle container text-center">Принцип действия и особенности применения<br><strong>«тромбоцитарной аутологичной плазмы (ТАП)» </strong></p>
-
-				<div class="container">
-					<div class="treatment">
-						<div class="treatment-item accordion-item">
-							<div class="treatment-item__header accordion-header">
-								<h3 class="treatment-item__title accordion-title">Ортопедия</h3>
-								<button class="btn__toggle js-toggle-accordion-btn" type="button" title="Показать ответ"></button>
-							</div>
-							<div class="treatment-item__body accordion-body">
-								<div class="content">
-									<ul>
-										<li>поллиноз (в виде порошка, назального спрея или ингаляций);</li>
-										<li>вазомоторный ринит (в виде порошка, назального спрея или ингаляций);</li>
-										<li>ХОБЛ (в комплексном лечении в виде ингаляции);</li>
-										<li>последствия перенесенных пневмоний (в том числе covid-19) в комплексном лечении в виде ингаляций;</li>
-										<li>гастропатии, язвенная болезнь желудка и 12-перстной кишки в комплексном лечении в виде трансгедальной плазмопунктуры;</li>
-										<li>хронический гепатит, панкреатит в комплексном лечении в виде трансгедальная плазмопунктуры;</li>
-										<li>неспецифический язвенный колит (в виде микроклизм и трансгедальной плазмопунктуры).</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<div class="treatment-item accordion-item">
-							<div class="treatment-item__header accordion-header">
-								<h3 class="treatment-item__title accordion-title">травматология и спортивная медицина</h3>
-								<button class="btn__toggle js-toggle-accordion-btn" type="button" title="Показать ответ"></button>
-							</div>
-							<div class="treatment-item__body accordion-body">
-								<div class="content">
-									<ul>
-										<li>поллиноз (в виде порошка, назального спрея или ингаляций);</li>
-										<li>вазомоторный ринит (в виде порошка, назального спрея или ингаляций);</li>
-										<li>ХОБЛ (в комплексном лечении в виде ингаляции);</li>
-										<li>последствия перенесенных пневмоний (в том числе covid-19) в комплексном лечении в виде ингаляций;</li>
-										<li>гастропатии, язвенная болезнь желудка и 12-перстной кишки в комплексном лечении в виде трансгедальной плазмопунктуры;</li>
-										<li>хронический гепатит, панкреатит в комплексном лечении в виде трансгедальная плазмопунктуры;</li>
-										<li>неспецифический язвенный колит (в виде микроклизм и трансгедальной плазмопунктуры).</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<div class="treatment-item accordion-item">
-							<div class="treatment-item__header accordion-header">
-								<h3 class="treatment-item__title accordion-title">неврология</h3>
-								<button class="btn__toggle js-toggle-accordion-btn" type="button" title="Показать ответ"></button>
-							</div>
-							<div class="treatment-item__body accordion-body">
-								<div class="content">
-									<ul>
-										<li>поллиноз (в виде порошка, назального спрея или ингаляций);</li>
-										<li>вазомоторный ринит (в виде порошка, назального спрея или ингаляций);</li>
-										<li>ХОБЛ (в комплексном лечении в виде ингаляции);</li>
-										<li>последствия перенесенных пневмоний (в том числе covid-19) в комплексном лечении в виде ингаляций;</li>
-										<li>гастропатии, язвенная болезнь желудка и 12-перстной кишки в комплексном лечении в виде трансгедальной плазмопунктуры;</li>
-										<li>хронический гепатит, панкреатит в комплексном лечении в виде трансгедальная плазмопунктуры;</li>
-										<li>неспецифический язвенный колит (в виде микроклизм и трансгедальной плазмопунктуры).</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<div class="treatment-item accordion-item">
-							<div class="treatment-item__header accordion-header">
-								<h3 class="treatment-item__title accordion-title">терапия</h3>
-								<button class="btn__toggle js-toggle-accordion-btn" type="button" title="Показать ответ"></button>
-							</div>
-							<div class="treatment-item__body accordion-body">
-								<div class="content">
-									<ul>
-										<li>поллиноз (в виде порошка, назального спрея или ингаляций);</li>
-										<li>вазомоторный ринит (в виде порошка, назального спрея или ингаляций);</li>
-										<li>ХОБЛ (в комплексном лечении в виде ингаляции);</li>
-										<li>последствия перенесенных пневмоний (в том числе covid-19) в комплексном лечении в виде ингаляций;</li>
-										<li>гастропатии, язвенная болезнь желудка и 12-перстной кишки в комплексном лечении в виде трансгедальной плазмопунктуры;</li>
-										<li>хронический гепатит, панкреатит в комплексном лечении в виде трансгедальная плазмопунктуры;</li>
-										<li>неспецифический язвенный колит (в виде микроклизм и трансгедальной плазмопунктуры).</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<!-- //container -->
-			</section>
-			<!-- //Section treatment -->
-
 			<!-- Section faq -->
-			<section class="sect__faqs gutters" id="faq">
-				<h2 class="sect-title container text-center">О процедуре: вопросы-ответы и мифы</h2>
+			<section class="sect__faqs gutters light-color-bg">
+				<h2 class="sect-title container text-center sect-title_with-text">часто задаваемые вопросы и мифы</h2>
+				<p class="container text-center sect-description">Об использовании тромбоцитарной аутологичной плазмы в лечении суставных заболеваний и заболеваний позвоночника</p>
 
 				<div class="container">
 					<div class="tab-controls">
@@ -623,6 +807,10 @@
 
 					</div>
 
+					<div class="text-center permalink-wrapper">
+						<a href="page-faq.html" class="btn btn-transparent">смотреть все вопросы и мифы</a>
+					</div>
+
 
 					
 				</div>
@@ -630,10 +818,10 @@
 			</section>
 			<!-- //Section faq -->
 
-			
+
 
 			<!-- Section feedbacks -->
-			<section class="sect__feedbacks gutters dark-color-bg" id="feedbacks">
+			<section class="sect__feedbacks gutters dark-color-bg" >
 				<h2 class="sect-title container text-center basic-white-color">Отзывы пациентов</h2>
 
 				<div class="feedbacks-slider">
@@ -715,11 +903,15 @@
 					</div>
 					<!-- //Pagination -->
 				</div>
+
+				<div class="container text-center permalink-wrapper">
+					<a href="page-feedbacks.html" class="btn btn-transparent btn-transparent-light">смотреть все вопросы и мифы</a>
+				</div>
 			</section>
 			<!-- //Section feedbacks -->
 
 			<!-- Section prices -->
-			<section class="sect__prices light-color-bg gutters" id="prices">
+			<section class="sect__prices gutters" id="prices">
 				<h2 class="sect-title container text-center">Прайс-лист</h2>
 
 				<div class="container">
@@ -880,13 +1072,18 @@
 
 					<p class="prices-block-notice">Цены и весь ассортимент услуг уточняйте по телефону у администратора клиники</p>
 
+
+					<div class="text-center permalink-wrapper">
+						<a href="page-pricelist.html" class="btn btn-transparent">смотреть все расценки</a>
+					</div>
+
 					
 				</div>
 				<!-- //container -->
 			</section>
 			<!-- //Section prices -->
 
-			<section class="sect__docs gutter-top">
+			<section class="sect__docs gutters light-color-bg">
 				<h2 class="sect-title container text-center">Лицензии и сертификаты</h2>
 
 				<div class="sertificates-slider">
@@ -939,57 +1136,86 @@
 
 				<div class="slider__pagination slider__pagination--dark js-sertificates-slider-pagination"></div>
 
-				<div class="container">
-					<div class="form-wrapper basic-white-color text-center">
-						<h3 class="sect-title-sm">Не нашли ответ на свой вопрос?</h3>
-						<p class="form-wrapper__description">Оставьте заявку на сайте, и наш врач проконсультирует Вас по всем вопросам</p>
-
-						<form class="form">
-							<!-- Hidden inputs -->
-							<input type="hidden" name="project_name" value="Plasma Priority">
-							<input type="hidden" name="admin_email" value="winde100kg@gmail.com">
-							<input type="hidden" name="form_subject" value="Консультация">
-							<!-- // Hidden inputs -->
-
-
-							<div class="row inputs__row">
-								<div class="input__wrapper col-w-33">
-									<input type="text" class="input js-input b-radius-sm" name="Имя" placeholder="Ваше имя *">
-								</div>
-								<div class="input__wrapper col-w-33">
-									<input type="tel" class="input js-input b-radius-sm" name="Телефон" placeholder="Ваш телефон *">
-								</div>
-								<div class="input__wrapper col-w-33">
-									<button class="btn btn-wide" type="submit">получить консультацию</button>
-								</div>
-							</div>
-
-							<p class="form__notice">* - мы не передаем Ваши персональные данные третьим лицам</p>
-
-
-						</form>
-					</div>
-				</div>
+				
 			</section>
 
+
+			<section class="sect__news gutters">
+				<h2 class="sect-title container text-center">новости клиники</h2>
+
+				<div class="container">
+
+					<div class="articles-cards">
+						<div class="row align-horisontal-start row-gutters">
+							<div class="article-card__wrapper col-w-33 col-gutters">
+								<article class="article-card">
+									<a href="page-article.html" class="article-card__thumbnail thumbnail">
+										<img src="img/thumb.jpg" alt="">
+									</a>
+									<p class="article-date">15.04.2021</p>
+									<h3 class="article-card__title">
+										<a href="page-article.html">Далеко-далеко за словесными, горами в стране.</a>
+									</h3>
+								</article>
+							</div>
+
+							<div class="article-card__wrapper col-w-33 col-gutters">
+								<article class="article-card">
+									<a href="page-article.html" class="article-card__thumbnail thumbnail">
+										<img src="img/thumb.jpg" alt="">
+									</a>
+									<p class="article-date">15.04.2021</p>
+									<h3 class="article-card__title">
+										<a href="page-article.html">Далеко-далеко за словесными, горами в стране.</a>
+									</h3>
+								</article>
+							</div>
+
+							<div class="article-card__wrapper col-w-33 col-gutters">
+								<article class="article-card">
+									<a href="page-article.html" class="article-card__thumbnail thumbnail">
+										<img src="img/thumb.jpg" alt="">
+									</a>
+									<p class="article-date">15.04.2021</p>
+									<h3 class="article-card__title">
+										<a href="page-article.html">Далеко-далеко за словесными, горами в стране.</a>
+									</h3>
+								</article>
+							</div>
+						</div>
+
+						<div class="text-center permalink-wrapper">
+							<a href="page-news.html" class="btn btn-transparent">читать все новости</a>
+						</div>
+
+
+					</div>
+
+					
+
+				</div>
+				<!-- //container -->
+			</section>
+
+
+			{% include '../parts/sections/sect-seo.html' %}
 			
 
 			<!-- Section contacts -->
-			<section class="sect__contacts sect-under-form light-color-bg gutter-bottom" id="contacts">
-				<h2 class="w3c">Контакты</h2>
+			<section class="sect__contacts light-color-bg  gutters">
 
 				<div class="container">
 					<div class="contacts row align-horisontal-between">
 
 						<div class="contacts-block">
-							<h3 class="sect-title">Наши контакты</h3>
+							<h2 class="sect-title">Наши контакты</h2>
 
 							<div class="contacts-item">
-								<h4 class="contacts-item__title">телефон:</h4>
+								<h3 class="contacts-item__title">телефон:</h3>
 								<p><a href="tel:+84951281780">8 (495) 128 17 80</a></p>
 							</div>
 							<div class="contacts-item">
-								<h4 class="contacts-item__title">адрес:</h4>
+								<h3 class="contacts-item__title">адрес:</h3>
 								<div class="address">
 									<p class="address-title">ООО “АРНИКА”</p>
 									<p class="metro-item">Бульвар Дмитрия Донского</p>
@@ -998,15 +1224,12 @@
 								</div>
 							</div>
 							<div class="contacts-item">
-								<h4 class="contacts-item__title">время работы:</h4>
+								<h3 class="contacts-item__title">время работы:</h3>
 								<p>Пн-Пт: 09:00-18:00,<br>Сб-Вс: 10:00-17:00</p>
 							</div>
 							<div class="contacts-item">
-								<h4 class="contacts-item__title">мы в соцсетях:</h4>
-								<ul class="socials">
-									<li class="socials__item"><a href="#" class="socials__link" target="_blank" rel="nofollow" style="background-image:url('img/icons/svg/fb.svg');"></a></li>
-									<li class="socials__item"><a href="#" class="socials__link" target="_blank" rel="nofollow" style="background-image:url('img/icons/svg/inst.svg');"></a></li>
-								</ul>
+								<h3 class="contacts-item__title">мы в соцсетях:</h3>
+								{% include '../parts/components/socials.html' %}
 							</div>
 
 						</div>

@@ -5,16 +5,23 @@
 		margin-top 10px
 		
 	&-wrapper
-		background-color #72bcb2
-		padding 35px 100px
-		border-radius 20px 0 20px 0
+		background $accent-color
+		background -moz-linear-gradient(90deg, $secondary-color 0%, $accent-color 100%)
+		background -webkit-linear-gradient(90deg, $secondary-color 0%, $accent-color 100%)
+		background linear-gradient(90deg, $secondary-color 0%, $accent-color 100%)
+		padding 30px
+		border-radius 12px
+		box-shadow 0px 10px 60px 0px rgba(18, 19, 20, 0.2)
+		
+		.sect-title,
+		.sect-title-sm
+			text-transform uppercase
 		
 		.form__notice
 			color rgba($basic-white-color, .5)
 			margin-top 20px
 			
-		.input
-			background-color $basic-white-color
+
 			
 		&__description
 			color rgba($basic-white-color, .75)
@@ -31,6 +38,7 @@
 	font 16px $GReg
 	color $text-color
 	height 100%
+	
 	
 	&:hover,
 	&:focus
@@ -55,32 +63,60 @@
 	&.is-error
 		border-color red
 		
+	&-transparent
+		background-color transparent
+		border 2px solid rgba($basic-white-color, .5)
+		color $basic-white-color
+		&::-webkit-input-placeholder
+			font 16px $GReg
+			color rgba($basic-white-color, .5)
+		&::-moz-placeholder
+			font 16px $GReg
+			color rgba($basic-white-color, .5)
+		&:-moz-placeholder
+			font 16px $GReg
+			color rgba($basic-white-color, .5)
+		&:-ms-input-placeholder
+			font 16px $GReg
+			color rgba($basic-white-color, .5)
+		
 
 .inputs__row
-	margin-left -5px
-	margin-right -5px
-	.input__wrapper
-		margin 0
-		padding 5px
+	display flex
+	flex-wrap nowrap
+	margin-left -10px
+	margin-right -10px
 	
+	.input__wrapper
+		flex 1
+		padding-left 10px
+		padding-right 10px
+		
+		flex-col-center()
+		display inline-flex
+		
+	.btn
+		width 100%
+		padding-left 10px
+		padding-right 10px
 
 
 .checkbox
 	display inline-block
 	position relative
 	padding-left 30px
-	font-size 16px
-	transition color .17s ease-in-out
-	&:hover
-		color $light-accent-color
+	font 12px $CReg
+	line-height 1.5
+	text-align left
+	color rgba($basic-white-color, .5)
 	&:before
 		pseudo()
 		position absolute
 		left 0
-		top 5px
-		width 20px
-		height 20px
-		border 1px solid #a3a3a3
+		vertical-center()
+		width 16px
+		height 16px
+		border 2px solid rgba($basic-white-color, .5)
 		border-radius 2px
 		background-position 50% 50%
 		background-repeat no-repeat

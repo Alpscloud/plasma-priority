@@ -13,39 +13,36 @@
 	.header
 		.logo
 			width 120px
-			
-	.nav
-		margin-left 50px
-		&__item
-			margin-right 20px
 
-	.logo__col
-		margin-right 40px
+	.header-center
+		margin 0 30px
 			
 +max-screen(1365px)
+	.main
+		padding-top 132px
+		
 	.sect__promo
 		&:before
 			width 100%
 			right 0
 			
 	.header
-		.btn
-			background-color $basic-white-color
-			color $accent-color
+	
 			
 		.logo
 			width 120px
 			
-	.nav
-		margin-left 40px
-		&__item
-			margin-right 20px
+	
 			
 
-	.promo-slide__content
-		padding-left 80px
-		max-width 750px
-		
+	.header 
+		.socials
+			margin-right 30px
+		.btn
+			padding 20px 30px
+			
+	.partner img
+		max-width 170px
 
 	.sertificates-slider 
 		.swiper-slide
@@ -56,9 +53,7 @@
 	.header 
 		.logo
 			width 100px
-			
-		.socials
-			margin-left 15px
+
 			
 +max-screen(1250px)
 	.header
@@ -70,49 +65,84 @@
 		box-shadow 0px 10px 60px 0px rgba($text-color, 0.2)
 		
 		.btn
-			background-color $accent-color
-			color $basic-white-color
-			padding 20px 30px
+			padding 20px
+			
 	.nav
 		position fixed
 		top 0
 		left 0
 		width 100%
 		height 100%
-		background-color $secondary-color
+		background-color rgba($basic-black-color, .5)
 		margin-left 0
 		z-index 25
-		display flex
-		align-items center
-		flex-direction column
-		justify-content center
-		text-align center
 		transition all .17s ease-in-out
 		flex-wrap wrap
-		transform translateX(105%)
 		opacity 0
 		visibility hidden
 		pointer-events none
 		&.is-opened
-			transform translateX(0)
+			
 			opacity 1
 			visibility visible
 			pointer-events auto
 			
-		&__link
-			color $basic-white-color
-		
-		&__list
-			width 100%
-		&__item
+			.nav-list
+				transform translateX(0)
+			
+		ul
 			display block
+			
+		li
+			display block
+			padding 0
+			margin-bottom 20px
 			margin-right 0
-			margin-bottom 5vh
+			
+			ul
+				display none
+			
+			a
+				font-size 16px
+			
 			&:last-child
 				margin-bottom 0
 				
+			&.menu-item-has-children
+				padding-right 0
+				display flex
+				flex-wrap wrap
+				align-items center
+				justify-content space-between
+				
+				.btn-toggle
+					pointer-events auto
+					position relative
+					transform none
+					margin 0
+					right auto
+					top auto
+			
+		&__link
+			color $basic-white-color
+		
+		&-list
+			width 350px
+			float right
+			height 100vh
+			overflow-y auto
+			background-color $basic-white-color
+			padding 50px 30px 60px
+			transition transform .2s ease-in-out
+			transform translateX(102%)
+			
+	
+				
 		.btn__close
 			display inline-block
+			
+	.nav-mobile-content
+		display block
 			
 	.logo-img
 		&__desktop
@@ -120,9 +150,36 @@
 		&__mobile
 			display block
 			
+	// .sub-menu
+		
+	// 	margin 0
+	// 	transition none
+	// 	opacity 1
+	// 	visibility visible
+	// 	pointer-events auto
+	// 	width 100%
+	// 	box-shadow none
+	// 	background-color transparent
+	// 	position relative
+	// 	padding-left 40px
+	// 	display none
+		
+	.header-center
+		
+		&__top
+			padding-bottom 0
+			border-bottom none
+			.row
+				justify-content flex-end
+			.partner
+				display none
+			
 	.btn__hamburger,
 	.mobile-phone-link
 		display inline-block
+		
+	.main
+		padding-top 86px
 			
 	// Promo
 
@@ -199,6 +256,19 @@
 	.footer__row
 		flex-wrap wrap
 		
+	.footer-nav
+		ul
+			flex-col-center()
+			text-align center
+		li
+			margin-bottom 8px
+			&:last-child
+				margin-bottom 0
+				
+		a
+			font-size 12px
+			
+		
 	.copyright
 		font-size 12px
 		max-width 600px
@@ -234,33 +304,50 @@
 				max-width 100%
 				font-size 16px
 			
-+max-screen(1000px)
++max-screen(1050px)
 	.promo-block__img
 		display none
-		
+	
 	.promo-slide
-		.container
-			padding-left 0
-			padding-right 0
-		&__content
-			max-width 100%
-			border-radius 0
-			padding-right 80px
-			&:before
-				display none
-				
+		padding-left 50px
+		padding-right 50px
+
 	.promo-slider
+	
 		.btn__arrow
 			width 40px
 			height 40px
+			
+	.promo-slide
+		min-height auto
+		&__title
+			font-size 34px
 		
 	// About
-	.about-service-item__wrapper
-		flex 1 0 50%
+	.about-us
+		&__row
+			flex-wrap wrap
+		&__text
+			flex none
+			width 100%
+			padding-right 0
+			margin-bottom 50px
+			
+		&__slider
+			width 100%
+			
+		&__slide
+			height auto
+			padding-top 70%
 		
 
 	.advantage__wrapper
 		width 50%
+		
+	// Cards
+	.service-cards
+		.card-wrapper
+			width 50%
 		
 	// Team
 	.team-member
@@ -302,6 +389,31 @@
 
 	.quiz-answer__wrapper
 		width 50%
+		
+	// News
+	.article-card__wrapper
+		width 50%
+		
+	.articles-cards
+		.row
+			justify-content center
+			
+	.page-form
+		.inputs__row
+			flex-wrap wrap
+		.input__wrapper
+			width 33.3333%
+			flex none
+			&:nth-child(3)
+				order 4
+				width 100%
+				margin-top 15px
+				
+			&:nth-child(4)
+				order 3
+				
+			&:last-child
+				margin-bottom 0
 						
 +max-screen(900px)
 	.map__wrapper
@@ -313,8 +425,9 @@
 	.contacts-block
 		padding-right 0
 		
-	.desktop-socials
-		display none
+	.header-center__top
+		.socials
+			display none
 	.mobile-socials
 		display block !important
 		margin-top 40px
@@ -325,27 +438,19 @@
 	.promo-slide
 		padding 0
 		flex-direction column
-		.container
-			height 100%
-			flex 1
-			display flex
-			flex-direction column
-		&__content
-			flex 1
-			padding-top 130px
-			padding-bottom 160px
-	
+
+
 			
 	.inputs__row
 		.input__wrapper
 			width 100%
 			
 	.sect-title
-		font-size 30px
-		line-height 38px
-		margin-bottom 55px
+		font-size 25px
+		line-height 30px
+		margin-bottom 40px
 		&_with-text
-			margin-bottom 25px
+			margin-bottom 5px
 			
 
 		&-sm
@@ -414,6 +519,12 @@
 		padding-right 15px
 		
 +max-screen(700px)
+	.header
+		.btn
+			display none
+		&-center
+			margin 0 15px
+			
 	.attention
 		text-align left
 		
@@ -437,8 +548,34 @@
 	.radio:after
 		top 9px
 		
+	.page-form
+		.checkbox
+			font-size 12px
+			&:before
+				top 50%
+		
 	.office img
 		width 100%
+		
+	.about-us__slider 
+		.btn__arrow
+
+			&:hover
+				background-color transparent
+				svg
+					fill $basic-white-color
+					
+			&--next
+				right 0
+			&--prev
+				left 0
+				
+	.about-us__slide
+		padding-top 100%
+		
+	.about-us__text .sect-title
+		margin-bottom 30px
+		
 			
 +max-screen(620px)
 	
@@ -447,40 +584,33 @@
 		padding 30px 0 30px 30px
 		
 		
-	.promo-slider
-		.swiper-slide
-			height auto
-			
+
 	.promo-slider__navigation
 		display none
 
 	.promo-slide
 		font-size 12px
-		min-height auto
-		height 100%
+		line-height 1.4
+		padding-top 70px
+		padding-bottom 100px
 		p
 			font-size inherit
 			margin-top 20px
-		h3
-			font-size 20px
-			margin-top 20px
+			line-height 1.4
+
 		&__title
-			font-size 30px
+			font-size 26px
 			
 			
 		&__content
 			font-size 14px
-			padding-left 15px
-			padding-right 15px
+			padding 0
 		
 	
 	.header
 		.btn
 			display none
-			
-		.socials
-			display none
-			
+		
 
 		
 	.title
@@ -501,28 +631,19 @@
 		&__ic
 			width 45px
 			height 45px
-			
-	.about-service-item
-		&__wrapper
-			flex 1 0 100%
-		&__description
-			padding 30px 20px
-			
-	.about-service__row
-		position relative
-		&:before
-			width 395px
-			height 395px
 
-			top -200px
-			right -150px
-	
+	// Services
+	.service-cards
+		.card-wrapper
+			width 100%
 			
-	.about-service__blockquote
-		padding 30px 20px
-		
-	.service-step__wrapper
-		flex 1 0 100%
+	.card-content
+		padding 20px 10px
+		p
+			margin-bottom 15px
+		&__title
+			font-size 18px
+			margin-bottom 15px
 		
 	.sect__faqs
 		.form-wrapper
@@ -647,6 +768,25 @@
 	.quiz-step__progress
 		margin-bottom 15px
 		
+
+	.article-card__wrapper
+		width 100%
+		
+	.article-card__title
+		font-size 18px
+		
+	.sect__news
+		padding-bottom 120px
+		
+	.content
+		font-size 14px
+		line-height 19px
+		p, ul, ol
+			margin-bottom 15px
+		h1,h2
+			font-size 26px
+			margin-bottom 20px
+		
 +max-screen(480px)
 	.btn
 		width 100%
@@ -663,13 +803,15 @@
 			top 10px
 			right 10px
 			
-	.header
+	.header-center__top
 		.phone-link
 			width 50px
 			height 50px
 			border-radius 50%
 			background $accent-color url('../img/icons/svg/phone-ic.svg') 50% 50% no-repeat / 20px 20px
 			margin-left 15px
+			padding 0
+			margin-left 0
 			span
 				display none
 			&:before
@@ -691,6 +833,8 @@
 		margin-bottom 40px
 			
 +max-screen(360px)
+	.main
+		padding-top 63px
 	.header
 		padding 6px 0
 		.logo

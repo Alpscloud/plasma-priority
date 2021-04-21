@@ -27,14 +27,17 @@
 			width 14px
 			height 14px
 			margin-right 25px
-			background-color $basic-white-color
+			border 2px solid $basic-white-color
+			opacity 1
+			background transparent
+			&-active
+				background $basic-white-color
 			&:last-child
 				margin-right 0
 				
 .slider__pagination--dark
 	padding-left 15px
 	padding-right 15px
-	margin-bottom 70px
 	margin-top 0
 	
 	.swiper-pagination-bullet
@@ -44,60 +47,86 @@
 		&-active
 			background $secondary-color
 			
-				
 
+// 
+.promo-slider
+	.swiper-slide
+		height auto
 .promo-slide
-	min-height 100vh
+	min-height 680px
 	padding 120px 0
-	display flex
-	align-items center
+	flex-col-center()
 	overflow hidden
+	position relative
+	height 100%
+	&:before
+		pseudo()
+		position absolute
+		fullSize()
+		background-color rgba($basic-black-color, .4)
 	&__content
 		position relative
-		max-width 670px
-		background-color rgba($secondary-color, .6)
-		border-radius 0 12px 12px 0
-		padding 40px 20px 40px 0
-		font 18px $GReg
-		&:before
-			pseudo()
-			height 100%
-			width 200%
-			right 100%
-			position absolute
-			top 0
-			background-color rgba($secondary-color, .6)
-			
-		
-		h3
-			font 28px $GReg
-			margin-top 30px
+		text-align center
+		font 20px $GReg
+		line-height 36px
+
+
 			
 		p
 			margin-top 30px
 			
+			max-width 650px
+			margin 30px auto 0
+			
+		.btn
+			margin-top 30px
+			
 		
 	&__title
-		font 40px $CBold
+		font 50px $CBold
 		
 		b, strong, span
 			text-transform uppercase
 			
 
+// About us
+.about-us__slider
+	position relative
+	.btn__arrow
+		position absolute
+		vertical-center()
+		z-index 1
+		background-color transparent
+		svg
+			fill $basic-white-color
+		&--next
+			right 10px
+			transform  translateY(-50%) scaleX(-1)
+		&--prev
+			left 10px
+		&:hover
+			background-color $basic-white-color
+			svg
+				 fill $accent-color
+			
+	.swiper-container, .swiper-wrapper, .swiper-slide
+		height 100%
+.about-us__slide
+	border-radius 24px
+	display block
+	padding-top 0
+	width 100%
+	height 100%
+	
+	img
+		opacity 1 !important
+		visiblity visible !important
+			
+
 .sertificates-slider
 	margin-bottom 20px
 	position relative
-	&:before
-		pseudo()
-		height 190px
-		background-color $accent-color
-		opacity .15
-		border-radius 8px
-		z-index -1
-		horisontal-center()
-		bottom 0
-		position absolute
-		width 1030px
+	
 		
 	.swiper-wrapper
 		align-items center
@@ -127,18 +156,19 @@
 		horisontal-center()
 		position absolute
 		z-index 3
-		bottom 100px
+		bottom 40px
 		padding-left 15px
 		padding-right 15px
-		
 		.swiper-pagination-bullet
-			border 2px solid $accent-color
-			opacity 1
-			background transparent
-			&-active
-				background $basic-white-color
+			margin-left 0
+			margin-right 25px
+			&:last-child
+				margin-right 0
+	
 		 
-			
+	
+.feedbacks-slider
+	margin-bottom 50px	
 
 .feedback-slide
 	background-color $basic-white-color

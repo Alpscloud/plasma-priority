@@ -1,32 +1,118 @@
 .nav
-	margin-left 100px
+	&-list
+		position relative
+	
 	.btn__close
 		opacity 1
 		display none
 		svg
-			fill $basic-white-color
+			fill $text-color
 			
-	&__item
+	ul
+		display flex
+		justify-content space-between
+			
+	li
 		display inline-block
-		margin-right 30px
+		margin-right 20px
+		padding 25px 0
 		&:last-child
 			margin-right 0
-	&__link
+			
+		&.is-active
+			> a
+				color $secondary-color
+				
+		&:hover
+			> a
+				color $secondary-color
+				
+			svg
+				fill $secondary-color
+				
+			.btn-toggle
+				transform rotate(-180deg)
+				
+			.sub-menu
+				opacity 1
+				visibility visible
+				
+		&.menu-item-has-children
+			position relative
+			padding-right 20px
+			
+			.btn-toggle
+				position absolute
+				right 0
+				top 50%
+				margin-top -7.5px
+				pointer-events none
+				
+		ul
+			display block
+		
+			
+
+	a
 		display inline-block
 		color $text-color
 		position relative
-		&:before
-			pseudo()
-			position absolute
-			bottom -10px
-			width 0
-			horisontal-center()
-			height 1px
-			background-color $accent-color
-			transition width .17s ease-in-out
+		font-size 14px
 			
 		&:hover
-			color $accent-color
-			&:before
-				width 40px
+			color $secondary-color
+			
+
+.sub-menu
+	position absolute
+	z-index 5
+	background-color $basic-white-color
+	top 100%
+	left -15px
+	width 280px
+	padding 20px
+	box-shadow 0px 5px 20px 0px rgba(0, 0, 0, 0.15)
+	transition all .2s ease-in-out
+	margin-top -10px
+	opacity 0
+	visibility hidden
+	li
+		display block !important
+		padding 0
+		margin-bottom 13px
+		margin-right 0
+		&:last-child
+			margin-bottom 0
+	a
+		font 14px $GReg
+		color $text-color
+		&:hover
+			color $accent-color !important
+			
+
+.nav-mobile-content
+	margin-top 50px
+	display none
+	.partner
+		margin-bottom 20px
+		font-size 12px
+		white-space nowrap
+		
+	.phone-link
+		margin-bottom 20px
+
+
+	.socials__item 
+		display inline-block !important
+		margin-right 10px !important
+		&:last-child
+			margin-right 0
+			
+	.socials__link
+		width 30px
+		height 30px
+		background-size 30px 30px
+
+
+
 			

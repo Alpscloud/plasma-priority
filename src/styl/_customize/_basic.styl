@@ -110,6 +110,7 @@ img
 .sect-title
 	font 40px $CBold
 	margin-bottom 50px
+	text-transform uppercase
 	&-sm
 		font 30px $CBold
 		margin-bottom 25px
@@ -199,8 +200,44 @@ img
 		
 
 .content
+	*
+		&:first-child
+			margin-top 0
+		&:last-child
+			margin-bottom 0
 	strong, b
 		font-family $GBold
+		text-transform uppercase
+		color $accent-color
+		
+	p,ol, ul
+		margin-bottom 30px
+		
+	h1,h2,h3,h4,h5,h6
+		color $text-color
+		
+	h1,h2
+		font 30px $CBold
+		margin-bottom 30px
+		text-transform uppercase
+		
+	h3
+		font 26px $CBold
+		margin-bottom 30px
+		text-transform uppercase
+		
+	h4
+		font 22px $CBold
+		margin-bottom 25px
+		
+	h5
+		font 20px $CBold
+		margin-bottom 20px
+		
+	h6
+		font 18px $CBold
+		margin-bottom 20px
+		
 		
 
 .thumbnail
@@ -217,3 +254,6 @@ img
 		position-center()
 
 // ========== ========== ========== ========== ========== ==========
+
+.main
+	padding-top 142px

@@ -3,9 +3,16 @@
 	left 0
 	width 100%
 	top 0
-	padding 5px 0
+	padding-top 10px
 	z-index 5
 	background-color $basic-white-color
+	box-shadow 0px 10px 50px 0px rgba(18, 19, 20, 0.1)
+	&-center
+		flex 1
+		margin 0 60px
+		&__top
+			border-bottom 1px solid #e7e7e7
+			padding-bottom 16px
 	&-tools
 		display flex
 		align-items center
@@ -16,12 +23,12 @@
 			align-items flex-end
 		
 	.phone-link
-		font 22px $GMed
-		color $basic-black-color
+		font 20px $GMed
+		color $alternate-accent-color
 		display inline-block
 		position relative
 		padding-left 30px
-		margin-bottom 5px
+		white-space nowrap
 		&:before
 			pseudo()
 			position absolute
@@ -31,8 +38,32 @@
 			height 18px
 			background url('../img/icons/svg/phone-icon.svg') no-repeat
 		&:hover
-			color $alternate-accent-color
+			color $accent-color
 			
 
 	.socials
-		margin-left 30px
+		margin-right 60px
+		
+
+
+		
+
+.header-contacts
+	display flex
+	align-items center
+	justify-content flex-end
+	margin-left 20px
+	
+.partner
+	display flex
+	align-items center
+	justify-content flex-start
+	font-size 14px
+	line-height 1
+	color rgba($basic-black-color, .5)
+	span
+		display block
+		margin-right 15px
+	img
+		display block
+		max-width 220px

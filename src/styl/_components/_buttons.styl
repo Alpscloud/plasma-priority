@@ -42,10 +42,66 @@
 		
 	&-transparent
 		background-color transparent
-		border 1px solid $accent-color
-		color $accent-color
+		border 2px solid $alternate-accent-color
+		color $alternate-accent-color
 		&:hover
 			color $basic-white-color
+			background-color $alternate-accent-color
+			
+		&-light
+			border-color $basic-white-color
+			color $basic-white-color
+			&:hover
+				background-color $basic-white-color
+				color $secondary-color
+			
+	&-order
+		width 100%
+		max-width 310px
+		padding-left 15px
+		padding-right 15px
+		display inline-flex
+		align-items center
+		justify-content center
+		font 14px $GMed
+		color $alternate-accent-color
+		background-color $basic-white-color
+		svg
+			flex none
+			display inline-block
+			width 18px
+			height 18px
+			margin-left 13px
+			fill $alternate-accent-color
+			transition fill .17s ease-in-out
+		&:hover
+			background-color $alternate-accent-color
+			color $basic-white-color
+			svg
+				fill $basic-white-color
+				
+		&-accent
+			background-color $alternate-accent-color
+			color $basic-white-color
+			svg
+				fill $basic-white-color
+			&:hover
+				background-color $secondary-color
+				
+			
+	&-toggle
+		display inline-block
+		width 15px
+		height 15px
+		svg
+			display block
+			position absolute
+			top 50%
+			left 50%
+			transform translate(-50%, -50%) rotate(90deg)
+			width 4px
+			fill $text-color
+
 		
 	&__close
 		display inline-block
