@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	//  ========= Variables =========
 	var body = $('body'),
-			html = body.width(),
+	html = body.width(),
 			timer; // for disable scroll
 	// ========= =========== =========== ===========
 
@@ -35,17 +35,31 @@ $(document).ready(function() {
 	});
 	// ========= =========== =========== ===========
 
+
+	$('.menu-item-has-children').each(function() {
+		var btn = '<button class="btn-toggle js-toggle-submenu-btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 8"><path d="M450.005,159.7a0.474,0.474,0,0,1,.134-0.391l0.075-.062v-0.032l0.267-.265v-0.031l0.03-.016,0.075-.094,0.163-.156v-0.031l0.268-.266v-0.031l0.269-.266v-0.031l0.029-.016V158l0.239-.235v-0.031l0.268-.266v-0.031l0.029-.016,0.075-.093,0.163-.156V157.14l0.268-.265v-0.031l0.03-.016,0.045-.063,0.194-.187v-0.031a0.269,0.269,0,0,1,.029-0.016l0.075-.094,0.164-.156c0-.016.009-0.031,0.014-0.047a0.98,0.98,0,0,0,.224-0.25l-0.238-.234v-0.032l-0.164-.156-0.075-.093-0.029-.016v-0.031l-0.269-.266v-0.031l-0.119-.11L452,154.734l-0.178-.172v-0.031l-0.268-.266v-0.031l-0.03-.016-0.075-.093-0.163-.157v-0.031l-0.269-.265V153.64l-0.163-.156-0.075-.094-0.03-.015v-0.032l-0.238-.234v-0.016l-0.03-.015v-0.031l-0.267-.266V152.75l-0.045-.032-0.06-.078-0.029-.015v-0.032l-0.03-.015-0.015-.063H450.02a0.589,0.589,0,0,1-.015-0.218h0.015V152.25h0.015l0.03-.094,0.074-.062,0.015-.032h0.03v-0.015a0.123,0.123,0,0,0,.059-0.032l0.194-.015v0.015h0.044v0.016l0.075,0.016,0.179,0.171v0.032L451,152.515v0.031l0.238,0.235V152.8l0.03,0.015v0.031l0.268,0.266v0.031l0.268,0.266v0.031l0.268,0.266v0.031L452.343,154v0.031l0.268,0.265v0.032l0.268,0.265v0.032l0.268,0.265v0.031l0.029,0.016v0.016l0.239,0.234v0.031c0.034,0.032.069,0.063,0.1,0.094s0.069,0.084.1,0.125l0.06,0.047v0.031l0.029,0.016v0.016a0.91,0.91,0,0,1,.283.375,0.341,0.341,0,0,1-.015.156v0.062a0.666,0.666,0,0,1-.149.188c-0.034.042-.069,0.083-0.1,0.125l-0.044.031v0.031l-0.268.266v0.031l-0.253.25-0.015.047-0.268.266v0.031l-0.268.266V157.7l-0.268.265V158l-0.164.156-0.075.094-0.029.015V158.3l-0.268.265v0.032c-0.04.036-.08,0.072-0.119,0.109l-0.239.281-0.178.172v0.031l-0.149.141-0.075.093-0.044.032v0.031l-0.254.25c0,0.016-.009.031-0.014,0.047-0.06.057-.12,0.114-0.179,0.172h-0.03v0.016h-0.045v0.015a0.468,0.468,0,0,1-.238,0v-0.015l-0.059-.016v-0.016h-0.03l-0.045-.062-0.044-.031v-0.032H450.05v-0.031h-0.015l-0.015-.078h-0.015Z" transform="translate(-450 -152)"/></svg></button>';
+		var link = $(this).find('> a');
+		$(btn).insertAfter(link);
+
+	});
+
+	$('.js-toggle-submenu-btn').on('click', function(e) {
+		e.preventDefault();
+		$(this).toggleClass('is-active');
+		$(this).parents('LI').find('UL').stop().slideToggle(150);
+	});
+
 	// ========= Smooth scrolling to the acnhors ===========
 	$('.js-smooth-scroll-link').on('click', function (e) {
 		e.preventDefault();
 		var id = $(this).attr('href'),
-			top = $(id).offset().top;
+		top = $(id).offset().top;
 
-			if($('.js-nav').hasClass('is-opened')) {
-				$('.js-open-mobile-menu-btn').removeClass('is-active');
-				$('html').removeClass('is-fixed');
-				$('.js-nav').removeClass('is-opened');
-			}
+		if($('.js-nav').hasClass('is-opened')) {
+			$('.js-open-mobile-menu-btn').removeClass('is-active');
+			$('html').removeClass('is-fixed');
+			$('.js-nav').removeClass('is-opened');
+		}
 
 		$('html, body').animate({scrollTop: top}, 'slow');
 	});	
@@ -59,6 +73,18 @@ $(document).ready(function() {
 		$('.js-nav').addClass('is-opened');
 
 	});
+
+	$('.js-close-mobile-menu-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$('.js-open-mobile-menu-btn').removeClass('is-active');
+		$('html').removeClass('is-fixed');
+		$('.js-nav').removeClass('is-opened');
+
+	});
+
+
+	
 	// ========= =========== =========== ===========
 
 	// Popup
@@ -103,33 +129,160 @@ $(document).ready(function() {
 	});
 	// ========= =========== =========== ===========
 
+	var promoSliderInit = $('.js-promo-slider');
+	var feedbacksSliderInit = $('.js-feedbacks-slider');
+	var sertificatesSliderInit = $('.js-sertificates-slider');
+	var aboutClinicSliderInit = $('.js-about-clinic-slider');
+	var gallerySliderInit = $('.js-gallery-slider');
 
-	var feedbacksSlider = new Swiper('.js-feedbacks-slider', {
-		loop: true,
-		slidesPerView: 1,
-		centeredSlides: false,
-		spaceBetween: 20,
-		autoplay: {
-			delay: 6000,
-			disableOnInteraction: false,
-		},
-		pagination: {
-			el: '.js-feedbacks-slider-pagination',
-			clickable: true
-		},
-		navigation: {
-			nextEl: '.js-feedbacks-slider-btn-next',
-			prevEl: '.js-feedbacks-slider-btn-prev',
-		},
+	if (promoSliderInit.length > 0) {
 
-		breakpoints: {
-			1150: {
-				slidesPerView: 3,
-				centeredSlides: true,
-				slidesPerView: 'auto',
-				spaceBetween: 120
+		var promoSlider = new Swiper(promoSliderInit, {
+			loop: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			pagination: {
+				el: '.js-promo-slider-pagination',
+				clickable: true
+			},
+			navigation: {
+				nextEl: '.js-promo-slider-btn-next',
+				prevEl: '.js-promo-slider-btn-prev',
+			},
+
+			
+		});
+
+	}
+
+	if (feedbacksSliderInit.length > 0) {
+
+		var feedbacksSlider = new Swiper(feedbacksSliderInit, {
+			loop: true,
+			slidesPerView: 1,
+			centeredSlides: false,
+			spaceBetween: 20,
+			autoplay: {
+				delay: 6000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.js-feedbacks-slider-pagination',
+				clickable: true
+			},
+			navigation: {
+				nextEl: '.js-feedbacks-slider-btn-next',
+				prevEl: '.js-feedbacks-slider-btn-prev',
+			},
+
+			breakpoints: {
+				1150: {
+					slidesPerView: 3,
+					centeredSlides: true,
+					slidesPerView: 'auto',
+					spaceBetween: 120
+				}
 			}
-		}
+		});
+
+	}
+
+	if (sertificatesSliderInit.length > 0) {
+
+		var sertificatesSlider = new Swiper(sertificatesSliderInit, {
+			loop: true,
+			slidesPerView: 1,
+			centeredSlides: false,
+			spaceBetween: 0,
+			pagination: {
+				el: '.js-sertificates-slider-pagination',
+				clickable: true
+			},
+			navigation: {
+				nextEl: '.js-sertificates-slider-btn-next',
+				prevEl: '.js-sertificates-slider-btn-prev',
+			},
+
+			breakpoints: {
+				1400: {
+					slidesPerView: 5,
+				},
+				1000: {
+					slidesPerView: 4,
+				},
+				700: {
+					slidesPerView: 3,
+				},
+				480: {
+					slidesPerView: 2,
+				}
+			}
+		});
+
+	}
+
+	if (aboutClinicSliderInit.length > 0) {
+		var aboutClinicSlider = new Swiper(aboutClinicSliderInit, {
+			loop: true,
+			slidesPerView: 1,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: '.js-about-clinic-slider-btn-next',
+				prevEl: '.js-about-clinic-slider-btn-prev',
+			},
+		});
+	}
+
+	if (gallerySliderInit.length > 0) {
+
+		var gallerySlider = new Swiper(gallerySliderInit, {
+			loop: true,
+			slidesPerView: 1,
+			spaceBetween: 20,
+			pagination: {
+				el: '.js-gallery-slider-pagination',
+				clickable: true
+			},
+			navigation: {
+				nextEl: '.js-gallery-slider-btn-next',
+				prevEl: '.js-gallery-slider-btn-prev',
+			},
+			breakpoints: {
+				1050: {
+					slidesPerView: 3
+				},
+				620: {
+					slidesPerView: 2
+				}
+			}
+
+			
+		});
+
+	}
+
+
+
+
+	$('[data-fancybox]').fancybox();
+
+	$('.js-tab-content').not(":first").hide();
+	$('.js-tab-btn:first').addClass('is-active');
+
+	$('.js-tab-btn').on('click', function(e) {
+		e.preventDefault();
+		$('.js-tab-content').removeClass('is-active');
+		$('.js-tab-btn').removeClass('is-active').eq($(this).index()).addClass('is-active');
+		$('.js-tab-content').hide().eq($(this).index()).fadeIn().addClass('is-active');
+	}).eq(0).addClass('is-active');
+
+	$('.js-toggle-accordion-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-active');
+		$(this).parents('.accordion-item').toggleClass('is-active');
+
+		$(this).parents('.accordion-item').find('.accordion-body').stop().slideToggle(150);
 	});
 
 
@@ -157,15 +310,15 @@ $(document).ready(function() {
 			e.stopPropagation();
 
 			var quizBtn = $(e.target),
-					quizDirection = quizBtn.attr('data-quiz-direction');
+			quizDirection = quizBtn.attr('data-quiz-direction');
 
 			if(quizBtn.prop('tagName') !== 'BUTTON') {return};
 
 
 			// Quiz steps
 			var currentQuizStep = self.parents('.js-quiz-step'),
-					nextQuizStep = currentQuizStep.next('.js-quiz-step'),
-					prevQuizStep = currentQuizStep.prev('.js-quiz-step');
+			nextQuizStep = currentQuizStep.next('.js-quiz-step'),
+			prevQuizStep = currentQuizStep.prev('.js-quiz-step');
 
 			if(quizDirection === 'next') {
 
@@ -198,8 +351,8 @@ $(document).ready(function() {
 		e.preventDefault();
 
 		var that = $(this);
-			inputs = that.find('.js-input'),
-			flag = true;
+		inputs = that.find('.js-input'),
+		flag = true;
 
 		// Validate
 		$(inputs).each(function() {
@@ -228,148 +381,6 @@ $(document).ready(function() {
 
 	});
 	// ========= =========== =========== ===========
-
-
-
-
-	// ========= G o o g l e   m a p   s t y l e s ===========
-	var map = $('#map');
-
-	if(map.length > 0) {
-
-
-	var latitude = $('.coords').attr('data-latitude'), // coordinates 
-		longitude = $('.coords').attr('data-longitude'), // coordinates 
-		map_zoom = 16, 
-		marker_url = 'img/icons/svg/map.svg'; // map marker 
-	// Styles
-	var style =  [
-    {
-        "featureType": "landscape",
-        "stylers": [
-            {
-                "hue": "#FFBB00"
-            },
-            {
-                "saturation": 43.400000000000006
-            },
-            {
-                "lightness": 37.599999999999994
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "stylers": [
-            {
-                "hue": "#FFC200"
-            },
-            {
-                "saturation": -61.8
-            },
-            {
-                "lightness": 45.599999999999994
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "stylers": [
-            {
-                "hue": "#FF0300"
-            },
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": 51.19999999999999
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "stylers": [
-            {
-                "hue": "#FF0300"
-            },
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": 52
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "stylers": [
-            {
-                "hue": "#0078FF"
-            },
-            {
-                "saturation": -13.200000000000003
-            },
-            {
-                "lightness": 2.4000000000000057
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "stylers": [
-            {
-                "hue": "#00FF6A"
-            },
-            {
-                "saturation": -1.0989010989011234
-            },
-            {
-                "lightness": 11.200000000000017
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    }
-];
-		// Create the point
-		var map_options = {
-			center: new google.maps.LatLng(latitude, longitude),
-			zoom: map_zoom,
-			panControl: false,
-			zoomControl: true,
-			mapTypeControl: false,
-			streetViewControl: false,
-			mapTypeId: google.maps.MapTypeId.ROADMAP,
-			scrollwheel: false,
-			styles: style
-		};
-		var map = new google.maps.Map(document.getElementById('map'), map_options),
-			marker = new google.maps.Marker({
-				position: new google.maps.LatLng(latitude, longitude),
-				map: map,
-				visible: true,
-				icon: marker_url
-			});
-
-	}
-	// ========= =========== =========== ===========
-
 
 
 

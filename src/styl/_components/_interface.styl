@@ -61,3 +61,34 @@
 .mobile-socials
 	display none
 			
+.fancy-link
+	display inline-block
+	position relative
+	overflow hidden
+	&:before
+		pseudo()
+		position absolute
+		fullSize()
+		background-color rgba($secondary-color, .6)
+		transition opacity .17s ease-in-out
+		opacity 0
+		z-index 1
+	&:after
+		pseudo()
+		position absolute
+		position-center()
+		z-index 2
+		transition opacity .17s ease-in-out
+		opacity 0
+		width 40px
+		height 40px
+		background url('../img/icons/svg/zoom.svg') no-repeat
+		
+	&:hover
+		&:before,
+		&:after
+			opacity 1
+		
+	img
+		display block
+	

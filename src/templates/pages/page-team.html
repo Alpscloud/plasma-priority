@@ -12,7 +12,63 @@
 		<!-- Main -->
 		<main class="main">
 
+			<section class="page-inner gutter-bottom">
+
+				<div class="page-inner__entering">
+					
+					<div class="container">
+						<!-- Breadcrumbs -->
+						<nav class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<a href="index.html" class="breadcrumbs__link" title="Главная">
+											<span itemprop="name">Главная</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</span>
+								</li>
+
+
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__link is-active">
+										<span itemprop="name">Наши специалисты</span>
+										<meta itemprop="position" content="2">
+									</span>
+								</li>
+							</ul>
+						</nav>
+						<!-- //Breadcrumbs -->
+
+						<h1 class="text-center sect-title page-title">наши специалисты</h1>
+
+						
+
+					</div>
+					<!-- //container -->
+
+				</div>
+
+				<div class="page-inner__content">
+					<div class="container">
+						<div class="team">
+							{% include '../parts/components/team-cards.html' %}
+						</div>
+					</div>
+					<!-- //container -->
+
+					<section class="sect__sertificates gutter-top">
+						<h2 class="sect-title-sm t-t-uppercase container text-center">сертификаты и Лицензии наших специалистов</h2>
+
+						{% include '../parts/components/sertificates-slider.html' %}
+
+
+					</section>
+				</div>
+			</section>
+
 			{% include '../parts/sections/sect-seo.html' %}
+			{% include '../parts/sections/sect-contacts.html' %}
 			
 
 			

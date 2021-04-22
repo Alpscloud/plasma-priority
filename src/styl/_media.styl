@@ -16,6 +16,9 @@
 
 	.header-center
 		margin 0 30px
+		
+	.page-technical
+		padding 120px 0
 			
 +max-screen(1365px)
 	.main
@@ -203,12 +206,7 @@
 		height 450px
 		
 
-		
-	// Team
-	.team-member__information
-		padding-right 0
-		
-	
+
 
 		
 	.feedbacks-slider
@@ -276,16 +274,44 @@
 		
 	.what-we-treating__slogan
 		font-size 30px
+		
+	// Page about
+	.gallery-slider
+		padding-left 30px
+		padding-right 30px
+		
+		.btn__arrow
+			&--prev
+				left 0
+			&--next
+				right 0
+				
+
+	.aside
+		margin-left 50px
+		max-width 350px
+		
+
+	.block-404__row
+		flex-wrap wrap
+		img
+			margin 0 auto 40px auto
+			order 1
+	
+	.block-404__content
+		width 100%
+		order 2
+		text-align center
+		margin-right 0
+		p
+			margin-bottom 30px
 					
 +max-screen(1100px)
 	.office
 		width 100%
 		margin-top 40px
 		
-	.team-description__row
-		.content
-			margin-right 0
-			
+
 
 	.what-we-treating
 		&__row
@@ -350,30 +376,8 @@
 			width 50%
 		
 	// Team
-	.team-member
-		flex-wrap wrap
-		&__photo
-			width 100%
-			min-height auto
-			padding-top 75%
-		&__information
-			width 100%
-			padding-left 0
-			margin-top 40px
-			flex none
-			
-	.page-alternate
-		.team-members__row
-			flex-wrap wrap
-		.team-member
-			&__wrapper
-				width 100%
-			&__photo
-				padding-top 0
-				min-height 250px
-			&__information
-				margin-top 0
-			
+
+
 	.price-block
 		&__header
 			padding 20px
@@ -414,7 +418,26 @@
 				
 			&:last-child
 				margin-bottom 0
-						
+	
+	.page-article__row
+		flex-wrap wrap
+		
+	.article
+		flex none
+		width 100%
+		
+	.aside
+		margin-left 0
+		margin-top 50px
+		max-width 500px
+		
+
+	.team-member__sertificate--wrapper
+		width 33.3333%
+		
+	.team-member__photo
+		max-width 270px
+		
 +max-screen(900px)
 	.map__wrapper
 		max-width 100%
@@ -518,6 +541,17 @@
 		padding-left 15px
 		padding-right 15px
 		
+
+	.team-member
+		&__row
+			flex-wrap wrap
+		&__content
+			flex none
+			width 100%
+			margin-top 40px
+		
+
+		
 +max-screen(700px)
 	.header
 		.btn
@@ -578,6 +612,11 @@
 		
 			
 +max-screen(620px)
+
+	.thanks-block
+		font-size 14px
+		
+	
 	
 	.what-we-treating__slogan
 		font-size 24px
@@ -669,38 +708,9 @@
 	.advantage__wrapper
 		width 100%
 		
-	.team-member
-		&__photo
-			padding-top 120%
-		&__name
-			font-size 26px
-			line-height 36px
-			margin-bottom 15px
-		&__experience
-			margin-bottom 30px
-			line-height 1.45
-			
-		&__position
-			font-size 16px
-			line-height 24px
-			
+	
 
-	.page-alternate
-		.team-members__row
-			flex-wrap wrap
-		.team-member
-			&__wrapper
-				width 100%
-			&__photo
-			
-				flex none
-				
-			&__information
-				margin-top 0
-				padding-left 0
-				margin-top 20px
-				width 100%
-				flex none
+	
 				
 	.service-notice
 		padding-left 0
@@ -786,7 +796,58 @@
 		h1,h2
 			font-size 26px
 			margin-bottom 20px
+			
+		ul
+			li
+				padding-left 15px
+				&:before
+					top 5px
+					
+	.team-member__position
+		margin-bottom 30px
+			
+	// Page feedbacks
+	.feedback-text
+		&__header
+			padding 15px 25px 15px 80px
+			&:before
+				width 30px
+				height 20px
+				left 25px
+				
+		&__body
+			padding 30px 15px
+			
+	.feedback-video__wrapper
+		width 100%
 		
+	.page-inner__entering
+		margin-bottom 40px
+		
+	.breadcrumbs
+		margin-bottom 30px
+		
+	// Page about
+	.gallery-slider
+		padding-left 0
+		padding-right 0
+		
+		.btn__arrow
+			display none
+			
+
+	.aside-title
+		font-size 18px
+		
+	.aside-page
+		.aside-title
+			padding 20px 15px
+		&-links
+			padding 30px 15px
+			
+			li
+				margin-bottom 20px
+			
 +max-screen(480px)
 	.btn
 		width 100%
@@ -831,6 +892,14 @@
 			
 	.slider__pagination--dark
 		margin-bottom 40px
+		
+
+	.team-member__sertificate--wrapper
+		width 50%
+		
+	.team-member__photo
+		max-width 100%
+		margin-right 0
 			
 +max-screen(360px)
 	.main

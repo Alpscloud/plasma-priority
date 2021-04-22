@@ -1,0 +1,147 @@
+{% include '../parts/head.html' %}
+<body id="home">
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+
+			<section class="page-inner gutter-bottom">
+
+				<div class="page-inner__entering">
+					
+					<div class="container">
+						<!-- Breadcrumbs -->
+						<nav class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<a href="index.html" class="breadcrumbs__link" title="Главная">
+											<span itemprop="name">Главная</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</span>
+								</li>
+
+								<li class="breadcrumbs__item">
+									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<a href="page-services.html" class="breadcrumbs__link" title="Главная">
+											<span itemprop="name">Что лечим</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</span>
+								</li>
+
+
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__link is-active">
+										<span itemprop="name">Плечевой сустав</span>
+										<meta itemprop="position" content="3">
+									</span>
+								</li>
+							</ul>
+						</nav>
+						<!-- //Breadcrumbs -->
+
+						<h1 class="page-title sect-title">Плечевой сустав</h1>
+
+						
+
+					</div>
+					<!-- //container -->
+
+				</div>
+
+				<div class="page-inner__content">
+					<div class="container">
+						<div class="row page-article__row align-vertical-start">
+							<article class="article">
+
+								<div class="content">
+									<img src="img/service.jpg" alt="">
+									<h3 style="color: #6686b3">СИМПТОМЫ</h3>
+									<ul>
+										<li>Боль</li>
+										<li>Невозможно поднять руку</li>
+										<li>Невозможно расчесать волосы</li>
+										<li>Невозможно застегнуть бюстгальтер</li>
+										<li>Ночные боли</li>
+										<li>Хруст, жжение</li>
+										<li>Прострелы, онемение пальцев рук</li>
+									</ul>
+
+									<h3 style="color: #6686b3">ЗАБОЛЕВАНИЯ</h3>
+									<ul>
+										<li>Артроз, артрит</li>
+										<li>Бурсит</li>
+										<li>Тендинит, тендиноз вращательной манжеты плеча</li>
+										<li>Импиджмент синдром</li>
+										<li>Последствия травм: переломов, вывихов, повреждений мышц, сухожилий, связок</li>
+									</ul>
+								</div>
+							</article>
+
+							<aside class="aside aside-page">
+								<h3 class="aside-title">Другие услуги</h3>
+
+								<ul class="aside-page-links">
+									<li>
+										<h4><a href="page-service.html">Коленный сустав</a></h4>
+									</li>
+									<li>
+										<h4><a href="page-service.html">Тазобедренный сустав</a></h4>
+									</li>
+									<li>
+										<h4><a href="page-service.html">Локтевой сустав</a></h4>
+									</li>
+									<li>
+										<h4><a href="page-service.html">Голеностопный сустав</a></h4>
+									</li>
+									<li>
+										<h4><a href="page-service.html">Кисть</a></h4>
+									</li>
+									<li>
+										<h4><a href="page-service.html">Шейный отдел позвоночника</a></h4>
+									</li>
+									<li>
+										<h4><a href="page-service.html">Грудной отдел позвоночника</a></h4>
+									</li>
+									<li>
+										<h4><a href="page-service.html">Поясничный отдел позвоночника</a></h4>
+									</li>
+								</ul>
+							</aside>
+						</div>
+					</div>
+					<!-- //container -->
+				</div>
+			</section>
+
+			{% include '../parts/sections/sect-seo.html' %}
+			{% include '../parts/sections/sect-contacts.html' %}
+			
+
+			
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

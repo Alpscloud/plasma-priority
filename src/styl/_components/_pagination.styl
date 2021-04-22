@@ -1,0 +1,46 @@
+.pagination
+	margin-top 20px
+	&-list
+		text-align center
+		white-space nowrap
+		display flex
+		justify-content center
+		
+	&-item
+		display inline-block
+		margin-right 10px
+		&:last-child
+			margin-right 0
+			
+		&__prev
+			transform scaleX(-1)
+			
+	&-link
+		flex-col-center()
+		text-align center
+		width 40px
+		height 40px
+		border-radius 50%
+		border 2px solid $secondary-color
+		background-color $basic-white-color
+		color $text-color
+		font 16px $GMed
+		position relative
+		
+		svg
+			display block
+			width 7px
+			fill #6686b3
+			position absolute
+			position-center()
+			transition fill .17s ease-in-out
+		
+		&.is-active,
+		&:hover
+			background-color $secondary-color
+			color $basic-white-color
+			
+			svg
+				fill $basic-white-color
+			
+		

@@ -142,6 +142,11 @@
 			&:after
 				transform translateX(5px)
 				
+		&-accent
+			color $secondary-color
+			&:after
+				background-image url('../img/icons/svg/permalink-accent.svg')
+				
 
 .procedures-cards
 	margin-bottom 70px
@@ -179,41 +184,7 @@
 		display block
 		border-radius 0 20px 0 20px
 		margin 0 auto 10px auto
-.team
-	&-member
-		margin-bottom 30px
-		display flex
-		flex-wrap nowrap
-		&__photo
-			width 50%
-			radius-overflow()
-			border-radius 24px 0 24px 24px
-			min-height 440px
-			img
-				@extends .visually-hidden
-		&__information
-			width 50%
-			padding-left 30px
-			
-		&__name
-			font 24px $CBold
-			margin-bottom 20px
-		&__experience
-			color $accent-color
-			font 14px $GMed
-			text-transform uppercase
-			margin-bottom 20px
-		&__position
-			font 18px $GMed
-			line-height 32px
-			margin-bottom 20px
-		&__description
-			font-size 16px
-			line-height 30px
-			
-		&:last-child
-			margin-bottom 0
-			
+
 // Treatment
 .sect__treatment
 	.sect-title
@@ -472,35 +443,9 @@
 
 
 .sertificate-link
-	display inline-block
-	position relative
-	overflow hidden
+
 	box-shadow 0px 10px 50px 0px rgba(0, 0, 0, 0.1)
-	&:before
-		pseudo()
-		position absolute
-		fullSize()
-		background-color rgba($secondary-color, .6)
-		transition opacity .17s ease-in-out
-		opacity 0
-	&:after
-		pseudo()
-		position absolute
-		position-center()
-		z-index 1
-		transition opacity .17s ease-in-out
-		opacity 0
-		width 40px
-		height 40px
-		background url('../img/icons/svg/zoom.svg') no-repeat
-		
-	&:hover
-		&:before,
-		&:after
-			opacity 1
-		
-	img
-		display block
+	
 		
 
 .address

@@ -133,6 +133,7 @@ $(document).ready(function() {
 	var feedbacksSliderInit = $('.js-feedbacks-slider');
 	var sertificatesSliderInit = $('.js-sertificates-slider');
 	var aboutClinicSliderInit = $('.js-about-clinic-slider');
+	var gallerySliderInit = $('.js-gallery-slider');
 
 	if (promoSliderInit.length > 0) {
 
@@ -230,6 +231,34 @@ $(document).ready(function() {
 				prevEl: '.js-about-clinic-slider-btn-prev',
 			},
 		});
+	}
+
+	if (gallerySliderInit.length > 0) {
+
+		var gallerySlider = new Swiper(gallerySliderInit, {
+			loop: true,
+			slidesPerView: 1,
+			spaceBetween: 20,
+			pagination: {
+				el: '.js-gallery-slider-pagination',
+				clickable: true
+			},
+			navigation: {
+				nextEl: '.js-gallery-slider-btn-next',
+				prevEl: '.js-gallery-slider-btn-prev',
+			},
+			breakpoints: {
+				1050: {
+					slidesPerView: 3
+				},
+				620: {
+					slidesPerView: 2
+				}
+			}
+
+			
+		});
+
 	}
 
 

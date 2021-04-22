@@ -1,0 +1,70 @@
+.aside
+	width 100%
+	flex 1
+	max-width 400px
+	margin-left 100px
+	
+	&-title
+		text-transform uppercase
+		font 24px $CBold
+		color $secondary-color
+		margin-bottom 40px
+		
+	&-articles
+		li
+			display block
+			margin-bottom 30px
+			
+		.article-date
+			margin-bottom 4px
+			
+		a
+			font 16px $CBold
+			text-transform uppercase
+			color $text-color
+			&:hover
+				color $secondary-color
+				
+	&-page
+		background-color #eaf5f4
+		
+		.aside-title
+			color $basic-white-color
+			padding 30px
+			background-color $accent-color
+			margin-bottom 0
+			border-top-left-radius 12px
+			border-top-right-radius 12px
+			text-align center
+			
+		&-links
+			padding 40px
+			border-bottom-left-radius 12px
+			border-bottom-right-radius 12px
+			
+			li
+				display block
+				margin-bottom 30px
+				position relative
+				padding-left 25px
+				&:before
+					pseudo()
+					position absolute
+					left 0
+					top 6px
+					width 7px
+					height 13px
+					background url('../img/icons/svg/link_arrow.svg') no-repeat / contain
+				&:last-child
+					margin-bottom 0
+					
+			a
+				color $text-color
+				border-bottom 1px solid transparent
+				&:hover
+					color $secondary-color
+					border-color currentColor
+				
+			
+	
+	

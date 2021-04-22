@@ -12,7 +12,92 @@
 		<!-- Main -->
 		<main class="main">
 
+			<section class="page-inner gutter-bottom">
+
+				<div class="page-inner__entering">
+					
+					<div class="container">
+						<!-- Breadcrumbs -->
+						<nav class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<a href="index.html" class="breadcrumbs__link" title="Главная">
+											<span itemprop="name">Главная</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</span>
+								</li>
+
+								<li class="breadcrumbs__item">
+									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+										<a href="page-news.html" class="breadcrumbs__link" title="Главная">
+											<span itemprop="name">Новости клиники</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</span>
+								</li>
+
+
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__link is-active">
+										<span itemprop="name">Название статьи</span>
+										<meta itemprop="position" content="3">
+									</span>
+								</li>
+							</ul>
+						</nav>
+						<!-- //Breadcrumbs -->
+
+						
+
+					</div>
+					<!-- //container -->
+
+				</div>
+
+				<div class="page-inner__content">
+					<div class="container">
+						<div class="row page-article__row align-vertical-start">
+							<article class="article">
+								<header class="article-header">
+									<img src="img/article.jpg" alt="">
+									<p class="article-date">17.04.2021</p>
+									<h1 class="sect-title-sm t-t-uppercase">Заголовок новости длинный в две строки</h1>
+								</header>
+
+								<div class="content">
+									<p><b>PRP- терапия</b> - инъекционная процедура, предполагающая введение обогащенной тромбоцитами плазмы пациента в место, требующее лечения, то есть направленная на ускорение регенерации и стимуляции роста собственных клеток организма. Несмотря на то, что метод достаточно инновационный, он получил одобрение Минздрава и, на данном этапе, продемонстрировал прекрасные результаты при лечении суставов и позвоночника. Суть метода в том, чтобы заставить собственный организм вырабатывать нужное количество клеток для восстановления тканей.</p>
+									<p><b>Плазмотерапия</b> – метод, аналогичный PRP. Различие методик состоит в отличии количества тромбоцитов (которые являются основной «движущей силой» регенераторного процесса) и сложности проведения процедуры.</p>
+								</div>
+							</article>
+
+							<aside class="aside">
+								<h3 class="aside-title">Больше новостей</h3>
+
+								<ul class="aside-articles">
+									<li>
+										<p class="article-date">17.04.2021</p>
+										<h4><a href="page-article.html">Далеко-далеко, за словесными.</a></h4>
+									</li>
+									<li>
+										<p class="article-date">17.04.2021</p>
+										<h4><a href="page-article.html">Далеко-далеко, за.</a></h4>
+									</li>
+									<li>
+										<p class="article-date">17.04.2021</p>
+										<h4><a href="page-article.html">Далеко-далеко за, словесными горами.</a></h4>
+									</li>
+								</ul>
+							</aside>
+						</div>
+					</div>
+					<!-- //container -->
+				</div>
+			</section>
+
 			{% include '../parts/sections/sect-seo.html' %}
+			{% include '../parts/sections/sect-contacts.html' %}
 			
 
 			

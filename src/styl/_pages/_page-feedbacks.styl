@@ -1,0 +1,52 @@
+.feedback-text
+	margin-bottom 10px
+	background-color $basic-white-color
+	border-radius 12px
+	box-shadow  0px 5px 20px 0px rgba(0, 0, 0, 0.15)
+	&__body
+		padding 40px 30px
+	&__header
+		padding 25px 30px 25px 120px
+		position relative
+		border-bottom 1px solid #e7e7e7
+		&:before
+			pseudo()
+			position absolute
+			left 40px
+			vertical-center()
+			width 40px
+			height 30px
+			background url('../img/icons/svg/quote.svg') 50% 50% no-repeat / contain
+
+	&:last-child
+		margin-bottom 0
+		
+.feedback
+	&-author__name
+		font 18px $GMed
+		
+	&-date
+		font 14px $GMed
+		color rgba($text-color, .3)
+		
+.feedbacks
+	.btn
+		margin-top 40px
+		
+	&-videos
+		.btn
+			margin-top 10px
+		
+
+.feedback-video
+	padding-top 75%
+	iframe, video
+		display block
+		width 100%
+		border-radius 12px
+		position absolute
+		position-center()
+		width 100%
+		height 100%
+	&__wrapper
+		margin-bottom 30px
