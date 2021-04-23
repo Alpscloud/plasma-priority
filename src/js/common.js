@@ -176,10 +176,9 @@ $(document).ready(function() {
 			},
 
 			breakpoints: {
-				1150: {
-					slidesPerView: 3,
-					centeredSlides: true,
+				1250: {
 					slidesPerView: 'auto',
+					centeredSlides: true,
 					spaceBetween: 120
 				}
 			}
