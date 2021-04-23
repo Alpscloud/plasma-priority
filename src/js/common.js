@@ -366,17 +366,11 @@ $(document).ready(function() {
 
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "/wp-content/themes/plasma-theme/mail.php", //Change
 			data: that.serialize()
 		}).done(function() {
-			$('.js-popup').fadeOut(150);
-			$('.js-quiz-popup').fadeOut(150);
-			$('.js-thanks-popup').fadeIn(150);
-			setTimeout(function() {
-				$('.js-thanks-popup').fadeOut(150);
-				$('html').removeClass('is-fixed');
-				that.trigger("reset");
-			}, 2000);
+			that.trigger("reset");
+			window.location.href ='/spasibo';
 		});
 
 	});
