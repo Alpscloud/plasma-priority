@@ -438,6 +438,19 @@
 	.team-member__photo
 		max-width 270px
 		
+
+	// Service
+	.page-article__row
+		flex-wrap wrap
+		
+	.page-service
+		width 100%
+		flex none
+		
+	.aside
+		width 100%
+		max-width 500px
+		
 +max-screen(900px)
 	.map__wrapper
 		max-width 100%
@@ -456,6 +469,10 @@
 		margin-top 40px
 		.socials
 			display block !important
+			
+
+	.service-information__item--wrapper
+		width 50%
 		
 +max-screen(767px)
 	.promo-slide
@@ -847,6 +864,45 @@
 			
 			li
 				margin-bottom 20px
+				
+
+	// Service
+	.service-step__wrapper
+		flex none
+		width 100%
+		margin-bottom 20px
+		
+	.doctor-blockquote
+		flex-wrap wrap
+		&__text
+			flex none
+			width 100%
+			padding 25px
+		&__information
+			margin-right 0
+			margin-bottom 20px
+			
+	.service-information__item--wrapper
+		width 100%
+		
+	.tab-controls
+		flex-wrap wrap
+		margin-left 0
+		margin-right 0
+		&__btn
+			flex none
+			width 100%
+			margin-right 0
+			margin-left 0
+			margin-bottom 6px
+			font-size 12px
+			padding 15px
+			&:last-child
+				margin-right 0
+				
+	.content
+		iframe
+			height 300px
 			
 +max-screen(480px)
 	.btn

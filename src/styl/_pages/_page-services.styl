@@ -1,0 +1,118 @@
+.page-service
+	flex 1
+
+.tab-controls
+	margin-bottom 50px
+	display flex
+	flex-wrap nowrap
+	margin-left -4px
+	margin-right -4px
+	&__btn
+		margin 0 4px
+		flex 1
+		padding 20px 10px
+		
+
+.service-step
+	position relative
+	&__count
+		flex-col-center()
+		position absolute
+		width 50px
+		height 50px
+		border-radius 50%
+		text-align center
+		background-color $secondary-color
+		left 25px
+		z-index 1
+		top -25px
+		color $basic-white-color
+		
+	&__wrapper
+		margin-bottom 40px
+		padding-top 30px
+	&__img
+		display block
+		padding-top 100%
+		border-radius 16px 0
+		margin-bottom 15px
+		
+
+.doctor-blockquote
+	margin-top 50px
+	display flex
+	align-items flex-start
+	justify-content flex-start
+	&__information
+		flex none
+		margin-right 30px
+		max-width 200px
+		flex none
+		&--photo
+			padding-top 0
+			width 100px
+			height 120px
+			border-radius 16px 0
+			margin-bottom 7px
+		&--name
+			font-family $CBold
+			
+	&__text
+		flex 1
+		font-family $GBoldItalic
+		position relative
+		padding 30px
+		background url('../img/icons/svg/quote.svg')  top left  no-repeat / 30px, url('../img/icons/svg/quote.svg')  bottom right  no-repeat / 30px
+		
+
+.advantage-column
+	flex-direction column
+	justify-content center
+	align-items center
+	text-align center
+	// p
+	// 	font-family $CBold
+		
+	b
+		color $alternate-accent-color
+	
+	.advantage__ic
+		margin-right 0
+		margin-bottom 20px
+		background-size 45px 45px
+		width 70px
+		height 70px
+		background-color #eaf5f4
+		
+
+
+.service-information
+	&__item
+		display flex
+		align-items flex-start
+		flex-wrap nowrap
+		justify-content flex-start
+		&--ic
+			flex none
+			width 45px
+			height 45px
+			background-position 50% 50%
+			background-repeat no-repeat
+			background-size 30px
+			margin-right 10px
+			border-radius 50%
+			background-color #eaf5f4
+			box-shadow 0px 5px 25px 0px rgba($secondary-color, 0.15)
+		&--text
+			&_val
+				font-size 16px
+				color $basic-black-color
+				color $alternate-accent-color
+			&_title
+				font-family $CBold
+				font-size 12px
+		&--wrapper
+			margin-bottom 30px
+		
+			
+	
