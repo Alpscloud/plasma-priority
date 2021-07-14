@@ -87,6 +87,7 @@
 
 
 .service-information
+	margin-top 40px
 	&__item
 		display flex
 		align-items flex-start
@@ -113,6 +114,103 @@
 				font-size 12px
 		&--wrapper
 			margin-bottom 30px
+			
+
+.service-content__block
+	margin-bottom 50px
+	&:last-child
+		margin-bottom 0
+		
+.service-content__steps
+	font-size 16px
+	margin-bottom 30px
+	li
+		display block
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 0
+	span
+		display block
+		position relative
+		padding-left 20px
+		line-height 1.25
+		&:before
+			pseudo()
+			position absolute
+			top 7px
+			left 0
+			width 4px
+			height 4px
+			border-radius 50%
+			background-color $secondary-color
+	a
+		display inline-block
+		width 50%
+		border-radius 10px
+		box-shadow 0 5px 20px 0 rgba(0,0,0, 15%)
+		margin-top 10px
 		
 			
-	
+.service-advantages
+	li
+		display block
+		margin-bottom 20px
+		padding-left 60px
+		position relative
+		font-size 16px
+		
+		b, strong
+			color #d95900
+		&:last-child
+			margin-bottom 0
+		&:before
+			pseudo()
+			width 40px
+			height 40px
+			border-radius 50%
+			background-image url('../img/icons/svg/badge.svg')
+			background-color $basic-white-color
+			background-position 50% 50%
+			background-repeat no-repeat
+			background-size 20px 20px
+			box-shadow 0px 5px 25px 0px rgba($secondary-color, 0.15)
+			position absolute
+			left 0
+			top -4px
+			
+
+.service-table
+	margin-bottom 30px
+	border-radius 10px
+	overflow hidden
+	table
+		width 100%
+		table-layout fixed
+		border-top-left-radius 10px
+		border-top-right-radius 10px
+		font-size 16px
+		td
+			padding 10px 30px
+			border-right 2px solid $basic-white-color
+			&:last-child
+				border-right none
+		tr
+			&:nth-child(odd)
+				background-color rgba($light-accent-color, .7)
+			&:nth-child(even)
+				background-color #eaf5f4
+		tr
+			&:first-child
+				text-align center
+				color $basic-white-color
+				text-transform uppercase
+				font 18px $CBold
+				
+				
+				td
+					padding 20px
+					&:first-child
+						background-color $secondary-color
+					&:last-child
+						background-color $alternate-accent-color
+			

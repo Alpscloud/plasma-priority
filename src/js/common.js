@@ -33,6 +33,14 @@ $(document).ready(function() {
 			scrollTop: 0
 		}, 1000);
 	});
+
+	$('.js-anchor-link').on('click', function (e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+		top = $(id).offset().top - 30;
+
+	$('html, body').animate({scrollTop: top}, 350);
+});
 	// ========= =========== =========== ===========
 
 
@@ -382,6 +390,30 @@ $(document).ready(function() {
 	}
 
 	initTelMask();
+
+	function initTheia() {
+		$('.page-service, .aside-page').theiaStickySidebar({
+			'additionalMarginTop': additionalMarginTop,
+			'disableOn': false
+		});
+	}
+
+	if (html < 1251) {
+		var additionalMarginTop = 110;
+
+	} else {
+		var additionalMarginTop = 20;
+	}
+
+	initTheia();
+
+	
+
+	
+
+
+
+
 
 
 });
