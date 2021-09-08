@@ -54,7 +54,7 @@ $(document).ready(function() {
 	$('.js-toggle-submenu-btn').on('click', function(e) {
 		e.preventDefault();
 		$(this).toggleClass('is-active');
-		$(this).parents('LI').find('UL').stop().slideToggle(150);
+		$(this).next('.sub-menu').stop().slideToggle(150);
 	});
 
 	// ========= Smooth scrolling to the acnhors ===========
@@ -170,10 +170,6 @@ $(document).ready(function() {
 			slidesPerView: 1,
 			centeredSlides: false,
 			spaceBetween: 20,
-			autoplay: {
-				delay: 6000,
-				disableOnInteraction: false,
-			},
 			pagination: {
 				el: '.js-feedbacks-slider-pagination',
 				clickable: true
@@ -189,7 +185,18 @@ $(document).ready(function() {
 					centeredSlides: true,
 					spaceBetween: 120
 				}
-			}
+			},
+			on: {
+				slideChange: function (el) {
+					console.log('1');
+					$('.swiper-slide').each(function () {
+						var youtubePlayer = $(this).find('iframe').get(0);
+						if (youtubePlayer) {
+							youtubePlayer.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+						}
+					});
+				},
+			},
 		});
 
 	}
